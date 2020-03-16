@@ -1,11 +1,11 @@
 
 .alpq-borderRadius{
-    border-radius: 4px;
+    border-radius: $borderadius;
 }
 
 @mixin alpq-border {
     border-style: solid;
-    border-width: 1px;
+    border-width: $borderwidth;
 }
 
 .alpq-borderColor-primary {

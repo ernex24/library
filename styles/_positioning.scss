@@ -1,3 +1,5 @@
+/* Positioning */
+
 @mixin alpq-flex {
     display: flex;
 }
@@ -6,75 +8,41 @@
     display: flex;
 }
 
-.alpq-pos-row {
-    @include alpq-flex();
-    flex-direction: row;
-}
-
 .alpq-pos-column {
     @include alpq-flex();
     flex-direction: column;
 }
 
-.alpq-pos-flex-rowReverse {
-    @include alpq-flex();
-    flex-direction: row;
-}
-
-.alpq-pos-flex-columnReverse {
-    @include alpq-flex();
-    flex-direction: column;
-}
+/* Positioning horizontal */
 
 .alpq-pos-hor-start {
-    @include alpq-flex();
     justify-content: flex-start;
 }
 
 .alpq-pos-hor-end {
-    @include alpq-flex();
     justify-content: flex-end;
 }
 
 .alpq-pos-hor-center {
-    @include alpq-flex();
     justify-content: center;
 }
 
-.alpq-pos-hor-spaceBetween {
-    @include alpq-flex();
-    justify-content: space-between;
-}
 
-.alpq-pos-hor-spaceAround {
-    @include alpq-flex();
-    justify-content: space-around;
-}
+/* Positioning vertical */
 
 .alpq-pos-vert-start {
-    @include alpq-flex();
     align-items: flex-start;
 }
 
 .alpq-pos-vert-end {
-    @include alpq-flex();
     align-items: flex-end;
 }
 
 .alpq-pos-vert-center {
-    @include alpq-flex();
     align-items: center;
 }
 
-.alpq-pos-vert-baseline {
-    @include alpq-flex();
-    align-items: baseline;
-}
-
-.alpq-pos-vert-stretch {
-    @include alpq-flex();
-    align-items: stretch;
-}
+/* Positioning clases with flex */
 
 .alpq-pos-center-center {
     @include alpq-flex();
@@ -94,7 +62,78 @@
     @extend .alpq-pos-hor-end;
 }
 
-.alpq-pos-wrap {
+.alpq-pos-start-end {
     @include alpq-flex();
+    @extend .alpq-pos-vert-end;
+    @extend .alpq-pos-hor-start;
+}
+
+.alpq-pos-center-end {
+    @include alpq-flex();
+    @extend .alpq-pos-vert-end;
+    @extend .alpq-pos-hor-center;
+}
+
+.alpq-pos-end-end {
+    @include alpq-flex();
+    @extend .alpq-pos-vert-end;
+    @extend .alpq-pos-hor-end;
+}
+
+
+.alpq-pos-start-start {
+    @include alpq-flex();
+    @extend .alpq-pos-vert-start;
+    @extend .alpq-pos-hor-start;
+}
+
+.alpq-pos-center-start {
+    @include alpq-flex();
+    @extend .alpq-pos-vert-start;
+    @extend .alpq-pos-hor-center;
+}
+
+.alpq-pos-end-start {
+    @include alpq-flex();
+    @extend .alpq-pos-vert-start;
+    @extend .alpq-pos-hor-end;
+}
+
+/* Distribution clases with flex horizontal */
+
+.alpq-dist-hor-spaceBetween {
+    @include alpq-flex();
+    justify-content: space-between;
+}
+
+.alpq-dist-hor-spaceAround {
+    @include alpq-flex();
+    justify-content: space-around;
+}
+
+.alpq-dist-vert-baseline {
+    @include alpq-flex();
+    @extend .alpq-dist;
+    align-items: baseline;
+}
+
+.alpq-dist-vert-stretch {
+    @include alpq-flex();
+    align-items: stretch;
+}
+
+.alpq-dist-vert-start {
+    @include alpq-flex();
+    align-items: flex-start;
+}
+
+.alpq-dist-vert-end {
+    @include alpq-flex();
+    align-items: flex-end;
+}
+
+/* Wraping clases with flex */
+
+.alpq-pos-wrap {
     flex-wrap: wrap;
 }

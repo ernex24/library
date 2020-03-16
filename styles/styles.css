@@ -1080,8 +1080,8 @@ textarea,
 }
 
 .alpq-bgShadow, .alpq-main-sidebar {
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
 }
 
 .alpq-bgColor-primary, .alpq-header {
@@ -1133,7 +1133,7 @@ textarea,
 }
 
 .alpq-borderRadius {
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 .alpq-borderColor-primary {
@@ -1214,20 +1214,11 @@ textarea,
   border-color: #b2d8e8 !important;
 }
 
+/* Positioning */
 .alpq-pos-displayflex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.alpq-pos-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .alpq-pos-column {
@@ -1240,115 +1231,45 @@ textarea,
           flex-direction: column;
 }
 
-.alpq-pos-flex-rowReverse {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.alpq-pos-flex-columnReverse {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.alpq-pos-hor-start, .alpq-pos-start-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+/* Positioning horizontal */
+.alpq-pos-hor-start, .alpq-pos-start-center, .alpq-pos-start-end, .alpq-pos-start-start {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
 
-.alpq-pos-hor-end, .alpq-pos-end-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.alpq-pos-hor-end, .alpq-pos-end-center, .alpq-pos-end-end, .alpq-pos-end-start {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-.alpq-pos-hor-center, .alpq-pos-center-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.alpq-pos-hor-center, .alpq-pos-center-center, .alpq-pos-center-end, .alpq-pos-center-start {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.alpq-pos-hor-spaceBetween {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.alpq-pos-hor-spaceAround {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.alpq-pos-vert-start {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+/* Positioning vertical */
+.alpq-pos-vert-start, .alpq-pos-start-start, .alpq-pos-center-start, .alpq-pos-end-start {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 
-.alpq-pos-vert-end {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.alpq-pos-vert-end, .alpq-pos-start-end, .alpq-pos-center-end, .alpq-pos-end-end {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
 }
 
 .alpq-pos-vert-center, .alpq-pos-center-center, .alpq-pos-start-center, .alpq-pos-end-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.alpq-pos-vert-baseline {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-.alpq-pos-vert-stretch {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-
+/* Positioning clases with flex */
 .alpq-pos-center-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1367,6 +1288,97 @@ textarea,
   display: flex;
 }
 
+.alpq-pos-start-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.alpq-pos-center-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.alpq-pos-end-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.alpq-pos-start-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.alpq-pos-center-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.alpq-pos-end-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Distribution clases with flex */
+.alpq-dist-hor-spaceBetween {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.alpq-dist-hor-spaceAround {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.alpq-dist-vert-baseline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.alpq-dist-vert-stretch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.alpq-dist-vert-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.alpq-dist-vert-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+/* Wraping clases with flex */
 .alpq-pos-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
