@@ -1,0 +1,74 @@
+
+.alpq-borderRadius{
+    border-radius: 4px;
+}
+
+@mixin alpq-border {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.alpq-borderColor-primary {
+    @include alpq-border();
+    border-color: $primary !important;
+}
+
+.alpq-borderColor-contrast {
+    @include alpq-border();
+    border-color: $contrast !important;
+}
+
+.alpq-borderColor-secondary {
+    @include alpq-border();
+    border-color: $secondary !important;
+}
+
+.alpq-borderColor-success {
+    @include alpq-border();
+    border-color: $success !important;
+}
+
+.alpq-borderColor-error {
+    @include alpq-border();
+    border-color: $Error !important;
+}
+
+.alpq-borderColor-warning {
+    @include alpq-border();
+    border-color: $link-hover !important;
+}
+
+.alpq-borderColor-info {
+    @include alpq-border();
+    border-color: $link !important;
+}
+
+.alpq-borderColor-inactive {
+    @include alpq-border();
+    border-color: $inactive !important;
+}
+
+.alpq-borderColor-white {
+    @include alpq-border();
+    border-color: $contrast !important;
+}
+
+.alpq-borderColor-background {
+    @include alpq-border();
+    border-color: $background !important;
+}
+
+.alpq-borderColor-gray {
+    @include alpq-border();
+    border-color: $H4 !important;
+}
+
+.alpq-borderColor-helper {
+    @include alpq-border();
+    border-color: $helper !important;
+}
+
+.alpq-borderColor-highlight {
+    @include alpq-border();
+    border-color: $highlight!important;
+}

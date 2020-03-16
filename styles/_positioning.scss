@@ -1,0 +1,100 @@
+@mixin alpq-flex {
+    display: flex;
+}
+
+.alpq-pos-displayflex {
+    display: flex;
+}
+
+.alpq-pos-row {
+    @include alpq-flex();
+    flex-direction: row;
+}
+
+.alpq-pos-column {
+    @include alpq-flex();
+    flex-direction: column;
+}
+
+.alpq-pos-flex-rowReverse {
+    @include alpq-flex();
+    flex-direction: row;
+}
+
+.alpq-pos-flex-columnReverse {
+    @include alpq-flex();
+    flex-direction: column;
+}
+
+.alpq-pos-hor-start {
+    @include alpq-flex();
+    justify-content: flex-start;
+}
+
+.alpq-pos-hor-end {
+    @include alpq-flex();
+    justify-content: flex-end;
+}
+
+.alpq-pos-hor-center {
+    @include alpq-flex();
+    justify-content: center;
+}
+
+.alpq-pos-hor-spaceBetween {
+    @include alpq-flex();
+    justify-content: space-between;
+}
+
+.alpq-pos-hor-spaceAround {
+    @include alpq-flex();
+    justify-content: space-around;
+}
+
+.alpq-pos-vert-start {
+    @include alpq-flex();
+    align-items: flex-start;
+}
+
+.alpq-pos-vert-end {
+    @include alpq-flex();
+    align-items: flex-end;
+}
+
+.alpq-pos-vert-center {
+    @include alpq-flex();
+    align-items: center;
+}
+
+.alpq-pos-vert-baseline {
+    @include alpq-flex();
+    align-items: baseline;
+}
+
+.alpq-pos-vert-stretch {
+    @include alpq-flex();
+    align-items: stretch;
+}
+
+.alpq-pos-center-center {
+    @include alpq-flex();
+    @extend .alpq-pos-vert-center;
+    @extend .alpq-pos-hor-center;
+}
+
+.alpq-pos-start-center {
+    @include alpq-flex();
+    @extend .alpq-pos-vert-center;
+    @extend .alpq-pos-hor-start;
+}
+
+.alpq-pos-end-center {
+    @include alpq-flex();
+    @extend .alpq-pos-vert-center;
+    @extend .alpq-pos-hor-end;
+}
+
+.alpq-pos-wrap {
+    @include alpq-flex();
+    flex-wrap: wrap;
+}

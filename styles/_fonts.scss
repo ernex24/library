@@ -1,0 +1,203 @@
+
+.alpq-textColor-primary{
+	color: $primary !important;
+}
+
+.alpq-textColor-secondary{
+	color: $secondary !important;
+}
+
+.alpq-textColor-success{
+	color: $success !important;
+}
+
+.alpq-textColor-error{
+	color: $Error !important;
+}
+
+.alpq-textColor-warning{
+	color: $link-hover !important;
+}
+
+.alpq-textColor-info{
+	color: $link !important;
+}
+
+.alpq-textColor-inactive{
+color: $inactive !important;
+}
+
+.alpq-textColor-contrast{
+	color: $contrast !important;
+}
+
+.alpq-textColor-helper{
+	color: $helper !important;
+}
+
+.alpq-textColor-link{
+	color: $link !important;
+}
+
+.alpq-textColor-gray{
+	color: $H4 !important;
+}
+
+.alpq-textColor-helper{
+	color: $helper !important;
+}
+
+.alpq-textColor-highlight{
+	color: $highlight !important;
+}
+
+
+.alpq-textSize-H1 {
+	font-family: "secondaryLight";
+	font-size: 64px;
+	font-weight: 300;
+  line-height: 48px;
+  color: $primary;
+}
+
+.alpq-textSize-H2 {
+	font-family: "secondaryBold";
+	font-size: 40px;
+  line-height: 40px;
+  color: $primary;
+}
+
+.alpq-textSize-H3 {
+	font-family: "secondaryBold";
+	font-size: 32px;
+	line-height: 40px;
+  color: $primary;
+}
+
+.alpq-textSize-H4 {
+	font-family: "primaryBook";
+	font-size: 24px;
+  line-height: 32px;
+  color: $H4;
+}
+
+.alpq-textSize-p {
+	font-family: "primaryBook";
+	font-size: 16px;
+  line-height: 24px;
+  color: $primary;
+}
+
+.alpq-textSize-p-bold {
+	font-family: "primaryBold";
+	font-size: 16px;
+	font-weight: bold;
+  line-height: 24px;
+  color: $primary;
+}
+
+.alpq-textSize-p-desc {
+	font-family: "primaryBook";
+	font-size: 12px;
+  line-height: 16px;
+  color: $H4;
+}
+
+.alpq-textSize-p-desc-bold {
+	font-family: "primaryBold";
+	font-size: 12px;
+	font-weight: bold;
+  line-height: 16px;
+  color: $H4;
+}
+
+.alpq-textSize-placeholder {
+	font-family: "primaryBook";
+	font-size: 16px;
+  line-height: 16px;
+  color: $helper;
+}
+
+.alpq-textSize-label {
+	font-family: "primaryBook";
+	font-size: 12px;
+  line-height: 16px;
+  color: $primary;
+}
+
+.alpq-textSize-sidebar {
+	font-family: "primaryBold";
+	font-size: 8px;
+	line-height: 8px;
+	color: $primary;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+/* Fonts */
+@font-face {
+	font-family: "primaryBold";
+  src: local(vistaSansBold), 
+  url("./fonts/vistaSansBold.woff2") format("woff2"),
+  url("./fonts/vistaSansBold.woff") format("woff"),
+  url("./fonts/vistaSansBold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "primaryReg";
+  src: local(vistaSansReg), 
+  url("./fonts/vistaSansReg.woff2") format("woff2"),
+  url("./fonts/vistaSansReg.woff") format("woff"),
+  url("./fonts/vistaSansReg.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "primaryBook";
+  src: local(vistaSansBook), 
+  url("./fonts/vistaSansBook.woff2") format("woff2"),
+  url("./fonts/vistaSansBook.woff") format("woff"), 
+  url("./fonts/vistaSansBook.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "primaryMed";
+  src: local(vistaSansMed),
+  url("./fonts/vistaSansMed.woff2") format("woff2"),
+  url("./fonts/vistaSansMed.woff") format("woff"),
+  url("./fonts/vistaSansMed.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "secondaryLight";
+	src: local(secondaryLight),
+  url("./fonts/vistaSlabLigth.ttf") format("truetype"), 
+  url("./fonts/vistaSlabLigth.woff2") format("woff2"),
+	url("./fonts/vistaSlabLigth.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "secondaryBold";
+  src: local(vistaSlabBook),
+  url("./fonts/vistaSlabBook.woff2") format("woff2"),
+  url("./fonts/vistaSlabBook.woff") format("woff"), 
+  url("./fonts/vistaSlabBook.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+}

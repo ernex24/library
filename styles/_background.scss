@@ -1,0 +1,52 @@
+.alpq-bgShadow {
+    box-shadow: $shadow;
+}
+
+.alpq-bgColor-primary {
+    background-color: $primary !important;
+}
+
+.alpq-bgColor-secondary {
+    background-color: $secondary !important;
+}
+
+.alpq-bgColor-success {
+    background-color: $success !important;
+}
+
+.alpq-bgColor-error {
+    background-color: $Error !important;
+}
+
+.alpq-bgColor-warning {
+    background-color: $link-hover !important;
+}
+
+.alpq-bgColor-info {
+    background-color: $link !important;
+}
+
+.alpq-bgColor-inactive {
+    background-color: $inactive !important;
+}
+
+.alpq-bgColor-contrast {
+    background-color: $contrast !important;
+}
+
+.alpq-bgColor-background {
+    background-color: $background !important;
+}
+
+.alpq-bgColor-highlight {
+    background-color: $highlight !important;
+}
+
+.alpq-bgColor-gray {
+    background-color: $H4 !important;
+}
+
+.alpq-bgColor-helper {
+    background-color: $helper !important;
+}
+

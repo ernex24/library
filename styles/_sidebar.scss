@@ -1,0 +1,33 @@
+.alpq-main-sidebar{
+    @extend .alpq-bgColor-contrast;
+    @extend .alpq-bgShadow;
+    width: 64px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 56px;
+    overflow: scroll;
+}
+
+.alpq-main-sidebar-item {
+    position: relative;
+   height: 80px;
+}
+
+.alpq-main-sidebar-item > img {
+    height: 32px;
+    @extend .alpq-margin-top-m;
+    @extend .alpq-margin-bottom-xs;
+ }
+
+ .alpq-main-sidebar-item:hover {
+    @extend .alpq-bgColor-highlight
+ }
+
+ .active::before {
+    content: " ";
+    position: absolute;
+width: 6px;
+height: 100%;
+@extend .alpq-bgColor-secondary;
+}
