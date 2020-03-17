@@ -27,7 +27,6 @@
     justify-content: center;
 }
 
-
 /* Positioning vertical */
 
 .alpq-pos-vert-start {
@@ -80,7 +79,6 @@
     @extend .alpq-pos-hor-end;
 }
 
-
 .alpq-pos-start-start {
     @include alpq-flex();
     @extend .alpq-pos-vert-start;
@@ -111,24 +109,61 @@
     justify-content: space-around;
 }
 
-.alpq-dist-vert-baseline {
+.alpq-dist-hor-baseline {
     @include alpq-flex();
-    @extend .alpq-dist;
     align-items: baseline;
 }
 
-.alpq-dist-vert-stretch {
+.alpq-dist-hor-stretch {
     @include alpq-flex();
     align-items: stretch;
 }
 
-.alpq-dist-vert-start {
+.alpq-dist-hor-start {
     @include alpq-flex();
     align-items: flex-start;
 }
 
-.alpq-dist-vert-end {
+.alpq-dist-hor-end {
     @include alpq-flex();
+    align-items: flex-end;
+}
+
+/* Distribution clases with flex vertical */
+
+.alpq-dist-ver-spaceBetween {
+    @include alpq-flex();
+    @extend .alpq-pos-column;
+    justify-content: space-between;
+}
+
+.alpq-dist-ver-spaceAround {
+    @include alpq-flex();
+    @extend .alpq-pos-column;
+    justify-content: space-around;
+}
+
+.alpq-dist-ver-baseline {
+    @include alpq-flex();
+    @extend .alpq-pos-column;
+    align-items: baseline;
+}
+
+.alpq-dist-ver-stretch {
+    @include alpq-flex();
+    @extend .alpq-pos-column;
+    align-items: stretch;
+}
+
+.alpq-dist-ver-start {
+    @include alpq-flex();
+    @extend .alpq-pos-column;
+    align-items: flex-start;
+}
+
+.alpq-dist-ver-end {
+    @include alpq-flex();
+    @extend .alpq-pos-column;
     align-items: flex-end;
 }
 

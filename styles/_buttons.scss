@@ -1,0 +1,96 @@
+.alpq-btn-primary {
+    @extend .alpq-textColor-contrast;
+    @extend .alpq-bgColor-primary;
+    @extend .alpq-borderRadius;
+    @extend .alpq-padding-side-m;
+    @extend .alpq-textSize-p;
+    border: 0;
+    height: 48px;
+    min-width: 160px;
+    transition: $transition;
+}
+
+.alpq-btn-primary:hover {
+    @extend .alpq-bgColor-info;
+    transition: $transition;
+}
+
+.alpq-btn-primary:active {
+    background-color: $primary !important;
+}
+
+.alpq-btn-primary>img {
+    margin-right: $space-s;
+    height: 16px;
+    width: 16px;
+}
+
+.alpq-btn-secondary {
+    @extend .alpq-textColor-primary;
+    @extend .alpq-borderColor-primary;
+    @extend .alpq-borderRadius;
+    @extend .alpq-padding-side-m;
+    @extend .alpq-textSize-p;
+    height: 48px;
+    min-width: 160px;
+    transition: $transition;
+}
+
+.alpq-btn-secondary>img {
+    margin-right: $space-s;
+    height: 16px;
+    width: 16px;
+}
+
+.alpq-btn-secondary:hover {
+    @extend .alpq-bgColor-primary;
+    @extend .alpq-textColor-secondary;
+    transition: $transition;
+}
+
+.alpq-btn-secondary:active {
+    background-color: $contrast !important;
+    @extend .alpq-borderColor-primary;
+    color: $primary !important;
+}
+
+.alpq-btn-text {
+    @extend .alpq-textColor-primary;
+    @extend .alpq-bgColor-contrast;
+    @extend .alpq-borderRadius;
+    @extend .alpq-padding-side-m;
+    @extend .alpq-textSize-p;
+    border: 0;
+    height: 48px;
+    min-width: 160px;
+    transition: $transition;
+}
+
+.alpq-btn-text > img {
+    margin-right: $space-s;
+    height: 16px;
+    width: 16px;
+}
+
+.alpq-btn-text:hover {
+    @extend .alpq-bgColor-highlight;
+    transition: $transition;
+}
+
+.alpq-btn-text:active {
+    background-color: $contrast !important;
+    color: $primary !important;
+}
+
+.alpq-btn-primary:disabled {
+    @extend .alpq-bgColor-inactive;
+    @extend .alpq-textColor-gray;
+    border: 0;
+    height: 48px;
+    min-width: 160px;
+    cursor: default;
+}
+
+button:focus {
+    outline-offset: -2px;
+}

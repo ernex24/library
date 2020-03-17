@@ -26,5 +26,76 @@ $space-xxxxl: 56px;
 $space-xxxxxl: 64px;
 
 $shadow: 0 0 16px rgba(0, 0, 0, 0.1);
-$borderadius: 0;
+
+$borderadius: 3px;
+
 $borderwidth: 1px;
+
+$transition: 0.3s;
+
+/* Fonts */
+@font-face {
+	font-family: "primaryBold";
+  src: local(vistaSansBold), 
+  url("./fonts/vistaSansBold.woff2") format("woff2"),
+  url("./fonts/vistaSansBold.woff") format("woff"),
+  url("./fonts/vistaSansBold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "primaryReg";
+  src: local(vistaSansReg), 
+  url("./fonts/vistaSansReg.woff2") format("woff2"),
+  url("./fonts/vistaSansReg.woff") format("woff"),
+  url("./fonts/vistaSansReg.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "primaryBook";
+  src: local(vistaSansBook), 
+  url("./fonts/vistaSansBook.woff2") format("woff2"),
+  url("./fonts/vistaSansBook.woff") format("woff"), 
+  url("./fonts/vistaSansBook.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "primaryMed";
+  src: local(vistaSansMed),
+  url("./fonts/vistaSansMed.woff2") format("woff2"),
+  url("./fonts/vistaSansMed.woff") format("woff"),
+  url("./fonts/vistaSansMed.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "secondaryLight";
+	src: local(secondaryLight),
+  url("./fonts/vistaSlabLigth.ttf") format("truetype"), 
+  url("./fonts/vistaSlabLigth.woff2") format("woff2"),
+	url("./fonts/vistaSlabLigth.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "secondaryBold";
+  src: local(vistaSlabBook),
+  url("./fonts/vistaSlabBook.woff2") format("woff2"),
+  url("./fonts/vistaSlabBook.woff") format("woff"), 
+  url("./fonts/vistaSlabBook.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+}

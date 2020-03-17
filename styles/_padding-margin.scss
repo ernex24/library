@@ -296,3 +296,32 @@
 .alpq-padding-bottom-xxl{
     padding-bottom: $space-xxl !important;
 }
+
+.alpq-padding-side-0{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.alpq-padding-side-xs{
+    padding-left: $space-xs !important;
+    padding-right: $space-xs;
+}
+.alpq-padding-side-s{
+    padding-left: $space-s !important;
+    padding-right: $space-s !important;
+}
+.alpq-padding-side-m{
+    padding-left: $space-m !important;
+    padding-right: $space-m !important;
+}
+.alpq-padding-side-l{
+    padding-left: $space-l !important;
+    padding-right: $space-l !important;
+}
+.alpq-padding-side-xl{
+    padding-left: $space-xl !important;
+    padding-right: $space-xl !important;
+}
+.alpq-padding-side-xxl{
+    padding-left: $space-xxl !important;
+    padding-right: $space-xxl  !important;
+}
