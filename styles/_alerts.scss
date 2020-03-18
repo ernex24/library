@@ -1,0 +1,44 @@
+.alpq-alertBox-warning{
+    background-color: lighten($link-hover, 20%);
+    color: darken($link-hover, 30%);
+    border: $borderwidth solid lighten($link-hover, 10%);
+    @extend .alpq-borderRadius;
+    @extend .alpq-pos-center-center;
+   
+    height: $space-xxxxl;
+    width: auto;
+}
+
+.alpq-alertBox-info{
+    background-color: lighten($link, 30%);
+    color: darken($link, 20%);
+    border: $borderwidth solid lighten($link, 20%);
+    @extend .alpq-borderRadius;
+    @extend .alpq-pos-center-center;
+    height: $space-xxxxl;
+    width: auto;
+}
+
+.alpq-alertBox-error{
+    background-color: lighten($Error, 15%);
+    color: darken($Error, 30%);
+    border: $borderwidth solid lighten($Error, 5%);
+    @extend .alpq-borderRadius;
+    @extend .alpq-pos-center-center;
+    height: $space-xxxxl;
+    width: auto;
+}
+
+.alpq-alertBox-success{
+    background-color: lighten($success, 10%);
+    color: darken($success, 30%);
+    border: $borderwidth solid $success;
+    @extend .alpq-borderRadius;
+    @extend .alpq-pos-center-center;
+    height: $space-xxxxl;
+    width: auto;
+}
+
+div[class~=alertBox] > i {
+    margin: $space-m;
+}
