@@ -16,3 +16,37 @@
     width: 24px;
     height: 24px;
 }
+
+pre code {
+    display: block;
+    padding: 1srem;
+    overflow: auto;
+    background-color: #333;
+    border: 0;
+}
+
+pre[class*=language-] {
+    background: #2d2d2d;
+    border-radius: 6px;
+}
+
+code[class*=language-], pre[class*=language-] {
+    text-shadow: none;
+    color:#b3b9c5;;
+}
+
+.token.tag {
+    color: #6ab0f3;
+}
+
+.token.punctuation {
+    color: #d5d8df;
+}
+
+.token.attr-name {
+    color: #ffd479;
+}
+
+.token.attr-value, .token.string {
+    color: #92d192;
+}
