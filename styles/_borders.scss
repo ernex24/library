@@ -1,9 +1,34 @@
 
-hr.alpq-divider{
+hr.alpq-divider-xl{
+    border-top: 1px $background;
+    margin-top: $space-l;
+    margin-bottom: $space-xl;
+}
+
+hr.alpq-divider-l{
     border-top: 1px $background;
     margin-top: $space-l;
     margin-bottom: $space-l;
 }
+
+hr.alpq-divider-m{
+    border-top: 1px $background;
+    margin-top: $space-m;
+    margin-bottom: $space-l;
+}
+
+hr.alpq-divider-s{
+    border-top: 1px $background;
+    margin-top: $space-m;
+    margin-bottom: $space-s;
+}
+
+hr.alpq-divider-xs{
+    border-top: 1px $background;
+    margin-top: $space-m;
+    margin-bottom: $space-xs;
+}
+
 .alpq-borderRadius{
     border-radius: $borderadius;
 }

@@ -992,10 +992,30 @@ a:hover {
 .alpq-bgColor-helper {
   background-color: #768d98 !important; }
 
-hr.alpq-divider {
+hr.alpq-divider-xl {
+  border-top: 1px #f2f4f5;
+  margin-top: 24px;
+  margin-bottom: 32px; }
+
+hr.alpq-divider-l {
   border-top: 1px #f2f4f5;
   margin-top: 24px;
   margin-bottom: 24px; }
+
+hr.alpq-divider-m {
+  border-top: 1px #f2f4f5;
+  margin-top: 16px;
+  margin-bottom: 24px; }
+
+hr.alpq-divider-s {
+  border-top: 1px #f2f4f5;
+  margin-top: 16px;
+  margin-bottom: 8px; }
+
+hr.alpq-divider-xs {
+  border-top: 1px #f2f4f5;
+  margin-top: 16px;
+  margin-bottom: 4px; }
 
 .alpq-borderRadius, .alpq-btn-primary, .alpq-btn-secondary, .alpq-btn-text, .alpq-alertBox-warning, .alpq-alertBox-info, .alpq-alertBox-error, .alpq-alertBox-success {
   border-radius: 3px; }
