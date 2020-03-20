@@ -608,7 +608,7 @@ a:hover {
   color: #052f43;
   margin: 0; }
 
-.alpq-textSize-p-bold {
+.alpq-textSize-p-bold, .alpq-accordion {
   font-family: "primaryBold";
   font-size: 16px;
   font-weight: bold;
@@ -1721,10 +1721,10 @@ div[class~=alertBox] > i {
   background: #052f43; }
 
 /* $Selector  */
-.custom-select {
+.alpq-selector {
   position: relative; }
 
-.custom-select select {
+.alpq-selector select {
   display: none;
   /*hide original SELECT element: */ }
 
@@ -1783,5 +1783,38 @@ div[class~=alertBox] > i {
 .select-items div, .same-as-selected {
   background-color: #ffffff;
   padding: 12px; }
+
+.alpq-accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  color: #052f43;
+  cursor: pointer;
+  padding: 24px;
+  width: 100%;
+  border: 1px solid #f2f4f5;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.alpq-accordion-active, .alpq-accordion:hover {
+  background-color: #b2d8e8; }
+
+.content {
+  padding: 0 16px;
+  display: none;
+  overflow: hidden;
+  background-color: #f2f4f5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
 
 /*# sourceMappingURL=styles.css.map */

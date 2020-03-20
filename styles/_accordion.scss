@@ -1,0 +1,28 @@
+.alpq-accordion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend .alpq-textSize-p-bold;
+    background-color: $contrast;
+    color: $primary;
+    cursor: pointer;
+    padding: $space-l;
+    width: 100%;
+    border: 1px solid $background;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: $transition;
+  }
+  
+  .alpq-accordion-active, .alpq-accordion:hover {
+    background-color: $highlight;
+  }
+  
+  .content {
+    padding: 0 16px;
+    display: none;
+    overflow: hidden;
+    background-color: $background;
+    transition: $transition;
+  }

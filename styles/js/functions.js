@@ -13,8 +13,8 @@ const toggleCorporativeMenu = () => {
 
 
 var x, i, j, selElmnt, a, b, c;
-/*look for any elements with the class "custom-select":*/
-x = document.getElementsByClassName("custom-select");
+/*look for any elements with the class "alpq-selector":*/
+x = document.getElementsByClassName("alpq-selector");
 for (i = 0; i < x.length; i++) {
   selElmnt = x[i].getElementsByTagName("select")[0];
   /*for each element, create a new DIV that will act as the selected item:*/
@@ -84,5 +84,23 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+
+
+/*Accordion*/
+
+var coll = document.getElementsByClassName("alpq-accordion");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("alpq-accordion-active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
 
   
