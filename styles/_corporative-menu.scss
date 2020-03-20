@@ -1,0 +1,81 @@
+.alpq-corporative-menu {
+    @extend .alpq-bgColor-contrast;
+    @extend .alpq-bgShadow;
+    height: calc(100% - 56px);
+    width: 320px;
+    position: fixed;
+    top: $space-xxxxl;
+    right: 0;
+    line-height: 1;
+    overflow: scroll;
+}
+
+.alpq-corporative-menu-toggle {
+    right: -320px;
+    transition: $transition;
+}
+
+.alpq-corporative-menu-item {
+    width: 100%;
+    cursor: pointer;
+    height: $space-xxxl;
+    background-color: $contrast;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid $background;
+    padding-left: $space-m;
+    padding-right: $space-m;
+    &:hover {
+        background-color: $highlight;
+    }
+    &:active {
+        background-color: $contrast;
+    }
+}
+
+.alpq-corporative-menu-item>i {
+    margin-left: 0;
+    margin-right: $space-m;
+}
+
+.alpq-corporative-menu-item>img {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 24px;
+    margin-right: $space-m;
+}
+
+.alpq-corporative-menu-divider {
+    @extend .alpq-textSize-sidebar;
+    width: 100%;
+    height: $space-l;
+    background-color: $background;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid $background;
+    padding-left: $space-m;
+    padding-right: $space-m;
+}
+
+.alpq-corporative-menu-logut {
+    @extend .alpq-textSize-p;
+    text-align: center;
+    width: inherit;
+    height: $space-xxxl;
+    background-color: $primary;
+    color: $contrast;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    position: fixed;
+    cursor: pointer;
+    &:hover {
+        background-color: $link;
+    }
+    &:active {
+        background-color: $primary;
+    }
+}

@@ -9,3 +9,13 @@
 .alpq-header-logo{
     height: 32px;
 }
+
+.alpq-header-icon{
+    height: 40px;
+    width: 40px;
+    padding: $space-xs;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

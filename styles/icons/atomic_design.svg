@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="190px" height="32px" viewBox="0 0 190 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>icons/atomic design</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/atomic-design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <polygon id="Path" stroke="#052F43" stroke-width="1.03643725" points="189.072065 0.129554656 167.332794 0.129554656 167.332794 3.30364372 179.74413 3.30364372 185.910931 9.27611336 185.910931 28.7611336 189.072065 28.7611336"></polygon>
+            <polyline id="Path" stroke="#052F43" stroke-width="1.03643725" points="179.834818 3.30364372 164.158704 3.30364372 164.158704 31.9352227 185.910931 31.9352227 185.910931 10.0923077"></polyline>
+            <polygon id="Path" stroke="#052F43" stroke-width="1.03643725" points="180.068016 4.13279352 180.080972 9.32793522 185.211336 9.35384615"></polygon>
+            <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="157.577328 15.805668 155.595142 17.697166 155.595142 13.91417"></polygon>
+            <g id="template" transform="translate(123.465587, 0.000000)" stroke="#052F43" stroke-width="1.1659919">
+                <polyline id="Path" points="25.3538462 0.906882591 25.3538462 0.129554656 24.5765182 0.129554656"></polyline>
+                <line x1="23.0736842" y1="0.129554656" x2="5.84291498" y2="0.129554656" id="Path" stroke-dasharray="1.499154650730643,1.499154650730643"></line>
+                <polyline id="Path" points="5.09149798 0.129554656 4.31417004 0.129554656 4.31417004 0.906882591"></polyline>
+                <line x1="4.31417004" y1="1.73603239" x2="4.31417004" y2="2.96680162" id="Path" stroke-dasharray="0.8262218521674153,0.8262218521674153"></line>
+                <polyline id="Path" points="4.31417004 3.38137652 4.31417004 4.15870445 5.09149798 4.15870445"></polyline>
+                <line x1="6.78866397" y1="4.15870445" x2="19.5238866" y2="4.15870445" id="Path" stroke-dasharray="1.697813705876771,1.697813705876771"></line>
+                <polyline id="Path" points="20.3659919 4.15870445 21.1433198 4.15870445 21.1433198 4.93603239"></polyline>
+                <line x1="21.1433198" y1="6.41295547" x2="21.1433198" y2="26.3255061" id="Path" stroke-dasharray="1.474630008342295,1.474630008342295"></line>
+                <polyline id="Path" points="21.1433198 27.0639676 21.1433198 27.8412955 21.9206478 27.8412955"></polyline>
+                <line x1="22.8145749" y1="27.8412955" x2="24.1360324" y2="27.8412955" id="Path" stroke-dasharray="0.8846769139834261,0.8846769139834261"></line>
+                <polyline id="Path" points="24.7060729 27.8412955 25.3538462 27.8412955 25.3538462 27.1935223"></polyline>
+                <line x1="25.3538462" y1="25.5222672" x2="25.3538462" y2="1.67125506" id="Path" stroke-dasharray="1.538396796716852,1.538396796716852"></line>
+                <polyline id="Path" points="4.31417004 4.71578947 4.31417004 4.15870445 3.53684211 4.15870445"></polyline>
+                <line x1="2.65587045" y1="4.15870445" x2="1.32145749" y2="4.15870445" id="Path" stroke-dasharray="0.8847028601024798,0.8847028601024798"></line>
+                <polyline id="Path" points="0.88097166 4.15870445 0.103643725 4.15870445 0.103643725 4.93603239"></polyline>
+                <line x1="0.103643725" y1="6.47773279" x2="0.103643725" y2="30.3287449" id="Path" stroke-dasharray="1.538409769776379,1.538409769776379"></line>
+                <polyline id="Path" points="0.103643725 31.0931174 0.103643725 31.8704453 0.88097166 31.8704453"></polyline>
+                <line x1="2.38380567" y1="31.8704453" x2="19.6145749" y2="31.8704453" id="Path" stroke-dasharray="1.499154650730643,1.499154650730643"></line>
+                <polyline id="Path" points="20.3659919 31.8704453 21.1433198 31.8704453 21.1433198 31.0931174"></polyline>
+                <line x1="21.1433198" y1="30.2639676" x2="21.1433198" y2="29.0331984" id="Path" stroke-dasharray="0.8262477982864689,0.8262477982864689"></line>
+                <polyline id="Path" points="21.1433198 28.6186235 21.1433198 27.8412955 20.702834 27.8412955"></polyline>
+            </g>
+            <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="117.933603 15.805668 115.951417 17.697166 115.951417 13.91417"></polygon>
+            <g id="Organisms" transform="translate(77.991903, 3.886640)">
+                <circle id="Oval" stroke="#052F43" stroke-width="1.42510121" cx="3.83481781" cy="3.91255061" r="3.79595142"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="3.83481781" cy="3.91255061" r="2.18947368"></circle>
+                <circle id="Oval" stroke="#052F43" stroke-width="1.42510121" cx="11.9838057" cy="3.91255061" r="3.79595142"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="11.9838057" cy="3.91255061" r="2.18947368"></circle>
+                <circle id="Oval" stroke="#052F43" stroke-width="1.42510121" cx="20.145749" cy="3.91255061" r="3.79595142"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="20.145749" cy="3.91255061" r="2.18947368"></circle>
+                <circle id="Oval" stroke="#052F43" stroke-width="1.42510121" cx="28.3983806" cy="3.91255061" r="3.79595142"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="28.3983806" cy="3.91255061" r="2.18947368"></circle>
+                <circle id="Oval" stroke="#052F43" stroke-width="1.42510121" cx="3.83481781" cy="12.0744939" r="3.79595142"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="3.83481781" cy="12.0744939" r="2.18947368"></circle>
+                <circle id="Oval" stroke="#052F43" stroke-width="1.42510121" cx="11.9838057" cy="12.0744939" r="3.79595142"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="11.9838057" cy="12.0744939" r="2.18947368"></circle>
+                <circle id="Oval" stroke="#052F43" stroke-width="1.42510121" cx="20.145749" cy="12.0744939" r="3.79595142"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="20.145749" cy="12.0744939" r="2.18947368"></circle>
+                <circle id="Oval" stroke="#052F43" stroke-width="1.42510121" cx="28.3983806" cy="12.0744939" r="3.79595142"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="28.3983806" cy="12.0744939" r="2.18947368"></circle>
+                <circle id="Oval" stroke="#052F43" stroke-width="1.42510121" cx="3.83481781" cy="20.2234818" r="3.79595142"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="3.83481781" cy="20.2234818" r="2.18947368"></circle>
+                <circle id="Oval" stroke="#052F43" stroke-width="1.42510121" cx="11.9838057" cy="20.2234818" r="3.79595142"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="11.9838057" cy="20.2234818" r="2.18947368"></circle>
+                <circle id="Oval" stroke="#052F43" stroke-width="1.42510121" cx="20.145749" cy="20.2234818" r="3.79595142"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="20.145749" cy="20.2234818" r="2.18947368"></circle>
+                <circle id="Oval" stroke="#052F43" stroke-width="1.42510121" cx="28.3983806" cy="20.2234818" r="3.79595142"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="28.3983806" cy="20.2234818" r="2.18947368"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="7.86396761" cy="3.91255061" r="1.04939271"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="3.83481781" cy="8.00647773" r="1.04939271"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="12.1781377" cy="8.00647773" r="1.04939271"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="20.2364372" cy="8.00647773" r="1.04939271"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="28.3983806" cy="8.00647773" r="1.04939271"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="3.83481781" cy="16.1554656" r="1.04939271"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="12.1781377" cy="16.1554656" r="1.04939271"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="20.2364372" cy="16.1554656" r="1.04939271"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="28.3983806" cy="16.1554656" r="1.04939271"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="16.0129555" cy="3.91255061" r="1.04939271"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="24.265587" cy="3.91255061" r="1.04939271"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="7.86396761" cy="11.8801619" r="1.04939271"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="16.0129555" cy="11.8801619" r="1.04939271"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="24.265587" cy="11.8801619" r="1.04939271"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="7.86396761" cy="20.0291498" r="1.04939271"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="16.0129555" cy="20.0291498" r="1.04939271"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="24.265587" cy="20.0291498" r="1.04939271"></circle>
+            </g>
+            <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="71.8121457 15.805668 69.8299595 17.697166 69.8299595 13.91417"></polygon>
+            <g id="Molecules" transform="translate(36.534413, 3.368421)">
+                <circle id="Oval" stroke="#052F43" stroke-width="1.94331984" cx="6.47773279" cy="18.8242915" r="6.38704453"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="6.47773279" cy="18.8242915" r="3.67935223"></circle>
+                <circle id="Oval" stroke="#052F43" stroke-width="1.94331984" cx="13.6680162" cy="6.41295547" r="6.38704453"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="13.6680162" cy="6.41295547" r="3.67935223"></circle>
+                <circle id="Oval" stroke="#052F43" stroke-width="1.94331984" cx="20.897166" cy="18.8242915" r="6.38704453"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="20.897166" cy="18.8242915" r="3.67935223"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="10.182996" cy="12.6315789" r="1.56761134"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="13.7198381" cy="18.9279352" r="1.56761134"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="17.4769231" cy="12.5408907" r="1.56761134"></circle>
+            </g>
+            <polygon id="Path" fill="#F2F4F5" fill-rule="nonzero" points="31.5206478 15.805668 29.5384615 17.697166 29.5384615 13.91417"></polygon>
+            <g id="atom" transform="translate(0.000000, 4.145749)">
+                <circle id="Oval" stroke="#052F43" stroke-width="1.94331984" cx="11.9578947" cy="11.8672065" r="11.8672065"></circle>
+                <circle id="Oval" fill="#FF9400" fill-rule="nonzero" cx="11.9578947" cy="11.8672065" r="6.84048583"></circle>
+                <path d="M24.2137652,4.50850202 C24.2137652,6.11497976 22.9182186,7.41052632 21.3117409,7.41052632 C19.7052632,7.41052632 18.4097166,6.11497976 18.4097166,4.50850202 C18.4097166,2.90202429 19.7052632,1.60647773 21.3117409,1.60647773 C22.9052632,1.60647773 24.2137652,2.90202429 24.2137652,4.50850202 Z" id="Path" fill="#FF9400" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

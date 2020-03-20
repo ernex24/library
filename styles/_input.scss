@@ -1,4 +1,55 @@
-.alpq-input-primary {
-@extend .alpq-borderColor-primary;
+.alpq-input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
+.alpq-form-group{
+    display: flex;
+}
+
+.alpq-input-size-xxs {
+    width: 40px;
+}
+
+.alpq-input-size-xs {
+    width: 80px;
+}
+
+.alpq-input-size-s {
+    width: 160px;
+}
+
+.alpq-input-size-m {
+    width: 240px;
+}
+
+.alpq-input-size-l {
+    width: 320px;
+}
+
+.alpq-input-size-xl {
+    width: 100%;
+}
+
+.alpq-input-label{
+    @extend .alpq-textSize-label;
+    margin-bottom: $space-xs;
+    color: $helper;
+}
+
+.alpq-input {
+    @extend .alpq-textSize-p;
+    @extend .alpq-borderColor-primary;
+    @extend .alpq-borderRadius;
+    height: $space-xxxl;
+    padding-left: $space-m;
+    &:disabled{
+        @extend .alpq-bgColor-inactive;
+        @extend .alpq-textColor-gray;
+        border: 0;
+        height: $space-xxxl;
+        min-width: 160px;
+        cursor: default;
+    }
 }

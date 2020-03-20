@@ -1,5 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 32 24">
-    <g fill="#FFF" fill-rule="evenodd">
-        <path d="M0 0H32V1.882H0zM0 11H32V12.882H0zM0 22H32V23.882H0z"/>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-menu-hamburger" transform="translate(0.000000, 2.000000)" fill="#ff9400">
+            <polygon id="Path" points="0 0 32 0 32 1.882 0 1.882"></polygon>
+            <polygon id="Path" points="0 13 32 13 32 14.882 0 14.882"></polygon>
+            <polygon id="Path" points="0 26 32 26 32 27.882 0 27.882"></polygon>
+        </g>
     </g>
 </svg>

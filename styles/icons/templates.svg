@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>icons/templates</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/templates" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="template" transform="translate(4.000000, 1.000000)" stroke="#052F43" stroke-width="1.1659919">
+            <polyline id="Path" points="23.4035503 0.837122392 23.4035503 0.119588913 22.6860168 0.119588913"></polyline>
+            <line x1="21.2987854" y1="0.119588913" x2="5.39345998" y2="0.119588913" id="Path" stroke-dasharray="1.499154650730643,1.499154650730643"></line>
+            <polyline id="Path" points="4.69984429 0.119588913 3.98231081 0.119588913 3.98231081 0.837122392"></polyline>
+            <line x1="3.98231081" y1="1.60249144" x2="3.98231081" y2="2.73858611" id="Path" stroke-dasharray="0.8262218521674153,0.8262218521674153"></line>
+            <polyline id="Path" points="3.98231081 3.12127063 3.98231081 3.83880411 4.69984429 3.83880411"></polyline>
+            <line x1="6.26645905" y1="3.83880411" x2="18.0220492" y2="3.83880411" id="Path" stroke-dasharray="1.697813705876771,1.697813705876771"></line>
+            <polyline id="Path" points="18.7993771 3.83880411 19.5169106 3.83880411 19.5169106 4.55633759"></polyline>
+            <line x1="19.5169106" y1="5.9196512" x2="19.5169106" y2="24.3004671" id="Path" stroke-dasharray="1.474630008342295,1.474630008342295"></line>
+            <polyline id="Path" points="19.5169106 24.9821239 19.5169106 25.6996574 20.2344441 25.6996574"></polyline>
+            <line x1="21.0596076" y1="25.6996574" x2="22.2794145" y2="25.6996574" id="Path" stroke-dasharray="0.8846769139834261,0.8846769139834261"></line>
+            <polyline id="Path" points="22.8056057 25.6996574 23.4035503 25.6996574 23.4035503 25.1017129"></polyline>
+            <line x1="23.4035503" y1="23.5590159" x2="23.4035503" y2="1.54269698" id="Path" stroke-dasharray="1.538396796716852,1.538396796716852"></line>
+            <polyline id="Path" points="3.98231081 4.35303644 3.98231081 3.83880411 3.26477733 3.83880411"></polyline>
+            <line x1="2.45157272" y1="3.83880411" x2="1.21980691" y2="3.83880411" id="Path" stroke-dasharray="0.8847028601024798,0.8847028601024798"></line>
+            <polyline id="Path" points="0.813204609 3.83880411 0.0956711305 3.83880411 0.0956711305 4.55633759"></polyline>
+            <line x1="0.0956711305" y1="5.97944566" x2="0.0956711305" y2="27.9957646" id="Path" stroke-dasharray="1.538409769776379,1.538409769776379"></line>
+            <polyline id="Path" points="0.0956711305 28.7013391 0.0956711305 29.4188726 0.813204609 29.4188726"></polyline>
+            <line x1="2.200436" y1="29.4188726" x2="18.1057614" y2="29.4188726" id="Path" stroke-dasharray="1.499154650730643,1.499154650730643"></line>
+            <polyline id="Path" points="18.7993771 29.4188726 19.5169106 29.4188726 19.5169106 28.7013391"></polyline>
+            <line x1="19.5169106" y1="27.9359701" x2="19.5169106" y2="26.7998754" id="Path" stroke-dasharray="0.8262477982864689,0.8262477982864689"></line>
+            <polyline id="Path" points="19.5169106 26.4171909 19.5169106 25.6996574 19.1103083 25.6996574"></polyline>
+        </g>
+    </g>
+</svg>

@@ -13,59 +13,138 @@
 
 <body class="alpq-textSize-p alpq-bgColor-background">
 
-    <nav class="alpq-header alpq-dist-hor-spaceBetween alpq-pos-vert-center">
+    <!-- Header Menu -->
+    <nav id="menu" class="alpq-header alpq-dist-hor-spaceBetween alpq-pos-vert-center">
         <img class="alpq-margin-m alpq-header-logo" src="styles/logo/alpiq-logo.svg?sanitize=true">
         <div class="alpq-pos-end-center">
             <img class="alpq-margin-s" src="styles/icons/icon-global.svg?sanitize=true">
-            <div class="alpq-textColor-contrast">GLobal, English</div>
-            <img class="alpq-margin-left-xxl alpq-margin-right-m" src="styles/icons/icon-menu-hamburger.svg?sanitize=true">
+            <div class="alpq-textColor-contrast">GLobal, English<i class="fas fa-angle-down alpq-margin-side-s"></i></div>
+            <img onclick="toggleCorporativeMenu()" class="alpq-header-icon alpq-margin-left-xxl alpq-margin-right-m" src="styles/icons/icon-menu-hamburger.svg?sanitize=true">
         </div>
     </nav>
 
+    <!-- Sidebar main menu -->
     <div class="alpq-main-sidebar">
-            <a href="index.html">
+        <a href="index.html">
             <div class="alpq-main-sidebar-item alpq-pos-column active">
-                    <img class="" src="styles/icons/icon-order.svg?sanitize=true">
-                    <div class="alpq-textSize-sidebar alpq-margin-side-s">Home</div>
-                </div>
-            </a>
-                <a href="atoms.html">
-        <div class="alpq-main-sidebar-item alpq-pos-column">
-            <img class="" src="styles/icons/icon-order.svg?sanitize=true">
-            <div class="alpq-textSize-sidebar alpq-margin-side-s">Atoms</div>
-        </div>
-    </a>
+                <img class="" src="styles/icons/home.svg?sanitize=true">
+                <div class="alpq-textSize-sidebar alpq-margin-side-s">Home</div>
+            </div>
+        </a>
+        <a href="atoms.html">
+            <div class="alpq-main-sidebar-item alpq-pos-column">
+                <img class="" src="styles/icons/atoms.svg?sanitize=true">
+                <div class="alpq-textSize-sidebar alpq-margin-side-s">Atoms</div>
+            </div>
+        </a>
         <a href="molecules.html">
+            <div class="alpq-main-sidebar-item alpq-pos-column">
+                <img class="" src="styles/icons/molecules.svg?sanitize=true">
+                <div class="alpq-textSize-sidebar alpq-margin-side-s">Molecules</div>
+            </div>
+        </a>
         <div class="alpq-main-sidebar-item alpq-pos-column">
-            <img class="" src="styles/icons/icon-order.svg?sanitize=true">
-            <div class="alpq-textSize-sidebar alpq-margin-side-s">Molecules</div>
-        </div>
-    </a>
-        <div class="alpq-main-sidebar-item alpq-pos-column">
-            <img class="" src="styles/icons/icon-order.svg?sanitize=true">
+            <img class="" src="styles/icons/organism.svg?sanitize=true">
             <div class="alpq-textSize-sidebar alpq-margin-side-s">Organism</div>
         </div>
         <div class="alpq-main-sidebar-item alpq-pos-column">
-                <img class="" src="styles/icons/icon-order.svg?sanitize=true">
-                <div class="alpq-textSize-sidebar alpq-margin-side-s">Templates</div>
-            </div>
+            <img class="" src="styles/icons/templates.svg?sanitize=true">
+            <div class="alpq-textSize-sidebar alpq-margin-side-s">Templates</div>
+        </div>
     </div>
 
+    <!-- Sidebar corporative menu -->
+    <div class="alpq-corporative-menu alpq-corporative-menu-toggle">
+        <div class="alpq-corporative-menu-item">ernesto.perezaraque@alpiq.com</div>
+        <div class="alpq-corporative-menu-divider">Account management</div>
+        <div class="alpq-corporative-menu-item">
+            <i class="far fa-user-circle"></i> User profile</div>
+        <div class="alpq-corporative-menu-item">
+            <i class="far fa-envelope"></i> Messages</div>
+        <div class="alpq-corporative-menu-divider">Alpiq software suite</div>
+        <div class="alpq-corporative-menu-item">
+            <img src="styles/icons/icon-apollo.svg?sanitize=true">Apollo</div>
+        <div class="alpq-corporative-menu-item">
+            <img src="styles/icons/icon-iqube.svg?sanitize=true">
+            </i>IQ-ube</div>
+        <div class="alpq-corporative-menu-item">
+            <img src="styles/icons/icon-eutportal.svg?sanitize=true">
+            </i>EUT Portal</div>
+        <div class="alpq-corporative-menu-divider">More functionalities</div>
+        <div class="alpq-corporative-menu-item">Item 2</div>
+        <div class="alpq-corporative-menu-item">Item 3</div>
+        <div class="alpq-corporative-menu-item">Item 2</div>
+        <div class="alpq-corporative-menu-item">Item 3</div>
+        <div class="alpq-corporative-menu-logut">Log out</div>
+    </div>
+
+    <!-- Main container -->
     <div class="alpq-container">
         <p class="alpq-textSize-H2 alpq-pos-start-center alpq-margin-left-m">Alpiq design system</p>
         <p class="alpq-textSize-p alpq-pos-start-center alpq-margin-left-m">Library and styleguide about the new Alpiq design system</p>
 
+         <!-- Card container -->
         <div class="alpq-bgColor-contrast alpq-margin-m alpq-padding-side-m alpq-padding-m alpq-borderRadius alpq-bgShadow">
-                <p class="alpq-textSize-H3 alpq-pos-start-center">Installation</p>
+            <p class="alpq-textSize-H3 alpq-pos-start-center">Installation</p>
             <hr class="alpq-divider-m">
-            <p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-topbottom-m">CDN</p>
-            <a class="alpq-textColor-link" href="https://cdn.jsdelivr.net/gh/ernex24/library/styles/styles.css"> https://cdn.jsdelivr.net/gh/ernex24/library/styles/styles.css</a>
+            <div class="alpq-margin-xxl">
+                <p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-topbottom-m">CDN</p>
+                <a class="alpq-textColor-link" href="https://cdn.jsdelivr.net/gh/ernex24/library/styles/styles.css"> https://cdn.jsdelivr.net/gh/ernex24/library/styles/styles.css</a>
+            </div>
         </div>
 
-        
+
+        <div class="alpq-bgColor-contrast alpq-margin-m alpq-padding-side-m alpq-padding-m alpq-borderRadius alpq-bgShadow">
+            <p class="alpq-textSize-H3 alpq-pos-start-center">Concept</p>
+            <hr class="alpq-divider-m">
+            <div class="alpq-iner-container">
+                <div class="alpq-textSize-H4 alpq-margin-topbottom-m">Atomic design principle</div>
+                <div>The Alpiq Design System is based in the Atomic Design Principle</div>
+                    <br> The Atomic Design concept keep coming back to chemistry. The thought is that all
+                    matter (whether solid, liquid, gas, simple, complex, etc) is comprised of atoms. Those atomic units bond
+                    together to form molecules, which in turn combine into more complex organisms to ultimately create all
+                    matter in our universe.
+                    <br>
+                    <br> Similarly, interfaces are made up of smaller components. This means we can break entire interfaces down
+                    into fundamental building blocks and work up from there. That’s the basic gist of atomic design. loads
+                    of other fields such as industrial design and architecture have developed smart modular systems for manufacturing
+                    immensely complex objects like airplanes, ships, and skyscrapers.
+                    <br>
+                    <br> In the natural world, atomic elements combine together to form molecules. These molecules can combine
+                    further to form relatively complex organisms. To expound a bit further:
+                    <br>
+                    <br>
+
+                    <span class="alpq-textSize-H4">Atoms</span>
+                    <br> are the basic building blocks of all matter. Each chemical element has distinct properties, and they
+                    can’t be broken down further without losing their meaning. (Yes, it’s true atoms are composed of even
+                    smaller bits like protons, electrons, and neutrons, but atoms are the smallest functional unit.)
+                    <br>
+                    <br>
+
+                    <span class="alpq-textSize-H4">Molecules</span>
+                    <br> are groups of two or more atoms held together by chemical bonds. These combinations of atoms take on
+                    their own unique properties, and become more tangible and operational than atoms.
+                    <br>
+                    <br>
+
+                    <span class="alpq-textSize-H4">Organisms</span>
+                    <br> are assemblies of molecules functioning together as a unit. These relatively complex structures can
+                    range from single-celled organisms all the way up to incredibly sophisticated organisms like human beings.
+                    <br>
+                    <br> Of course, I’m simplifying the incredibly rich composition of the universe, but the basic gist remains:
+                    atoms combine together to form molecules, which further combine to form organisms. This atomic theory
+                    means that all matter in the known universe can be broken down into a finite set of atomic elements
+                </div>
             </div>
+        </div>
 
-
+         <!-- Footer -->
+        <div class="alpq-footer">Alpiq Holding AG all rigths reserved 2020,
+            <a href="#"> privacy policy</a>
+        </div>
+    </div>
+    <script src="./styles/js/functions.js"></script>
 </body>
 
 </html>
