@@ -50,3 +50,23 @@ code[class*=language-], pre[class*=language-] {
 .token.attr-value, .token.string {
     color: #92d192;
 }
+
+.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url {
+    color: #f3b229;
+    background: #2d2d2d;
+}
+
+.language-javascript {
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.language-html {
+    max-height: 500px;
+    overflow: scroll;
+}
+
+code, kbd, samp {
+    font-family: monospace, monospace;
+    font-size: 12px;
+}

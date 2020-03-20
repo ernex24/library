@@ -1,3 +1,7 @@
+
+
+/* $Input group */
+
 .alpq-input-group {
     display: flex;
     flex-direction: column;
@@ -7,6 +11,9 @@
 .alpq-form-group{
     display: flex;
 }
+
+
+/* $Input */
 
 .alpq-input-size-xxs {
     width: 40px;
@@ -55,6 +62,7 @@
 }
 
 
+/* $Checkbox */
 
 /* The container */
 .alpq-checkbox-container {
@@ -121,3 +129,144 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+
+
+
+/* $Radio button  */
+
+  /* The container */
+.alpq-radiobtn-container {
+  display: block;
+  position: relative;
+  padding-left: $space-xl;
+  margin-bottom: $space-m;
+  cursor: pointer;
+  @extend .alpq-textSize-p;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .alpq-radiobtn-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .alpq-radiobtn-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 23px;
+    width: 23px;
+    background-color: $contrast;
+    border: 1px solid $primary;
+    border-radius: 50%;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .alpq-radiobtn-container input:checked ~ .alpq-radiobtn-checkmark {
+    background-color: $contrast;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .alpq-radiobtn-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .alpq-radiobtn-container input:checked ~ .alpq-radiobtn-checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .alpq-radiobtn-container .alpq-radiobtn-checkmark:after {
+      top: 7px;
+      left: 7px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: $primary;
+  }
+
+
+
+  
+/* $Selector  */
+.custom-select {
+    position: relative;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: $contrast;
+  }
+  
+ /*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 12px;
+    right: 20px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid transparent;
+    border-color: #052f43 #052f43 transparent transparent;
+    transform: rotate(135deg);
+    z-index: 1;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    transform: rotate(-45deg);
+    top: 20px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-selected {
+    color: #052f43;
+    padding: 11px 16px;
+    border: 1px solid #052f43;
+    border-color: #052f43;
+    cursor: pointer;
+    border-radius: $borderadius; 
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: #ffffff;
+    top: 46px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-left: 1px solid $primary;
+    border-right: 1px solid $primary;
+    border-bottom: 1px solid $primary;
+    border-radius: 0 0 $borderadius $borderadius;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: $highlight;
+  }
+
+  .select-items div, .same-as-selected {
+    background-color: $contrast;
+    padding: 12px;
+  }
+
+
+

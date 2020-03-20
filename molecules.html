@@ -272,6 +272,149 @@
     &lt;span class=&quot;alpq-textSize-label alpq-textColor-info alpq-margin-xs&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 
+<hr class="alpq-divider-m">
+    <p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-topbottom-s">Selector</p>
+
+    <div class="alpq-input-group alpq-input-size-s">
+            <label class="alpq-input-label" for="name">Type:</label>
+            <div class="custom-select">
+                    <select>
+                      <option value="0">Select car</option>
+                      <option value="1">Audi</option>
+                      <option value="2">BMW</option>
+                      <option value="3">Citroen</option>
+                    </select>
+                  </div>
+                </div>
+
+<pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-input-size-s&quot;&gt;
+        &lt;label class=&quot;alpq-input-label&quot; for=&quot;name&quot;&gt;Type:&lt;/label&gt;
+        &lt;div class=&quot;custom-select&quot;&gt;
+                &lt;select&gt;
+                    &lt;option value=&quot;0&quot;&gt;Select car&lt;/option&gt;
+                    &lt;option value=&quot;1&quot;&gt;...&lt;/option&gt;
+                &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</code></pre>
+
+    <div class="alpq-input-group alpq-input-size-l">
+    <label class="alpq-input-label" for="name">Type:</label>
+    <div class="custom-select">
+            <select>
+              <option value="0">Select car</option>
+              <option value="1">Audi</option>
+              <option value="2">BMW</option>
+              <option value="3">Citroen</option>
+            </select>
+          </div>
+        </div>
+
+<pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-input-size-l&quot;&gt;
+        &lt;label class=&quot;alpq-input-label&quot; for=&quot;name&quot;&gt;Type:&lt;/label&gt;
+        &lt;div class=&quot;custom-select&quot;&gt;
+                &lt;select&gt;
+                    &lt;option value=&quot;0&quot;&gt;Select car&lt;/option&gt;
+                    &lt;option value=&quot;1&quot;&gt;...&lt;/option&gt;
+                &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</code></pre>
+
+        <div class="alpq-input-group alpq-input-size-xl">
+                <label class="alpq-input-label" for="name">Type:</label>
+                <div class="custom-select">
+                        <select>
+                          <option value="0">Select car</option>
+                          <option value="1">Audi</option>
+                          <option value="2">BMW</option>
+                          <option value="3">Citroen</option>
+                        </select>
+                      </div>
+                    </div>
+
+<pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-input-size-xl&quot;&gt;
+        &lt;label class=&quot;alpq-input-label&quot; for=&quot;name&quot;&gt;Type:&lt;/label&gt;
+        &lt;div class=&quot;custom-select&quot;&gt;
+                &lt;select&gt;
+                    &lt;option value=&quot;0&quot;&gt;Select car&lt;/option&gt;
+                    &lt;option value=&quot;1&quot;&gt;...&lt;/option&gt;
+                &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</code></pre>
+
+            <p class="alpq-textSize-p alpq-pos-start-center alpq-margin-topbottom-s">The selector uses Vainilla Javascript in order to work</p>
+            <pre><code class="language-javascript">ar x, i, j, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+for (i = 0; i < x.length; i++) {
+    selElmnt = x[i].getElementsByTagName("select")[0];
+    /*for each element, create a new DIV that will act as the selected item:*/
+    a = document.createElement("DIV");
+    a.setAttribute("class", "select-selected");
+    a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+    x[i].appendChild(a);
+    /*for each element, create a new DIV that will contain the option list:*/
+    b = document.createElement("DIV");
+    b.setAttribute("class", "select-items select-hide");
+    for (j = 1; j < selElmnt.length; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < s.length; i++) {
+            if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            for (k = 0; k < y.length; k++) {
+                y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+            }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+    }
+    x[i].appendChild(b);
+    a.addEventListener("click", function(e) {
+        /*when the select box is clicked, close any other select boxes,
+        and open/close the current select box:*/
+        e.stopPropagation();
+        closeAllSelect(this);
+        this.nextSibling.classList.toggle("select-hide");
+        this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+    /*a function that will close all select boxes in the document,
+    except the current select box:*/
+    var x, y, i, arrNo = [];
+    x = document.getElementsByClassName("select-items");
+    y = document.getElementsByClassName("select-selected");
+    for (i = 0; i < y.length; i++) {
+    if (elmnt == y[i]) {
+        arrNo.push(i)
+    } else {
+        y[i].classList.remove("select-arrow-active");
+    }
+    }
+    for (i = 0; i < x.length; i++) {
+    if (arrNo.indexOf(i)) {
+        x[i].classList.add("select-hide");
+    }
+    }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);</code></pre>
+
     <hr class="alpq-divider-m">
     <p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-topbottom-s">Checkbox</p>
 
@@ -296,12 +439,38 @@
     &lt;span class=&quot;alpq-checkbox-checkmark&quot;&gt;&lt;/span&gt;
 &lt;/label&gt;</code></pre>
 
+<hr class="alpq-divider-m">
+<p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-topbottom-s">Radio button</p>
 
+<p class="alpq-textSize-p alpq-margin-topbottom-s">Select your service</p>
+<label class="alpq-radiobtn-container">One
+  <input type="radio" checked="checked" name="radio">
+  <span class="alpq-radiobtn-checkmark"></span>
+</label>
+<label class="alpq-radiobtn-container">Two
+  <input type="radio" name="radio">
+  <span class="alpq-radiobtn-checkmark"></span>
+</label>
+
+<pre><code class="language-html">&lt;p class=&quot;alpq-textSize-p alpq-margin-topbottom-s&quot;&gt;Select your service&lt;/p&gt;
+&lt;label class=&quot;alpq-radiobtn-container&quot;&gt;One
+    &lt;input type=&quot;radio&quot; checked=&quot;checked&quot; name=&quot;radio&quot;&gt;
+    &lt;span class=&quot;alpq-radiobtn-checkmark&quot;&gt;&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class=&quot;alpq-radiobtn-container&quot;&gt;Two
+    &lt;input type=&quot;radio&quot; name=&quot;radio&quot;&gt;
+    &lt;span class=&quot;alpq-radiobtn-checkmark&quot;&gt;&lt;/span&gt;
+&lt;/label&gt;</code></pre>
 
             </div>
            
         </div>
     </div>
+
+     <!-- Footer -->
+     <div class="alpq-footer">Alpiq Holding AG all rigths reserved 2020,
+            <a href="#"> privacy policy</a>
+        </div>
     <script src="./styles/js/functions.js"></script>
     <script src="https://kit.fontawesome.com/2dfcb74320.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
