@@ -53,3 +53,71 @@
         cursor: default;
     }
 }
+
+
+
+/* The container */
+.alpq-checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: $space-xl;
+    margin-bottom: $space-m;
+    cursor: pointer;
+    @extend .alpq-textSize-p;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .alpq-checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .alpq-checkbox-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: $space-l;
+    width: $space-l;
+    background-color: $contrast;
+    border: 1px solid $primary;
+    border-radius: $borderadius;
+  }
+  
+  
+  /* When the checkbox is checked, add a blue background */
+  .alpq-checkbox-container input:checked ~ .alpq-checkbox-checkmark {
+    background-color: $contrast;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .alpq-checkbox-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .alpq-checkbox-container input:checked ~ .alpq-checkbox-checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .alpq-checkbox-container .alpq-checkbox-checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 12px;
+    border: solid $primary;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
