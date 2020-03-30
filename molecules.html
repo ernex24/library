@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" media="all" href="content.css">
+    <script src="https://kit.fontawesome.com/2dfcb74320.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alpiq Styleguide</title>
 </head>
@@ -18,7 +19,7 @@
         <div class="alpq-pos-end-center">
             <img class="alpq-margin-s" src="styles/icons/icon-global.svg?sanitize=true">
             <div class="alpq-textColor-contrast">GLobal, English
-                <i class="fas fa-angle-down alpq-margin-side-s"></i>
+                <i class="fas fa-angle-down alpq-margin-left-right-s"></i>
             </div>
             <img onclick="toggleCorporativeMenu()" class="alpq-header-icon alpq-margin-left-xxl alpq-margin-right-m" src="styles/icons/icon-menu-hamburger.svg?sanitize=true">
         </div>
@@ -29,28 +30,28 @@
         <a href="index.html">
             <div class="alpq-main-sidebar-item alpq-pos-column">
                 <img class="" src="styles/icons/home.svg?sanitize=true">
-                <div class="alpq-textSize-sidebar alpq-margin-side-s">Home</div>
+                <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Home</div>
             </div>
         </a>
         <a href="atoms.html">
             <div class="alpq-main-sidebar-item alpq-pos-column">
                 <img class="" src="styles/icons/atoms.svg?sanitize=true">
-                <div class="alpq-textSize-sidebar alpq-margin-side-s">Atoms</div>
+                <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Atoms</div>
             </div>
         </a>
         <a href="molecules.html">
             <div class="alpq-main-sidebar-item alpq-pos-column active">
                 <img class="" src="styles/icons/molecules.svg?sanitize=true">
-                <div class="alpq-textSize-sidebar alpq-margin-side-s">Molecules</div>
+                <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Molecules</div>
             </div>
         </a>
         <div class="alpq-main-sidebar-item alpq-pos-column">
             <img class="" src="styles/icons/organism.svg?sanitize=true">
-            <div class="alpq-textSize-sidebar alpq-margin-side-s">Organism</div>
+            <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Organism</div>
         </div>
         <div class="alpq-main-sidebar-item alpq-pos-column">
             <img class="" src="styles/icons/templates.svg?sanitize=true">
-            <div class="alpq-textSize-sidebar alpq-margin-side-s">Templates</div>
+            <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Templates</div>
         </div>
     </div>
 
@@ -84,254 +85,253 @@
         <p class="alpq-textSize-H2 alpq-pos-start-center alpq-margin-left-m">Molecules</p>
         <p class="alpq-textSize-p alpq-pos-start-center alpq-margin-left-m">Elements of the styleguide comformed by many Atoms</p>
 
-        <div class="alpq-bgColor-contrast alpq-margin-m alpq-padding-side-m alpq-padding-m alpq-borderRadius alpq-bgShadow">
-            <p class="alpq-textSize-H3 alpq-pos-start-center">Controllers</p>
-            <hr class="alpq-divider-m">
+        <div class="alpq-bgColor-contrast alpq-margin-m alpq-borderRadius alpq-bgShadow">
 
-            <div class="alpq-iner-container">
-                <p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-topbottom-s">Buttons</p>
+            <p class="alpq-textSize-H3 alpq-pos-start-center alpq-padding-m">Controllers</p>
 
-                <button class="alpq-btn-primary">Button primary</button>
-                <pre><code class="language-html">&lt;button class=&quot;alpq-btn-primary&quot;&gt;alpq-btn-primary&lt;/button&gt;</code></pre>
+            <div class="alpq-accordion">
+                <div class="alpq-accordion-header">
+                    <span>Buttons</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="alpq-accordion-content">
 
-                <hr class="alpq-divider-m">
+                    <div class="alpq-iner-container">
 
-                <button class="alpq-btn-primary">
-                    <i class="fa fa-battery-quarter"></i>Button primary + Icon</button>
-                <pre><code class="language-html">&lt;button class=&quot;alpq-btn-primary&quot;&gt;&lt;i class=&quot;fa fa-battery-quarter&quot;&gt;&lt;/i&gt; alpq-btn-primary&lt;/button&gt;</code></pre>
-
-                <hr class="alpq-divider-m">
-
-                <button class="alpq-btn-secondary">Button Secondary</button>
-                <pre><code class="language-html">&lt;button class=&quot;alpq-btn-secondary&quot;&gt;alpq-btn-secondary&lt;/button&gt;</code></pre>
-
-                <hr class="alpq-divider-m">
-
-                <button class="alpq-btn-secondary">
-                    <i class="fa fa-battery-quarter"></i>Button Secondary + Icon</button>
-                <pre><code class="language-html">&lt;button class=&quot;alpq-btn-secondary&quot;&gt;alpq-btn-secondary&lt;/button&gt;</code></pre>
-
-                <hr class="alpq-divider-m">
-
-                <button class="alpq-btn-text">Button text</button>
-                <pre><code class="language-html">&lt;button class=&quot;alpq-btn-text&quot;&gt;alpq-btn-text&lt;/button&gt;</code></pre>
-
-                <hr class="alpq-divider-m">
-
-                <button class="alpq-btn-text">
-                    <i class="fa fa-battery-quarter"></i>Button text + Icon</button>
-                <pre><code class="language-html">&lt;button class=&quot;alpq-btn-text&quot;&gt;alpq-btn-text&lt;/button&gt;</code></pre>
-
-                <hr class="alpq-divider-m">
-
-                <button class="alpq-btn-primary" disabled>Button Inactive</button>
-                <pre><code class="language-html">&lt;button class=&quot;alpq-btn-primary&quot; disabled &gt;alpq-btn-inactive&lt;/button&gt;</code></pre>
+                            <p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-top-bottom-m">Button Primary</p>
+                            <hr class="alpq-divider-m">
 
 
-                <hr class="alpq-divider-m">
+                        <button class="alpq-btn-primary">Button primary</button>
+                        <pre><code class="language-html">&lt;button class=&quot;alpq-btn-primary&quot;&gt;alpq-btn-primary&lt;/button&gt;</code></pre>
 
-                <p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-topbottom-m">Alerts</p>
+                        <hr class="alpq-divider-m">
 
-                <div class="alpq-alertBox-warning alpq-pos-center-center">
-                    <i class="alpq-margin-s fas fa-exclamation-triangle"></i>Alert warning</div>
+                        <button class="alpq-btn-primary">
+                            <i class="fa fa-battery-quarter"></i>Button primary + Icon</button>
+                        <pre><code class="language-html">&lt;button class=&quot;alpq-btn-primary&quot;&gt;&lt;i class=&quot;fa fa-battery-quarter&quot;&gt;&lt;/i&gt; alpq-btn-primary&lt;/button&gt;</code></pre>
 
-                <pre><code class="language-html">&lt;div class=&quot;alpq-alertBox-warning alpq-margin-m alpq-pos-center-center&quot;&gt;
+                        <p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-top-bottom-m">Button Secondary</p>
+                        <hr class="alpq-divider-m">
+
+                        <button class="alpq-btn-secondary">Button Secondary</button>
+                        <pre><code class="language-html">&lt;button class=&quot;alpq-btn-secondary&quot;&gt;alpq-btn-secondary&lt;/button&gt;</code></pre>
+
+                        <hr class="alpq-divider-m">
+
+                        <button class="alpq-btn-secondary">
+                            <i class="fa fa-battery-quarter"></i>Button Secondary + Icon</button>
+                        <pre><code class="language-html">&lt;button class=&quot;alpq-btn-secondary&quot;&gt;alpq-btn-secondary&lt;/button&gt;</code></pre>
+
+                        <p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-top-bottom-m">Button Text</p>
+                        <hr class="alpq-divider-m">
+
+                        <button class="alpq-btn-text">Button text</button>
+                        <pre><code class="language-html">&lt;button class=&quot;alpq-btn-text&quot;&gt;alpq-btn-text&lt;/button&gt;</code></pre>
+
+                        <p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-top-bottom-m">Button Text  + Icon</p>
+                        <hr class="alpq-divider-m">
+
+                        <button class="alpq-btn-text">
+                            <i class="fa fa-battery-quarter"></i>Button text + Icon</button>
+                        <pre><code class="language-html">&lt;button class=&quot;alpq-btn-text&quot;&gt;alpq-btn-text&lt;/button&gt;</code></pre>
+
+                        <p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-top-bottom-m">Button Inactive</p>
+                        <hr class="alpq-divider-m">
+
+                        <button class="alpq-btn-primary" disabled>Button Inactive</button>
+                        <pre><code class="language-html">&lt;button class=&quot;alpq-btn-primary&quot; disabled &gt;alpq-btn-inactive&lt;/button&gt;</code></pre>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="alpq-accordion">
+                <div class="alpq-accordion-header">
+                    <span>Alerts</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="alpq-accordion-content">
+
+                    <div class="alpq-iner-container">
+
+
+
+                        <div class="alpq-alertBox-warning alpq-pos-center-center">
+                            <i class="alpq-margin-s fas fa-exclamation-triangle"></i>Alert warning</div>
+
+                        <pre><code class="language-html">&lt;div class=&quot;alpq-alertBox-warning alpq-margin-m alpq-pos-center-center&quot;&gt;
     &lt;i class=&quot;alpq-margin-s fas fa-exclamation-triangle&quot;&gt;&lt;/i&gt;alpq-alertBox-warning
 &lt;/div&gt;</code></pre>
 
-                <hr class="alpq-divider-m">
+                        <hr class="alpq-divider-m">
 
-                <div class="alpq-alertBox-info alpq-pos-center-center">
-                    <i class="alpq-margin-s fas fa-info-circle"></i>Alert Info</div>
+                        <div class="alpq-alertBox-info alpq-pos-center-center">
+                            <i class="alpq-margin-s fas fa-info-circle"></i>Alert Info</div>
 
-                <pre><code class="language-html">&lt;div class=&quot;alpq-alertBox-info alpq-margin-m alpq-pos-center-center&quot;&gt;
+                        <pre><code class="language-html">&lt;div class=&quot;alpq-alertBox-info alpq-margin-m alpq-pos-center-center&quot;&gt;
     &lt;i class=&quot;alpq-margin-s fas fa-info-circle&quot;&gt;&lt;/i&gt;alpq-alertBox-info
 &lt;/div&gt;</code></pre>
 
-                <hr class="alpq-divider-m">
+                        <hr class="alpq-divider-m">
 
-                <div class="alpq-alertBox-error alpq-pos-center-center">
-                    <i class="alpq-margin-s fas fa-times"></i>Alert Error</div>
+                        <div class="alpq-alertBox-error alpq-pos-center-center">
+                            <i class="alpq-margin-s fas fa-times"></i>Alert Error</div>
 
-                <pre><code class="language-html">&lt;div class=&quot;alpq-alertBox-error alpq-margin-m alpq-pos-center-center&quot;&gt;
+                        <pre><code class="language-html">&lt;div class=&quot;alpq-alertBox-error alpq-margin-m alpq-pos-center-center&quot;&gt;
     &lt;i class=&quot;alpq-margin-s fas fa-times&quot;&gt;&lt;/i&gt;alpq-alertBox-error
 &lt;/div&gt;</code></pre>
 
-                <hr class="alpq-divider-m">
+                        <hr class="alpq-divider-m">
 
-                <div class="alpq-alertBox-success alpq-pos-center-center">
-                    <i class="alpq-margin-s far fa-check-circle"></i>Alert Success</div>
+                        <div class="alpq-alertBox-success alpq-pos-center-center">
+                            <i class="alpq-margin-s far fa-check-circle"></i>Alert Success</div>
 
-                <pre><code class="language-html">&lt;div class=&quot;alpq-alertBox-success alpq-margin-m alpq-pos-center-center&quot;&gt;
+                        <pre><code class="language-html">&lt;div class=&quot;alpq-alertBox-success alpq-margin-m alpq-pos-center-center&quot;&gt;
     &lt;i class=&quot;alpq-margin-s far fa-check-circle&quot;&gt;&lt;/i&gt;alpq-alertBox-success
 &lt;/div&gt;</code></pre>
 
-                <hr class="alpq-divider-m">
-
-                <p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-topbottom-m">Inputs</p>
-
-                <div class="alpq-input-group alpq-input-size-xs">
-                    <label class="alpq-input-label" for="name">First name:</label>
-                    <input class="alpq-input" placeholder="xs 80px" type="text" name="name">
+                    </div>
                 </div>
+            </div>
 
-                <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-margin-s alpq-input-size-xs&quot;&gt;
+            <div class="alpq-accordion">
+                <div class="alpq-accordion-header">
+                    <span>Inputs</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="alpq-accordion-content">
+
+                    <div class="alpq-iner-container">
+
+
+                        <div class="alpq-input-group alpq-input-size-xs">
+                            <label class="alpq-input-label" for="name">First name:</label>
+                            <input class="alpq-input" placeholder="xs 80px" type="text" name="name">
+                        </div>
+
+                        <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-margin-s alpq-input-size-xs&quot;&gt;
     &lt;label class=&quot;alpq-input-label&quot; for=&quot;name&quot;&gt;First name:&lt;/label&gt;
     &lt;input class=&quot;alpq-input&quot; placeholder=&quot;xs 80px&quot; type=&quot;text&quot; name=&quot;name&quot;&gt;
 &lt;/div&gt;</code></pre>
 
-                <div class="alpq-input-group alpq-input-size-s">
-                    <label class="alpq-input-label" for="name">First name:</label>
-                    <input class="alpq-input" placeholder="alpq-input-sizes-s" type="text" name="name">
-                </div>
+                        <div class="alpq-input-group alpq-input-size-s">
+                            <label class="alpq-input-label" for="name">First name:</label>
+                            <input class="alpq-input" placeholder="alpq-input-sizes-s" type="text" name="name">
+                        </div>
 
-                <pre><code class="language-html">
+                        <pre><code class="language-html">
     &lt;div class=&quot;alpq-input-group alpq-margin-s alpq-input-size-s&quot;&gt;
     &lt;label class=&quot;alpq-input-label&quot; for=&quot;name&quot;&gt;First name:&lt;/label&gt;
     &lt;input class=&quot;alpq-input&quot; placeholder=&quot;alpq-input-sizes-s&quot; type=&quot;text&quot; name=&quot;name&quot;&gt;
  &lt;/div&gt;</code></pre>
 
-                <div class="alpq-input-group alpq-input-size-m">
-                    <label class="alpq-input-label" for="name">First name:</label>
-                    <input class="alpq-input" placeholder="alpq-input-sizes-m 240px" type="text" name="name">
-                </div>
+                        <div class="alpq-input-group alpq-input-size-m">
+                            <label class="alpq-input-label" for="name">First name:</label>
+                            <input class="alpq-input" placeholder="alpq-input-sizes-m 240px" type="text" name="name">
+                        </div>
 
-                <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-margin-s alpq-input-size-m&quot;&gt;
+                        <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-margin-s alpq-input-size-m&quot;&gt;
     &lt;label class=&quot;alpq-input-label&quot; for=&quot;name&quot;&gt;First name:&lt;/label&gt;
     &lt;input class=&quot;alpq-input&quot; placeholder=&quot;alpq-input-sizes-m 240px&quot; type=&quot;text&quot; name=&quot;name&quot;&gt;
 &lt;/div&gt;</code></pre>
 
-                <div class="alpq-input-group alpq-input-size-l">
-                    <label class="alpq-input-label" for="name">First name:</label>
-                    <input class="alpq-input" placeholder="alpq-input-sizes-l 320px" type="text" name="name">
-                </div>
+                        <div class="alpq-input-group alpq-input-size-l">
+                            <label class="alpq-input-label" for="name">First name:</label>
+                            <input class="alpq-input" placeholder="alpq-input-sizes-l 320px" type="text" name="name">
+                        </div>
 
-                <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-margin-s alpq-input-size-l&quot;&gt;
+                        <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-margin-s alpq-input-size-l&quot;&gt;
     &lt;label class=&quot;alpq-input-label&quot; for=&quot;name&quot;&gt;First name:&lt;/label&gt;
     &lt;input class=&quot;alpq-input&quot; placeholder=&quot;alpq-input-sizes-l 320px&quot; type=&quot;text&quot; name=&quot;name&quot;&gt;
 &lt;/div&gt;</code></pre>
 
-                <div class="alpq-input-group alpq-input-size-xl">
-                    <label class="alpq-input-label" for="name">First name:</label>
-                    <input class="alpq-input" placeholder="alpq-input-sizes-xl" type="text" name="name">
-                </div>
+                        <div class="alpq-input-group alpq-input-size-xl">
+                            <label class="alpq-input-label" for="name">First name:</label>
+                            <input class="alpq-input" placeholder="alpq-input-sizes-xl" type="text" name="name">
+                        </div>
 
-                <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-margin-s alpq-input-size-xl&quot;&gt;
+                        <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-margin-s alpq-input-size-xl&quot;&gt;
     &lt;label class=&quot;alpq-input-label&quot; for=&quot;name&quot;&gt;First name:&lt;/label&gt;
     &lt;input class=&quot;alpq-input&quot; placeholder=&quot;alpq-input-sizes-xl&quot; type=&quot;text&quot; name=&quot;name&quot;&gt;
 &lt;/div&gt;</code></pre>
 
-                <p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-topbottom-m">Inputs Validation</p>
+                        <p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-top-bottom-m">Inputs Validation</p>
 
 
-                <div class="alpq-input-group alpq-input-size-l">
-                    <label class="alpq-input-label alpq-textColor-error" for="name">First name:</label>
-                    <input class="alpq-input alpq-borderColor-error" placeholder="Error" type="text" name="name">
-                    <span class="alpq-textSize-label alpq-textColor-error alpq-margin-xs"> Error notification</span>
-                </div>
+                        <div class="alpq-input-group alpq-input-size-l">
+                            <label class="alpq-input-label alpq-textColor-error" for="name">First name:</label>
+                            <input class="alpq-input alpq-borderColor-error" placeholder="Error" type="text" name="name">
+                            <span class="alpq-textSize-label alpq-textColor-error alpq-margin-xs"> Error notification</span>
+                        </div>
 
-                <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-margin-s alpq-input-size-l&quot;&gt;
+                        <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-margin-s alpq-input-size-l&quot;&gt;
     &lt;label class=&quot;alpq-input-label alpq-textColor-error&quot; for=&quot;name&quot;&gt;First name:&lt;/label&gt;
     &lt;input class=&quot;alpq-input alpq-borderColor-error&quot; placeholder=&quot;Error&quot; type=&quot;text&quot; name=&quot;name&quot;&gt;
     &lt;span class=&quot;alpq-textSize-label alpq-textColor-error alpq-margin-xs&quot;&gt; Error notification&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 
-                <div class="alpq-input-group alpq-input-size-l">
-                    <label class="alpq-input-label" for="name">First name:</label>
-                    <input class="alpq-input" placeholder="Warning notification" type="text" name="name">
-                    <span class="alpq-textSize-label alpq-textColor-warning alpq-margin-xs">Warning</span>
-                </div>
+                        <div class="alpq-input-group alpq-input-size-l">
+                            <label class="alpq-input-label" for="name">First name:</label>
+                            <input class="alpq-input" placeholder="Warning notification" type="text" name="name">
+                            <span class="alpq-textSize-label alpq-textColor-warning alpq-margin-xs">Warning</span>
+                        </div>
 
-                <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-margin-s alpq-input-size-l&quot;&gt;
+                        <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-margin-s alpq-input-size-l&quot;&gt;
     &lt;label class=&quot;alpq-input-label&quot; for=&quot;name&quot;&gt;First name:&lt;/label&gt;
     &lt;input class=&quot;alpq-input&quot; placeholder=&quot;Warning notification&quot; type=&quot;text&quot; name=&quot;name&quot;&gt;
     &lt;span class=&quot;alpq-textSize-label alpq-textColor-warning alpq-margin-xs&quot;&gt;Warning&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 
-                <div class="alpq-input-group alpq-input-size-l">
-                    <label class="alpq-input-label" for="name">First name:</label>
-                    <input class="alpq-input" placeholder="Warning notification" type="text" name="name">
-                    <span class="alpq-textSize-label alpq-textColor-info alpq-margin-xs">Info</span>
-                </div>
+                        <div class="alpq-input-group alpq-input-size-l">
+                            <label class="alpq-input-label" for="name">First name:</label>
+                            <input class="alpq-input" placeholder="Warning notification" type="text" name="name">
+                            <span class="alpq-textSize-label alpq-textColor-info alpq-margin-xs">Info</span>
+                        </div>
 
-                <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-margin-s alpq-input-size-l&quot;&gt;
+                        <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-margin-s alpq-input-size-l&quot;&gt;
     &lt;label class=&quot;alpq-input-label&quot; for=&quot;name&quot;&gt;First name:&lt;/label&gt;
     &lt;input class=&quot;alpq-input&quot; placeholder=&quot;Warning notification&quot; type=&quot;text&quot; name=&quot;name&quot;&gt;
     &lt;span class=&quot;alpq-textSize-label alpq-textColor-info alpq-margin-xs&quot;&gt;Info&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 
-                <div class="alpq-input-group alpq-input-size-l">
-                    <label class="alpq-input-label" for="name">First name:</label>
-                    <input class="alpq-input" placeholder="Disabled" type="text" name="name" disabled>
-                    <span class="alpq-textSize-label alpq-textColor-info alpq-margin-xs"></span>
-                </div>
+                        <div class="alpq-input-group alpq-input-size-l">
+                            <label class="alpq-input-label" for="name">First name:</label>
+                            <input class="alpq-input" placeholder="Disabled" type="text" name="name" disabled>
+                            <span class="alpq-textSize-label alpq-textColor-info alpq-margin-xs"></span>
+                        </div>
 
-                <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-margin-s alpq-input-size-l&quot;&gt;
+                        <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-margin-s alpq-input-size-l&quot;&gt;
     &lt;label class=&quot;alpq-input-label&quot; for=&quot;name&quot;&gt;First name:&lt;/label&gt;
     &lt;input class=&quot;alpq-input&quot; placeholder=&quot;Disabled&quot; type=&quot;text&quot; name=&quot;name&quot; disabled&gt;
     &lt;span class=&quot;alpq-textSize-label alpq-textColor-info alpq-margin-xs&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 
-<hr class="alpq-divider-m">
-    <p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-topbottom-s">Selector</p>
-
-    <div class="alpq-input-group alpq-input-size-s">
-            <label class="alpq-input-label" for="name">Type:</label>
-            <div class="alpq-selector">
-                    <select>
-                      <option value="0">Select car</option>
-                      <option value="1">Audi</option>
-                      <option value="2">BMW</option>
-                      <option value="3">Citroen</option>
-                    </select>
-                  </div>
+                    </div>
                 </div>
 
-<pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-input-size-s&quot;&gt;
-        &lt;label class=&quot;alpq-input-label&quot; for=&quot;name&quot;&gt;Type:&lt;/label&gt;
-        &lt;div class=&quot;custom-select&quot;&gt;
-                &lt;select&gt;
-                    &lt;option value=&quot;0&quot;&gt;Select car&lt;/option&gt;
-                    &lt;option value=&quot;1&quot;&gt;...&lt;/option&gt;
-                &lt;/select&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;</code></pre>
-
-    <div class="alpq-input-group alpq-input-size-l">
-    <label class="alpq-input-label" for="name">Type:</label>
-    <div class="alpq-selector">
-            <select>
-              <option value="0">Select car</option>
-              <option value="1">Audi</option>
-              <option value="2">BMW</option>
-              <option value="3">Citroen</option>
-            </select>
-          </div>
-        </div>
-
-<pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-input-size-l&quot;&gt;
-        &lt;label class=&quot;alpq-input-label&quot; for=&quot;name&quot;&gt;Type:&lt;/label&gt;
-        &lt;div class=&quot;custom-select&quot;&gt;
-                &lt;select&gt;
-                    &lt;option value=&quot;0&quot;&gt;Select car&lt;/option&gt;
-                    &lt;option value=&quot;1&quot;&gt;...&lt;/option&gt;
-                &lt;/select&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;</code></pre>
-
-        <div class="alpq-input-group alpq-input-size-xl">
-                <label class="alpq-input-label" for="name">Type:</label>
-                <div class="alpq-selector">
-                        <select>
-                          <option value="0">Select car</option>
-                          <option value="1">Audi</option>
-                          <option value="2">BMW</option>
-                          <option value="3">Citroen</option>
-                        </select>
-                      </div>
+                <div class="alpq-accordion">
+                    <div class="alpq-accordion-header">
+                        <span>Selector</span>
+                        <i class="fas fa-angle-down"></i>
                     </div>
+                    <div class="alpq-accordion-content">
 
-<pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-input-size-xl&quot;&gt;
+                        <div class="alpq-iner-container">
+
+                            <div class="alpq-input-group alpq-input-size-s">
+                                <label class="alpq-input-label" for="name">Type:</label>
+                                <div class="alpq-selector">
+                                    <select>
+                                        <option value="0">Select car</option>
+                                        <option value="1">Audi</option>
+                                        <option value="2">BMW</option>
+                                        <option value="3">Citroen</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-input-size-s&quot;&gt;
         &lt;label class=&quot;alpq-input-label&quot; for=&quot;name&quot;&gt;Type:&lt;/label&gt;
         &lt;div class=&quot;custom-select&quot;&gt;
                 &lt;select&gt;
@@ -341,8 +341,52 @@
                 &lt;/div&gt;
             &lt;/div&gt;</code></pre>
 
-            <p class="alpq-textSize-p alpq-pos-start-center alpq-margin-topbottom-s">The selector uses Vainilla Javascript in order to work</p>
-            <pre><code class="language-javascript">ar x, i, j, selElmnt, a, b, c;
+                            <div class="alpq-input-group alpq-input-size-l">
+                                <label class="alpq-input-label" for="name">Type:</label>
+                                <div class="alpq-selector">
+                                    <select>
+                                        <option value="0">Select car</option>
+                                        <option value="1">Audi</option>
+                                        <option value="2">BMW</option>
+                                        <option value="3">Citroen</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-input-size-l&quot;&gt;
+        &lt;label class=&quot;alpq-input-label&quot; for=&quot;name&quot;&gt;Type:&lt;/label&gt;
+        &lt;div class=&quot;custom-select&quot;&gt;
+                &lt;select&gt;
+                    &lt;option value=&quot;0&quot;&gt;Select car&lt;/option&gt;
+                    &lt;option value=&quot;1&quot;&gt;...&lt;/option&gt;
+                &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</code></pre>
+
+                            <div class="alpq-input-group alpq-input-size-xl">
+                                <label class="alpq-input-label" for="name">Type:</label>
+                                <div class="alpq-selector">
+                                    <select>
+                                        <option value="0">Select car</option>
+                                        <option value="1">Audi</option>
+                                        <option value="2">BMW</option>
+                                        <option value="3">Citroen</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <pre><code class="language-html">&lt;div class=&quot;alpq-input-group alpq-input-size-xl&quot;&gt;
+        &lt;label class=&quot;alpq-input-label&quot; for=&quot;name&quot;&gt;Type:&lt;/label&gt;
+        &lt;div class=&quot;custom-select&quot;&gt;
+                &lt;select&gt;
+                    &lt;option value=&quot;0&quot;&gt;Select car&lt;/option&gt;
+                    &lt;option value=&quot;1&quot;&gt;...&lt;/option&gt;
+                &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</code></pre>
+
+                            <p class="alpq-textSize-p alpq-pos-start-center alpq-margin-top-bottom-s">The selector uses Vainilla Javascript in order to work</p>
+                            <pre><code class="language-javascript">ar x, i, j, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");
 for (i = 0; i < x.length; i++) {
@@ -415,22 +459,33 @@ function closeAllSelect(elmnt) {
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);</code></pre>
 
-    <hr class="alpq-divider-m">
-    <p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-topbottom-s">Checkbox</p>
+                        </div>
+                    </div>
+                </div>
 
-    <p class="alpq-textSize-p alpq-margin-topbottom-s">Select your service</p>
+                <div class="alpq-accordion">
+                    <div class="alpq-accordion-header">
+                        <span>Checkbox</span>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="alpq-accordion-content">
 
-    <label class="alpq-checkbox-container">Option one
-        <input type="checkbox" checked="checked">
-        <span class="alpq-checkbox-checkmark"></span>
-    </label>
+                        <div class="alpq-iner-container">
 
-    <label class="alpq-checkbox-container">Option Two
-        <input type="checkbox">
-        <span class="alpq-checkbox-checkmark"></span>
-    </label>
 
-    <pre><code class="language-html">&lt;label class=&quot;alpq-checkbox-container&quot;&gt;Option one
+                            <p class="alpq-textSize-p alpq-margin-top-bottom-s">Select your service</p>
+
+                            <label class="alpq-checkbox-container">Option one
+                                <input type="checkbox" checked="checked">
+                                <span class="alpq-checkbox-checkmark"></span>
+                            </label>
+
+                            <label class="alpq-checkbox-container">Option Two
+                                <input type="checkbox">
+                                <span class="alpq-checkbox-checkmark"></span>
+                            </label>
+
+                            <pre><code class="language-html">&lt;label class=&quot;alpq-checkbox-container&quot;&gt;Option one
     &lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot;&gt;
     &lt;span class=&quot;alpq-checkbox-checkmark&quot;&gt;&lt;/span&gt;
 &lt;/label&gt;
@@ -439,20 +494,29 @@ document.addEventListener("click", closeAllSelect);</code></pre>
     &lt;span class=&quot;alpq-checkbox-checkmark&quot;&gt;&lt;/span&gt;
 &lt;/label&gt;</code></pre>
 
-<hr class="alpq-divider-m">
-<p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-topbottom-s">Radio button</p>
+                        </div>
+                    </div>
+                </div>
 
-<p class="alpq-textSize-p alpq-margin-topbottom-s">Select your service</p>
-<label class="alpq-radiobtn-container">One
-  <input type="radio" checked="checked" name="radio">
-  <span class="alpq-radiobtn-checkmark"></span>
-</label>
-<label class="alpq-radiobtn-container">Two
-  <input type="radio" name="radio">
-  <span class="alpq-radiobtn-checkmark"></span>
-</label>
+                <div class="alpq-accordion">
+                    <div class="alpq-accordion-header">
+                        <span>Radio buttons</span>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="alpq-accordion-content">
 
-<pre><code class="language-html">&lt;p class=&quot;alpq-textSize-p alpq-margin-topbottom-s&quot;&gt;Select your service&lt;/p&gt;
+                        <div class="alpq-iner-container">
+                            <p class="alpq-textSize-p alpq-margin-top-bottom-s">Select your service</p>
+                            <label class="alpq-radiobtn-container">One
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="alpq-radiobtn-checkmark"></span>
+                            </label>
+                            <label class="alpq-radiobtn-container">Two
+                                <input type="radio" name="radio">
+                                <span class="alpq-radiobtn-checkmark"></span>
+                            </label>
+
+                            <pre><code class="language-html">&lt;p class=&quot;alpq-textSize-p alpq-margin-top-bottom-s&quot;&gt;Select your service&lt;/p&gt;
 &lt;label class=&quot;alpq-radiobtn-container&quot;&gt;One
     &lt;input type=&quot;radio&quot; checked=&quot;checked&quot; name=&quot;radio&quot;&gt;
     &lt;span class=&quot;alpq-radiobtn-checkmark&quot;&gt;&lt;/span&gt;
@@ -462,23 +526,72 @@ document.addEventListener("click", closeAllSelect);</code></pre>
     &lt;span class=&quot;alpq-radiobtn-checkmark&quot;&gt;&lt;/span&gt;
 &lt;/label&gt;</code></pre>
 
-
-<hr class="alpq-divider-m">
-<p class="alpq-textSize-H4 alpq-pos-start-center alpq-margin-topbottom-s">Accordion</p>
-
-<button type="button" class="alpq-accordion">Open Accordion <i class="fas fa-angle-down"></i></button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-           
+
+            <div class="alpq-accordion">
+                <div class="alpq-accordion-header">
+                    <span>Accordeons</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="alpq-accordion-content">
+                    <div class="alpq-iner-container">
+
+
+                        <div class="alpq-accordion">
+                            <div class="alpq-accordion-header">
+                                <span>Accordion Title</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="alpq-accordion-content">
+                                Accordion content Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quae debitis sunt excepturi, fugit vitae?
+                                Error rerum nisi voluptate. A ab nobis officia aliquid nostrum, veniam autem et aspernatur
+                                dolorum.
+                            </div>
+                        </div>
+
+                        <div class="alpq-accordion">
+                            <div class="alpq-accordion-header">
+                                <span>
+                                    <i class="fas fa-plus-circle alpq-margin-right-s alpq-textColor-error"></i>Accordion Title</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="alpq-accordion-content">
+                                Accordion content Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quae debitis sunt excepturi, fugit vitae?
+                                Error rerum nisi voluptate. A ab nobis officia aliquid nostrum, veniam autem et aspernatur
+                                dolorum.
+                            </div>
+                        </div>
+
+                        <pre><code class="language-html">&lt;div class=&quot;alpq-accordion&quot;&gt;
+    &lt;div class=&quot;alpq-accordion-header&quot;&gt;
+        &lt;span&gt;
+            &lt;i class=&quot;fas fa-plus-circle alpq-margin-right-s alpq-textColor-error&quot;&gt;&lt;/i&gt;Accordion Title&lt;/span&gt;
+        &lt;i class=&quot;fas fa-angle-down&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alpq-accordion-content&quot;&gt;
+        Accordion content Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quae debitis sunt excepturi, fugit vitae?
+        Error rerum nisi voluptate. A ab nobis officia aliquid nostrum, veniam autem et aspernatur
+        dolorum.
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+    </div>
     </div>
 
-     <!-- Footer -->
-     <div class="alpq-footer">Alpiq Holding AG all rigths reserved 2020,
-            <a href="#"> privacy policy</a>
-        </div>
+    <!-- Footer -->
+    <div class="alpq-footer">Alpiq Holding AG all rigths reserved 2020,
+        <a href="#"> privacy policy</a>
+    </div>
     <script src="./styles/js/functions.js"></script>
     <script src="https://kit.fontawesome.com/2dfcb74320.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>

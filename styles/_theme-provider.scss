@@ -14,6 +14,20 @@ $primary: #052f43;
 $link: #007db3;
 $inactive: #eeeeee;
 
+/*Font Colors*/
+$font-contrast: #ffffff;
+$font-highlight: #b2d8e8;
+$font-Error: #de592e;
+$font-background: #f2f4f5;
+$font-H4: #666058;
+$font-success: #99cc51;
+$font-secondary: #ff9400;
+$font-link-hover: #f3b229;
+$font-helper: #768d98;
+$font-primary: #052f43;
+$font-link: #007db3;
+$font-inactive: #eeeeee;
+
 // $info-light:
 // $error-light:
 // $warning-light:
@@ -36,7 +50,7 @@ $borderadius: 3px;
 
 $borderwidth: 1px;
 
-$transition: 0.3s;
+$transition: all 0.5s;
 
 /* Fonts */
 @font-face {

@@ -2,7 +2,7 @@
     @extend .alpq-textColor-contrast;
     @extend .alpq-bgColor-primary;
     @extend .alpq-borderRadius;
-    @extend .alpq-padding-side-m;
+    @extend .alpq-padding-left-right-m;
     @extend .alpq-textSize-p;
     border: 0;
     height: $space-xxxl;
@@ -41,7 +41,7 @@
     @extend .alpq-textColor-primary;
     @extend .alpq-borderColor-primary;
     @extend .alpq-borderRadius;
-    @extend .alpq-padding-side-m;
+    @extend .alpq-padding-left-right-m;
     @extend .alpq-textSize-p;
     height: $space-xxxl;
     min-width: 160px;
@@ -82,7 +82,7 @@
     @extend .alpq-textColor-primary;
     @extend .alpq-bgColor-contrast;
     @extend .alpq-borderRadius;
-    @extend .alpq-padding-side-m;
+    @extend .alpq-padding-left-right-m;
     @extend .alpq-textSize-p;
     border: 0;
     height: $space-xxxl;

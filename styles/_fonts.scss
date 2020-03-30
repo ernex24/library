@@ -1,64 +1,64 @@
 
 a {
-	color: $link !important;
+	color: $font-link !important;
 	transition: $transition
 }
 
 a:hover{
-	color: $link-hover !important;
+	color: $font-link-hover !important;
 	transition: $transition
 }
 
 .alpq-textColor-primary{
-	color: $primary !important;
+	color: $font-primary !important;
 }
 
 .alpq-textColor-secondary{
-	color: $secondary !important;
+	color: $font-secondary !important;
 }
 
 .alpq-textColor-success{
-	color: $success !important;
+	color: $font-success !important;
 }
 
 .alpq-textColor-error{
-	color: $Error !important;
+	color: $font-Error !important;
 }
 
 .alpq-textColor-warning{
-	color: $link-hover !important;
+	color: $font-link-hover !important;
 }
 
 .alpq-textColor-info{
-	color: $link !important;
+	color: $font-link !important;
 }
 
 .alpq-textColor-inactive{
-color: $inactive !important;
+color: $font-inactive !important;
 }
 
 .alpq-textColor-contrast{
-	color: $contrast !important;
+	color: $font-contrast !important;
 }
 
 .alpq-textColor-helper{
-	color: $helper !important;
+	color: $font-helper !important;
 }
 
 .alpq-textColor-link{
-	color: $link !important;
+	color: $font-link !important;
 }
 
 .alpq-textColor-gray{
-	color: $H4 !important;
+	color: $font-H4 !important;
 }
 
 .alpq-textColor-helper{
-	color: $helper !important;
+	color: $font-helper !important;
 }
 
 .alpq-textColor-highlight{
-	color: $highlight !important;
+	color: $font-highlight !important;
 }
 
 
@@ -67,7 +67,7 @@ color: $inactive !important;
 	font-size: 64px;
 	font-weight: 300;
   line-height: 48px;
-	color: $primary;
+	color: $font-primary;
 	margin: 0;
 }
 
@@ -75,7 +75,7 @@ color: $inactive !important;
 	font-family: "secondaryBold";
 	font-size: 40px;
   line-height: 40px;
-	color: $primary;
+	color: $font-primary;
 	margin: 0;
 }
 
@@ -83,7 +83,7 @@ color: $inactive !important;
 	font-family: "secondaryBold";
 	font-size: 32px;
 	line-height: 40px;
-	color: $primary;
+	color: $font-primary;
 	margin: 0;
 }
 
@@ -91,7 +91,7 @@ color: $inactive !important;
 	font-family: "primaryBook";
 	font-size: 24px;
   line-height: 32px;
-	color: $H4;
+	color: $font-H4;
 	margin: 0;
 }
 
@@ -99,7 +99,7 @@ color: $inactive !important;
 	font-family: "primaryBook";
 	font-size: 16px;
   line-height: 24px;
-	color: $primary;
+	color: $font-primary;
 	margin: 0;
 }
 
@@ -108,7 +108,7 @@ color: $inactive !important;
 	font-size: 16px;
 	font-weight: bold;
   line-height: 24px;
-	color: $primary;
+	color: $font-primary;
 	margin: 0;
 }
 
@@ -116,7 +116,7 @@ color: $inactive !important;
 	font-family: "primaryBook";
 	font-size: 12px;
   line-height: 16px;
-	color: $H4;
+	color: $font-H4;
 	margin: 0;
 }
 
@@ -125,7 +125,7 @@ color: $inactive !important;
 	font-size: 12px;
 	font-weight: bold;
   line-height: 16px;
-	color: $H4;
+	color: $font-H4;
 	margin: 0;
 }
 
@@ -133,7 +133,7 @@ color: $inactive !important;
 	font-family: "primaryBook";
 	font-size: 16px;
   line-height: 16px;
-	color: $helper;
+	color: $font-helper;
 	margin: 0;
 }
 
@@ -141,7 +141,7 @@ color: $inactive !important;
 	font-family: "primaryBook";
 	font-size: 12px;
   line-height: 16px;
-	color: $primary;
+	color: $font-primary;
 	margin: 0;
 }
 
@@ -149,7 +149,7 @@ color: $inactive !important;
 	font-family: "primaryBold";
 	font-size: 8px;
 	line-height: 8px;
-	color: $primary;
+	color: $font-primary;
 	text-align: center;
 	text-transform: uppercase;
 	margin: 0;
