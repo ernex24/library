@@ -558,9 +558,6 @@ a:hover {
 .alpq-textColor-contrast, .alpq-btn-primary {
   color: #ffffff !important; }
 
-.alpq-textColor-helper {
-  color: #768d98 !important; }
-
 .alpq-textColor-link {
   color: #007db3 !important; }
 
@@ -572,6 +569,9 @@ a:hover {
 
 .alpq-textColor-highlight {
   color: #b2d8e8 !important; }
+
+.alpq-textColor-background {
+  color: #f2f4f5 !important; }
 
 .alpq-textSize-H1 {
   font-family: "secondaryLight";
@@ -1885,5 +1885,27 @@ div[class~=alertBox] > i {
   width: 2px;
   z-index: 1;
   opacity: 0.2; }
+
+.alpq-status-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.alpq-status-bar {
+  width: 80px;
+  height: 2px;
+  background-color: red; }
+
+.alpq-status-circle {
+  border-radius: 32px;
+  width: 32px;
+  height: 32px;
+  background-color: red; }
 
 /*# sourceMappingURL=styles.css.map */
