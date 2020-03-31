@@ -1851,6 +1851,9 @@ div[class~=alertBox] > i {
   .alpq-accordion-header:hover {
     background-color: #b2d8e8; }
 
+.alpq-accordion-title {
+  pointer-events: none; }
+
 .alpq-accordion-icon {
   background-color: #ffffff;
   border-radius: 50px;
@@ -1931,14 +1934,12 @@ div[class~=alertBox] > i {
 
 /* START TOOLTIP STYLES */
 [tooltip] {
-  position: relative;
-  /* opinion 1 */ }
+  position: relative; }
 
 /* Applies to all tooltips */
 [tooltip]::before,
 [tooltip]::after {
   text-transform: none;
-  /* opinion 2 */
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1951,28 +1952,25 @@ div[class~=alertBox] > i {
 [tooltip]::before {
   content: '';
   border: 5px solid transparent;
-  /* opinion 4 */
-  z-index: 1001;
-  /* absurdity 1 */ }
+  z-index: 1001; }
 
 [tooltip]::after {
   content: attr(tooltip);
   /* magic! */
-  /* most of the rest of this is opinion */
   text-align: center;
   /* 
     Let the content set the size of the tooltips 
     but this will also keep them from being obnoxious
     */
-  min-width: 3em;
+  min-width: 48px;
   max-width: 21em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 1ch 1.5ch;
-  border-radius: .3ch;
-  -webkit-box-shadow: 0 1em 2em -0.5em rgba(0, 0, 0, 0.35);
-          box-shadow: 0 1em 2em -0.5em rgba(0, 0, 0, 0.35);
+  padding: 8px 16px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 16px 24px -0.5em rgba(0, 0, 0, 0.35);
+          box-shadow: 0 16px 24px -0.5em rgba(0, 0, 0, 0.35);
   background: #052f43;
   color: #fff;
   z-index: 1000;

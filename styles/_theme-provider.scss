@@ -28,11 +28,6 @@ $font-primary: #052f43;
 $font-link: #007db3;
 $font-inactive: #eeeeee;
 
-// $info-light:
-// $error-light:
-// $warning-light:
-// $success-light:
-
 /* Spaces & Sizing 8pt system */
 $space-xs: 4px;
 $space-s: 8px;
@@ -45,9 +40,9 @@ $space-xxxxl: 56px;
 $space-xxxxxl: 64px;
 
 $shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+$shadowOver: 0 $space-m $space-l -.5em rgba(0, 0, 0, 0.35);
 
 $borderadius: 3px;
-
 $borderwidth: 1px;
 
 $transition: all 0.5s;

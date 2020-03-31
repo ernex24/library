@@ -24,6 +24,10 @@ position: relative;
   }
 }
 
+.alpq-accordion-title{
+  pointer-events: none;
+}
+
 .alpq-accordion-icon{
   background-color: $contrast;
   border-radius: 50px;
