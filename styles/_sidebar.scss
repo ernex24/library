@@ -28,7 +28,7 @@
     transition: $transition;
 }
 
-.active::before {
+.alpq-active::before {
     content: " ";
     position: absolute;
     width: 6px;

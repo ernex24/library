@@ -992,7 +992,7 @@ a:hover {
 .alpq-bgColor-primary, .alpq-header, .alpq-btn-primary, .alpq-btn-secondary:hover {
   background-color: #052f43 !important; }
 
-.alpq-bgColor-secondary, .active::before {
+.alpq-bgColor-secondary, .alpq-active::before {
   background-color: #ff9400 !important; }
 
 .alpq-bgColor-success {
@@ -1363,7 +1363,7 @@ hr.alpq-divider-xs {
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
 
-.active::before {
+.alpq-active::before {
   content: " ";
   position: absolute;
   width: 6px;
