@@ -702,21 +702,21 @@ document.addEventListener("click", closeAllSelect);</code></pre>
 
                             <div class="alpq-status-container">
 
-                                <div class="alpq-status-circle-xl alpq-bgColor-background"></div>
+                                <div tooltip="Status" class="alpq-status-circle-xl alpq-bgColor-background"></div>
 
                                 <div class="alpq-status-step-container">
                                     <div class="alpq-status-bar alpq-bgColor-error"></div>
-                                    <div class="alpq-status-circle-xl alpq-bgColor-error"></div>
+                                    <div tooltip="Status" class="alpq-status-circle-xl alpq-bgColor-error"></div>
                                 </div>
 
                                 <div class="alpq-status-step-container">
                                     <div class="alpq-status-bar alpq-bgColor-warning"></div>
-                                    <div class="alpq-status-circle-xl alpq-bgColor-warning"></div>
+                                    <div tooltip="Status" class="alpq-status-circle-xl alpq-bgColor-warning"></div>
                                 </div>
 
                                 <div class="alpq-status-step-container">
                                     <div class="alpq-status-bar alpq-bgColor-success"></div>
-                                    <div class="alpq-status-circle-xl alpq-bgColor-success"></div>
+                                    <div tooltip="Status" class="alpq-status-circle-xl alpq-bgColor-success"></div>
                                 </div>
 
                             </div>
@@ -726,28 +726,28 @@ document.addEventListener("click", closeAllSelect);</code></pre>
 
                             <div class="alpq-status-container">
 
-                                <div class="alpq-status-circle-l alpq-bgColor-background"></div>
+                                <div tooltip="Status" class="alpq-status-circle-l alpq-bgColor-background"></div>
 
                                 <div class="alpq-status-step-container">
                                     <div class="alpq-status-bar alpq-bgColor-error"></div>
-                                    <div class="alpq-status-circle-l alpq-bgColor-error"></div>
+                                    <div tooltip="Status" class="alpq-status-circle-l alpq-bgColor-error"></div>
                                 </div>
 
                                 <div class="alpq-status-step-container">
                                     <div class="alpq-status-bar alpq-bgColor-warning"></div>
-                                    <div class="alpq-status-circle-l alpq-bgColor-warning"></div>
+                                    <div tooltip="Status" class="alpq-status-circle-l alpq-bgColor-warning"></div>
                                 </div>
 
                                 <div class="alpq-status-step-container">
                                     <div class="alpq-status-bar alpq-bgColor-success"></div>
-                                    <div class="alpq-status-circle-l alpq-bgColor-success"></div>
+                                    <div tooltip="Status" class="alpq-status-circle-l alpq-bgColor-success"></div>
                                 </div>
                             </div>
 
 
                             <hr class="alpq-divider-m">
 
-                        <pre><code class="language-html">&lt;div class=&quot;alpq-status-container&quot;&gt;
+                            <pre><code class="language-html">&lt;div class=&quot;alpq-status-container&quot;&gt;
 
     &lt;div class=&quot;alpq-status-circle-xl alpq-bgColor-background&quot;&gt;&lt;/div&gt;
 
@@ -769,6 +769,44 @@ document.addEventListener("click", closeAllSelect);</code></pre>
                         </div>
 
                     </div>
+                </div>
+
+
+                <div class="alpq-accordion">
+                    <div class="alpq-accordion-header">
+                        <span>Tooltip</span>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+
+                    <div class="alpq-accordion-content">
+                        <div class="alpq-iner-container">
+
+                            <div class="alpq-dist-hor-spaceBetween alpq-margin-top-bottom-xl">
+
+                                <div>
+                                    <span tooltip="I'm up above it!">Tooltip Up</span>
+                                </div>
+                                <div>
+                                    <span tooltip="Slide to the left" flow="left">Tooltip Left</span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="alpq-dist-hor-spaceBetween alpq-margin-top-bottom-xl">
+
+                                <div>
+                                    <span tooltip="Slide to the right" flow="right">Tooltip Right</span>
+                                </div>
+                                <div>
+                                    <span tooltip="Get Down." flow="down">Tooltip Down</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
