@@ -1492,7 +1492,8 @@ div[class~=alertBox] > i {
   top: 56px;
   right: 0;
   line-height: 1;
-  overflow: scroll; }
+  overflow: scroll;
+  z-index: 2; }
 
 .alpq-corporative-menu-toggle {
   right: -320px;
@@ -1890,22 +1891,42 @@ div[class~=alertBox] > i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
 
-.alpq-status-bar {
-  width: 80px;
-  height: 2px;
-  background-color: red; }
+.alpq-status-step-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%; }
 
-.alpq-status-circle {
+.alpq-status-bar {
+  width: 100%;
+  height: 2px; }
+
+.alpq-status-circle-xl {
   border-radius: 32px;
-  width: 32px;
-  height: 32px;
-  background-color: red; }
+  min-width: 32px;
+  min-height: 32px; }
+
+.alpq-status-circle-l {
+  border-radius: 24px;
+  min-width: 24px;
+  min-height: 24px; }
+
+.alpq-status-circle-s {
+  border-radius: 8px;
+  min-width: 8px;
+  min-height: 8px; }
 
 /*# sourceMappingURL=styles.css.map */

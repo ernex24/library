@@ -1,18 +1,35 @@
 .alpq-status-container {
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alpq-status-step-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
 }
 
 .alpq-status-bar {
-    width: 80px;
+    width: 100%;
     height: 2px;
-    background-color: red;
 }
 
-.alpq-status-circle { 
-    border-radius: 32px; 
-    width: 32px;
-    height: 32px;
-    background-color: red;
+.alpq-status-circle-xl {
+    border-radius: $space-xl;
+    min-width: $space-xl;
+    min-height: $space-xl;
+}
+
+.alpq-status-circle-l {
+    border-radius: $space-l;
+    min-width: $space-l;
+    min-height: $space-l;
+}
+
+.alpq-status-circle-s {
+    border-radius: $space-s;
+    min-width: $space-s;
+    min-height: $space-s;
 }
