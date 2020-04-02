@@ -16,7 +16,7 @@
 /* $Input */
 
 .alpq-input-size-xxs {
-    width: 40px;
+    width: var(--alpq-space-xxl);
 }
 
 .alpq-input-size-xs {
@@ -41,21 +41,21 @@
 
 .alpq-input-label{
     @extend .alpq-textSize-label;
-    margin-bottom: $space-xs;
-    color: $helper;
+    margin-bottom: var(--alpq-space-xs);
+    color: var(--alpq-font-color-helper);
 }
 
 .alpq-input {
     @extend .alpq-textSize-p;
     @extend .alpq-borderColor-primary;
     @extend .alpq-borderRadius;
-    height: $space-xxxl;
-    padding-left: $space-m;
+    height: var(--alpq-space-xxxl);
+    padding-left: var(--alpq-space-m);
     &:disabled{
         @extend .alpq-bgColor-inactive;
         @extend .alpq-textColor-gray;
         border: 0;
-        height: $space-xxxl;
+        height: var(--alpq-space-xxxl);
         min-width: 160px;
         cursor: default;
     }
@@ -68,8 +68,8 @@
 .alpq-checkbox-container {
     display: block;
     position: relative;
-    padding-left: $space-xl;
-    margin-bottom: $space-m;
+    padding-left: var(--alpq-space-xl);
+    margin-bottom: var(--alpq-space-m);
     cursor: pointer;
     @extend .alpq-textSize-p;
     -webkit-user-select: none;
@@ -92,17 +92,17 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: $space-l;
-    width: $space-l;
-    background-color: $contrast;
-    border: 1px solid $primary;
-    border-radius: $borderadius;
+    height: var(--alpq-space-l);
+    width: var(--alpq-space-l);
+    background-color: var(--alpq-color-contrast);
+    border: 1px solid var(--alpq-color-primary);
+    border-radius: var(--alpq-borderadius);
   }
   
   
   /* When the checkbox is checked, add a blue background */
   .alpq-checkbox-container input:checked ~ .alpq-checkbox-checkmark {
-    background-color: $contrast;
+    background-color: var(--alpq-color-contrast);
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -123,7 +123,7 @@
     top: 5px;
     width: 5px;
     height: 12px;
-    border: solid $primary;
+    border: solid var(--alpq-color-primary);
     border-width: 0 2px 2px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -138,8 +138,8 @@
 .alpq-radiobtn-container {
   display: block;
   position: relative;
-  padding-left: $space-xl;
-  margin-bottom: $space-m;
+  padding-left: var(--alpq-space-xl);
+  margin-bottom: var(--alpq-space-m);
   cursor: pointer;
   @extend .alpq-textSize-p;
   -webkit-user-select: none;
@@ -162,14 +162,14 @@
     left: 0;
     height: 23px;
     width: 23px;
-    background-color: $contrast;
-    border: 1px solid $primary;
+    background-color: var(--alpq-color-contrast);
+    border: 1px solid var(--alpq-color-primary);
     border-radius: 50%;
   }
   
   /* When the radio button is checked, add a blue background */
   .alpq-radiobtn-container input:checked ~ .alpq-radiobtn-checkmark {
-    background-color: $contrast;
+    background-color: var(--alpq-color-contrast);
   }
   
   /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -191,7 +191,7 @@
       width: 7px;
       height: 7px;
       border-radius: 50%;
-      background: $primary;
+      background: var(--alpq-color-primary);
   }
 
 
@@ -207,7 +207,7 @@
   }
   
   .select-selected {
-    background-color: $contrast;
+    background-color: var(--alpq-color-contrast);
   }
   
  /*style the arrow inside the select element:*/
@@ -218,8 +218,8 @@
     right: 20px;
     width: 14px;
     height: 14px;
-    border: 1px solid transparent;
-    border-color: #052f43 #052f43 transparent transparent;
+    border: var(--alpq-borderwidth) solid transparent;
+    border-color: var(--alpq-color-primary) var(--alpq-color-primary) transparent transparent;
     transform: rotate(135deg);
     z-index: 1;
   }
@@ -232,10 +232,10 @@
   
   /* style the items (options), including the selected item: */
   .select-selected {
-    color: #052f43;
+    color: var(--alpq-color-primary);
     padding: 11px 16px;
-    border: 1px solid #052f43;
-    border-color: #052f43;
+    border: 1px solid var(--alpq-color-primary);
+    border-color: var(--alpq-color-primary);
     cursor: pointer;
     border-radius: $borderadius; 
   }
@@ -243,14 +243,14 @@
   /* Style items (options): */
   .select-items {
     position: absolute;
-    background-color: #ffffff;
+    background-color: var(--alpq-color-contrast);
     top: 46px;
     left: 0;
     right: 0;
     z-index: 1;
-    border-left: 1px solid $primary;
-    border-right: 1px solid $primary;
-    border-bottom: 1px solid $primary;
+    border-left: var(--alpq-borderwidth) solid $primary;
+    border-right: var(--alpq-borderwidth) solid $primary;
+    border-bottom: var(--alpq-borderwidth) solid $primary;
     border-radius: 0 0 $borderadius $borderadius;
   }
   
@@ -260,11 +260,11 @@
   }
   
   .select-items div:hover, .same-as-selected {
-    background-color: $highlight;
+    background-color: var(--alpq-color-highlight);
   }
 
   .select-items div, .same-as-selected {
-    background-color: $contrast;
+    background-color: var(--alpq-color-contrast);
     padding: 12px;
   }
 

@@ -3,7 +3,7 @@
     @extend .alpq-bgShadow;
     height: calc(100% - 56px);
     width: 320px;
-    top: $space-xxxxl;
+    top: var(--alpq-space-xxxxl);
     right: 0;
     line-height: 1;
     overflow: scroll;
@@ -12,69 +12,69 @@
 
 .alpq-corporative-menu-toggle {
     right: -320px;
-    transition: $transition;
+    transition: var(--alpq-transition);
 }
 
 .alpq-corporative-menu-item {
     width: 100%;
     cursor: pointer;
-    height: $space-xxxl;
-    background-color: $contrast;
+    height: var(--alpq-space-xxxl);
+    background-color: var(--alpq-color-contrast);
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border-bottom: 1px solid $background;
-    padding-left: $space-m;
-    padding-right: $space-m;
+    border-bottom: var(--alpq-borderwidth) solid var(--alpq-color-background);
+    padding-left: var(--alpq-space-m);
+    padding-right: var(--alpq-space-m);
     &:hover {
-        background-color: $highlight;
+        background-color: var(--alpq-color-highlight);
     }
     &:active {
-        background-color: $contrast;
+        background-color: var(--alpq-color-contrast);
     }
 }
 
 .alpq-corporative-menu-item>i {
     margin-left: 0;
-    margin-right: $space-m;
+    margin-right: var(--alpq-space-m);
 }
 
 .alpq-corporative-menu-item>img {
     display: flex;
     justify-content: flex-start;
     max-width: 24px;
-    margin-right: $space-m;
+    margin-right: var(--alpq-space-m);
 }
 
 .alpq-corporative-menu-divider {
     @extend .alpq-textSize-sidebar;
     width: 100%;
-    height: $space-l;
-    background-color: $background;
+    height: var(--alpq-space-l);
+    background-color: var(--alpq-color-background) ;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border-bottom: 1px solid $background;
-    padding-left: $space-m;
-    padding-right: $space-m;
+    border-bottom: var(--alpq-borderwidth) solid var(--alpq-color-background);
+    padding-left: var(--alpq-space-m);
+    padding-right: var(--alpq-space-m);
 }
 
 .alpq-corporative-menu-logut {
     @extend .alpq-textSize-p;
     text-align: center;
     width: inherit;
-    height: $space-xxxl;
-    background-color: $primary;
-    color: $contrast;
+    height: var(--alpq-space-xxxl);
+    background-color: var(--alpq-color-primary);
+    color: var(--alpq-font-color-contrast);
     display: flex;
     justify-content: center;
     align-items: center;
     bottom: 0;
     cursor: pointer;
     &:hover {
-        background-color: $link;
+        background-color: var(--alpq-color-link);
     }
     &:active {
-        background-color: $primary;
+        background-color: var(--alpq-color-primary);
     }
 }

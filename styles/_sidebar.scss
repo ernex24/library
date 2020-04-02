@@ -1,12 +1,12 @@
 .alpq-main-sidebar {
     @extend .alpq-bgColor-contrast;
     @extend .alpq-bgShadow;
-    width: 64px;
+    width: var(--alpq-space-xxxxxl);
     height: 100%;
     left: 0;
-    top: 56px;
+    top: var(--alpq-space-xxxxl);
     overflow: scroll;
-    transition: $transition;
+    transition: var(--alpq-transition);
     z-index: 1;
 }
 
@@ -17,14 +17,14 @@
 }
 
 .alpq-main-sidebar-item>img {
-    height: 32px;
+    height: var(--alpq-space-xl);
     @extend .alpq-margin-top-m;
     @extend .alpq-margin-bottom-xs;
 }
 
 .alpq-main-sidebar-item:hover {
     @extend .alpq-bgColor-highlight;
-    transition: $transition;
+    transition: var(--alpq-transition);
 }
 
 .alpq-active::before {

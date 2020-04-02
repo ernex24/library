@@ -17,19 +17,19 @@
 }
 
 .alpq-status-circle-xl {
-    border-radius: $space-xl;
-    min-width: $space-xl;
-    min-height: $space-xl;
+    border-radius: var(--alpq-space-xl);
+    min-width: var(--alpq-space-xl);
+    min-height:var(--alpq-space-xl);
 }
 
 .alpq-status-circle-l {
-    border-radius: $space-l;
-    min-width: $space-l;
-    min-height: $space-l;
+    border-radius: var(--alpq-space-l);
+    min-width: var(--alpq-space-l);
+    min-height: var(--alpq-space-l);
 }
 
 .alpq-status-circle-s {
-    border-radius: $space-s;
-    min-width: $space-s;
-    min-height: $space-s;
+    border-radius: var(--alpq-space-s);
+    min-width: var(--alpq-space-s);
+    min-height: var(--alpq-space-s);
 }

@@ -1,19 +1,19 @@
 .alpq-header{
     @extend .alpq-bgColor-primary;
     width: 100%;
-    height: $space-xxxxl;
+    height: var(--alpq-space-xxxxl);
     top: 0;
     z-index: 10;
 }
 
 .alpq-header-logo{
-    height: 32px;
+    height: var(--alpq-space-xl);
 }
 
 .alpq-header-icon{
-    height: 40px;
-    width: 40px;
-    padding: $space-xs;
+    height: var(--alpq-space-xxl);
+    width: var(--alpq-space-xxl);
+    padding: var(--alpq-space-xs);
     display: flex;
     justify-content: center;
     align-items: center;
