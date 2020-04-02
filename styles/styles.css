@@ -604,13 +604,13 @@ a:hover {
 .alpq-textColor-inactive {
   color: var(--alpq-font-color-inactive) !important; }
 
-.alpq-textColor-contrast, .alpq-btn-primary {
+.alpq-textColor-contrast, .alpq-btn-primary, .alpq-btn-error, .alpq-btn-success, .alpq-btn-warning {
   color: var(--alpq-font-color-contrast) !important; }
 
 .alpq-textColor-link {
   color: var(--alpq-font-color-link) !important; }
 
-.alpq-textColor-gray, .alpq-btn-primary:disabled, .alpq-btn-secondary:disabled, .alpq-btn-text:disabled, .alpq-input:disabled {
+.alpq-textColor-gray, .alpq-btn-primary:disabled, .alpq-btn-secondary:disabled, .alpq-btn-text:disabled, .alpq-btn-error:disabled, .alpq-btn-success:disabled, .alpq-btn-warning:disabled, .alpq-input:disabled {
   color: var(--alpq-font-color-H4) !important; }
 
 .alpq-textColor-helper {
@@ -651,7 +651,7 @@ a:hover {
   color: var(--alpq-font-color-H4);
   margin: 0; }
 
-.alpq-textSize-p, .alpq-btn-primary, .alpq-btn-secondary, .alpq-btn-text, .alpq-corporative-menu-logut, .alpq-input, .alpq-checkbox-container, .alpq-radiobtn-container {
+.alpq-textSize-p, .alpq-btn-primary, .alpq-btn-secondary, .alpq-btn-text, .alpq-btn-error, .alpq-btn-success, .alpq-btn-warning, .alpq-corporative-menu-logut, .alpq-input, .alpq-checkbox-container, .alpq-radiobtn-container {
   font-family: "primaryBook";
   font-size: var(--alpq-font-size-m);
   line-height: var(--alpq-space-l);
@@ -705,7 +705,7 @@ a:hover {
   margin: 0; }
 
 .alpq-container {
-  margin-top: var(--alpq-space-xxxxl)var(--alpq-space-l) !important;
+  margin-top: calc(var(--alpq-space-xxxxl) + var(--alpq-space-m)) !important;
   margin-left: var(--alpq-space-xxxxxl); }
 
 .alpq-iner-container {
@@ -990,7 +990,7 @@ a:hover {
   padding-left: var(--alpq-space-s) !important;
   padding-right: var(--alpq-space-s) !important; }
 
-.alpq-padding-left-right-m, .alpq-btn-primary, .alpq-btn-secondary, .alpq-btn-text, .alpq-accordion-header > * {
+.alpq-padding-left-right-m, .alpq-btn-primary, .alpq-btn-secondary, .alpq-btn-text, .alpq-btn-error, .alpq-btn-success, .alpq-btn-warning, .alpq-accordion-header > * {
   padding-left: var(--alpq-space-m) !important;
   padding-right: var(--alpq-space-m) !important; }
 
@@ -1041,13 +1041,13 @@ a:hover {
 .alpq-bgColor-primary, .alpq-header, .alpq-btn-primary, .alpq-btn-secondary:hover {
   background-color: var(--alpq-color-primary) !important; }
 
-.alpq-bgColor-secondary, .alpq-active::before {
+.alpq-bgColor-secondary, .alpq-active::before, .alpq-btn-warning, .alpq-btn-warning:hover {
   background-color: var(--alpq-color-secondary) !important; }
 
-.alpq-bgColor-success {
+.alpq-bgColor-success, .alpq-btn-success, .alpq-btn-success:hover {
   background-color: var(--alpq-color-success) !important; }
 
-.alpq-bgColor-error {
+.alpq-bgColor-error, .alpq-btn-error, .alpq-btn-error:hover {
   background-color: var(--alpq-color-error) !important; }
 
 .alpq-bgColor-warning {
@@ -1056,7 +1056,7 @@ a:hover {
 .alpq-bgColor-info, .alpq-btn-primary:hover {
   background-color: var(--alpq-color-link) !important; }
 
-.alpq-bgColor-inactive, .alpq-btn-primary:disabled, .alpq-btn-secondary:disabled, .alpq-btn-text:disabled, .alpq-input:disabled {
+.alpq-bgColor-inactive, .alpq-btn-primary:disabled, .alpq-btn-secondary:disabled, .alpq-btn-text:disabled, .alpq-btn-error:disabled, .alpq-btn-success:disabled, .alpq-btn-warning:disabled, .alpq-input:disabled {
   background-color: var(--alpq-color-inactive) !important; }
 
 .alpq-bgColor-contrast, .alpq-main-sidebar, .alpq-btn-text, .alpq-corporative-menu {
@@ -1099,7 +1099,7 @@ hr.alpq-divider-xs {
   margin-top: var(--alpq-space-xs);
   margin-bottom: var(--alpq-space-xs); }
 
-.alpq-borderRadius, .alpq-btn-primary, .alpq-btn-secondary, .alpq-btn-text, .alpq-alertBox-warning, .alpq-alertBox-info, .alpq-alertBox-error, .alpq-alertBox-success, .alpq-input {
+.alpq-borderRadius, .alpq-btn-primary, .alpq-btn-secondary, .alpq-btn-text, .alpq-btn-error, .alpq-btn-success, .alpq-btn-warning, .alpq-alertBox-warning, .alpq-alertBox-info, .alpq-alertBox-error, .alpq-alertBox-success, .alpq-input {
   border-radius: var(--alpq-borderadius); }
 
 .alpq-borderColor-primary, .alpq-btn-secondary, .alpq-btn-secondary:active, .alpq-input {
@@ -1511,6 +1511,63 @@ hr.alpq-divider-xs {
 button:focus {
   outline-offset: -2px; }
 
+.alpq-btn-error {
+  border: 0;
+  height: var(--alpq-space-xxl);
+  min-width: 160px;
+  -webkit-transition: var(--alpq-transition);
+  transition: var(--alpq-transition); }
+  .alpq-btn-error:hover {
+    -webkit-filter: brightness(1.2);
+            filter: brightness(1.2);
+    -webkit-transition: var(--alpq-transition);
+    transition: var(--alpq-transition); }
+  .alpq-btn-error:active {
+    background-color: var(--alpq-color-error) !important; }
+  .alpq-btn-error:disabled {
+    border: 0;
+    height: var(--alpq-space-xxxl);
+    min-width: 160px;
+    cursor: default; }
+
+.alpq-btn-success {
+  border: 0;
+  height: var(--alpq-space-xxl);
+  min-width: 160px;
+  -webkit-transition: var(--alpq-transition);
+  transition: var(--alpq-transition); }
+  .alpq-btn-success:hover {
+    -webkit-filter: brightness(1.2);
+            filter: brightness(1.2);
+    -webkit-transition: var(--alpq-transition);
+    transition: var(--alpq-transition); }
+  .alpq-btn-success:active {
+    background-color: var(--alpq-color-success) !important; }
+  .alpq-btn-success:disabled {
+    border: 0;
+    height: var(--alpq-space-xxxl);
+    min-width: 160px;
+    cursor: default; }
+
+.alpq-btn-warning {
+  border: 0;
+  height: var(--alpq-space-xxl);
+  min-width: 160px;
+  -webkit-transition: var(--alpq-transition);
+  transition: var(--alpq-transition); }
+  .alpq-btn-warning:hover {
+    -webkit-filter: brightness(1.2);
+            filter: brightness(1.2);
+    -webkit-transition: var(--alpq-transition);
+    transition: var(--alpq-transition); }
+  .alpq-btn-warning:active {
+    background-color: var(--alpq-color-secondary) !important; }
+  .alpq-btn-warning:disabled {
+    border: 0;
+    height: var(--alpq-space-xxxl);
+    min-width: 160px;
+    cursor: default; }
+
 .alpq-alertBox-warning {
   background-color: #f8d58a;
   color: #7c5607;
@@ -1560,7 +1617,7 @@ div[class~=alertBox] > i {
   width: 100%;
   cursor: pointer;
   height: var(--alpq-space-xxxl);
-  background-color: var(--alpq-font-color-contrast);
+  background-color: var(--alpq-color-contrast);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

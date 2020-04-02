@@ -113,11 +113,27 @@ accordion.forEach((e) => {
 
 // change colors
 
+const darkmodeHandler = () => {
+	document.documentElement.style.setProperty('--alpq-color-contrast', '#353535');
+	document.documentElement.style.setProperty('--alpq-color-background', '#2d2d2d');
+	document.documentElement.style.setProperty('--alpq-font-color-primary', '#eaeaea');
+	document.documentElement.style.setProperty('--alpq-color-highlight', '#303d42');
+	document.documentElement.style.setProperty('--alpq-shadow-s', '0 0 16px rgba(0, 0, 0, 0.3)');
+
+	sidebar = document.querySelectorAll('.alpq-main-sidebar > a > div > img');
+	sidebar.forEach(() => {
+		sidebar;
+		sidebar.forEach((i) => {
+			i.style.filter = 'grayscale(1) invert(1)';
+		});
+	});
+};
+
 const color = document.querySelector('.selectedcolor');
 
-const changeHandler = () =>{
-	console.log(color.value)
+const changeHandler = () => {
+	console.log(color.value);
 	document.documentElement.style.setProperty('--alpq-color-primary', color.value);
-}
- 
-color.addEventListener('change', changeHandler)
+};
+
+color.addEventListener('change', changeHandler);

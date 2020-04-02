@@ -121,3 +121,87 @@
 button:focus {
     outline-offset: -2px;
 }
+
+.alpq-btn-error {
+    @extend .alpq-textColor-contrast;
+    @extend .alpq-bgColor-error;
+    @extend .alpq-borderRadius;
+    @extend .alpq-padding-left-right-m;
+    @extend .alpq-textSize-p;
+    border: 0;
+    height: var(--alpq-space-xxl);
+    min-width: 160px;
+    transition: var(--alpq-transition);
+    &:hover {
+        @extend .alpq-bgColor-error;
+        filter: brightness(1.2);
+        transition: var(--alpq-transition);
+    }
+    &:active {
+        background-color: var(--alpq-color-error)!important;
+    }
+    &:disabled {
+        @extend .alpq-bgColor-inactive;
+        @extend .alpq-textColor-gray;
+        border: 0;
+        height: var(--alpq-space-xxxl);
+        min-width: 160px;
+        cursor: default;
+    }
+}
+
+.alpq-btn-success {
+    @extend .alpq-textColor-contrast;
+    @extend .alpq-bgColor-success;
+    @extend .alpq-borderRadius;
+    @extend .alpq-padding-left-right-m;
+    @extend .alpq-textSize-p;
+    border: 0;
+    height: var(--alpq-space-xxl);
+    min-width: 160px;
+    transition: var(--alpq-transition);
+    &:hover {
+        @extend .alpq-bgColor-success;
+        filter: brightness(1.2);
+        transition: var(--alpq-transition);
+    }
+    &:active {
+        background-color: var(--alpq-color-success)!important;
+    }
+    &:disabled {
+        @extend .alpq-bgColor-inactive;
+        @extend .alpq-textColor-gray;
+        border: 0;
+        height: var(--alpq-space-xxxl);
+        min-width: 160px;
+        cursor: default;
+    }
+}
+
+.alpq-btn-warning {
+    @extend .alpq-textColor-contrast;
+    @extend .alpq-bgColor-secondary;
+    @extend .alpq-borderRadius;
+    @extend .alpq-padding-left-right-m;
+    @extend .alpq-textSize-p;
+    border: 0;
+    height: var(--alpq-space-xxl);
+    min-width: 160px;
+    transition: var(--alpq-transition);
+    &:hover {
+        @extend .alpq-bgColor-secondary;
+        filter: brightness(1.2);
+        transition: var(--alpq-transition);
+    }
+    &:active {
+        background-color: var(--alpq-color-secondary)!important;
+    }
+    &:disabled {
+        @extend .alpq-bgColor-inactive;
+        @extend .alpq-textColor-gray;
+        border: 0;
+        height: var(--alpq-space-xxxl);
+        min-width: 160px;
+        cursor: default;
+    }
+}
