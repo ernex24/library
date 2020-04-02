@@ -28,6 +28,13 @@ $font-primary: #052f43;
 $font-link: #007db3;
 $font-inactive: #eeeeee;
 
+$font-size-xs: 8px;
+$font-size-s: 12px;
+$font-size-m: 16px;
+$font-size-l: 24px;
+$font-size-xl: 32px;
+$font-size-xxl: 64px;
+
 /* Spaces & Sizing 8pt system */
 $space-xs: 4px;
 $space-s: 8px;
@@ -39,8 +46,8 @@ $space-xxxl: 48px;
 $space-xxxxl: 56px;
 $space-xxxxxl: 64px;
 
-$shadow: 0 0 16px rgba(0, 0, 0, 0.1);
-$shadowOver: 0 $space-m $space-l -.5em rgba(0, 0, 0, 0.35);
+$shadow-s: 0 0 16px rgba(0, 0, 0, 0.1);
+$shadow-l: 0 $space-m $space-l -.5em rgba(0, 0, 0, 0.35);
 
 $borderadius: 3px;
 $borderwidth: 1px;
@@ -50,7 +57,7 @@ $transition: all 0.5s;
 /* Fonts */
 @font-face {
 	font-family: "primaryBold";
-  src: local(vistaSansBold), 
+  src: local(primaryBold), 
   url("./fonts/vistaSansBold.woff2") format("woff2"),
   url("./fonts/vistaSansBold.woff") format("woff"),
   url("./fonts/vistaSansBold.ttf") format("truetype");
@@ -61,7 +68,7 @@ $transition: all 0.5s;
 
 @font-face {
 	font-family: "primaryReg";
-  src: local(vistaSansReg), 
+  src: local(primaryReg), 
   url("./fonts/vistaSansReg.woff2") format("woff2"),
   url("./fonts/vistaSansReg.woff") format("woff"),
   url("./fonts/vistaSansReg.ttf") format("truetype");
@@ -72,7 +79,7 @@ $transition: all 0.5s;
 
 @font-face {
 	font-family: "primaryBook";
-  src: local(vistaSansBook), 
+  src: local(primaryBook), 
   url("./fonts/vistaSansBook.woff2") format("woff2"),
   url("./fonts/vistaSansBook.woff") format("woff"), 
   url("./fonts/vistaSansBook.ttf") format("truetype");
@@ -83,7 +90,7 @@ $transition: all 0.5s;
 
 @font-face {
 	font-family: "primaryMed";
-  src: local(vistaSansMed),
+  src: local(primaryMed),
   url("./fonts/vistaSansMed.woff2") format("woff2"),
   url("./fonts/vistaSansMed.woff") format("woff"),
   url("./fonts/vistaSansMed.ttf") format("truetype");
@@ -105,7 +112,7 @@ $transition: all 0.5s;
 
 @font-face {
 	font-family: "secondaryBold";
-  src: local(vistaSlabBook),
+  src: local(secondaryBold),
   url("./fonts/vistaSlabBook.woff2") format("woff2"),
   url("./fonts/vistaSlabBook.woff") format("woff"), 
   url("./fonts/vistaSlabBook.ttf") format("truetype");

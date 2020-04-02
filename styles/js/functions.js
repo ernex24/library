@@ -110,3 +110,14 @@ const openAccordion = (e) => {
 accordion.forEach((e) => {
 	this.addEventListener('click', openAccordion);
 });
+
+// change colors
+
+const color = document.querySelector('.selectedcolor');
+
+const changeHandler = () =>{
+	console.log(color.value)
+	document.documentElement.style.setProperty('--alpq-color-primary', color.value);
+}
+ 
+color.addEventListener('change', changeHandler)

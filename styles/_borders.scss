@@ -1,104 +1,104 @@
 
 hr.alpq-divider-xl{
-    border-top: 1px $background;
-    margin-top: $space-xl;
-    margin-bottom: $space-xl;
+    border-top: var(--alpq-borderwidth) var(--alpq-color-background);
+    margin-top: var(--alpq-space-xl);
+    margin-bottom: var(--alpq-space-xl);
 }
 
 hr.alpq-divider-l{
-    border-top: 1px $background;
-    margin-top: $space-l;
-    margin-bottom: $space-l;
+    border-top: var(--alpq-borderwidth) var(--alpq-color-background);
+    margin-top: var(--alpq-space-l);
+    margin-bottom: var(--alpq-space-l);
 }
 
 hr.alpq-divider-m{
-    border-top: 1px $background;
-    margin-top: $space-m;
-    margin-bottom: $space-m;
+    border-top: var(--alpq-borderwidth) var(--alpq-color-background);
+    margin-top: var(--alpq-space-m);
+    margin-bottom: var(--alpq-space-m);
 }
 
 hr.alpq-divider-s{
-    border-top: 1px $background;
-    margin-top: $space-s;
-    margin-bottom: $space-s;
+    border-top: var(--alpq-borderwidth) var(--alpq-color-background);
+    margin-top: var(--alpq-space-s);
+    margin-bottom: var(--alpq-space-s);
 }
 
 hr.alpq-divider-xs{
-    border-top: 1px $background;
-    margin-top: $space-xs;
-    margin-bottom: $space-xs;
+    border-top: var(--alpq-borderwidth) var(--alpq-color-background);
+    margin-top: var(--alpq-space-xs);
+    margin-bottom: var(--alpq-space-xs);
 }
 
 .alpq-borderRadius{
-    border-radius: $borderadius;
+    border-radius: var(--alpq-borderadius);
 }
 
 @mixin alpq-border {
     border-style: solid;
-    border-width: $borderwidth;
+    border-width: var(--alpq-borderwidth);
 }
 
 .alpq-borderColor-primary {
     @include alpq-border();
-    border-color: $primary !important;
+    border-color: var(--alpq-color-primary) !important;
 }
 
 .alpq-borderColor-contrast {
     @include alpq-border();
-    border-color: $contrast !important;
+    border-color: var(--alpq-color-contrast) !important;
 }
 
 .alpq-borderColor-secondary {
     @include alpq-border();
-    border-color: $secondary !important;
+    border-color: var(--alpq-color-secondary) !important;
 }
 
 .alpq-borderColor-success {
     @include alpq-border();
-    border-color: $success !important;
+    border-color: var(--alpq-color-success) !important;
 }
 
 .alpq-borderColor-error {
     @include alpq-border();
-    border-color: $Error !important;
+    border-color: var(--alpq-color-error)  !important;
 }
 
 .alpq-borderColor-warning {
     @include alpq-border();
-    border-color: $link-hover !important;
+    border-color: var(--alpq-color-link-hover) !important;
 }
 
 .alpq-borderColor-info {
     @include alpq-border();
-    border-color: $link !important;
+    border-color: var(--alpq-color-link) !important;
 }
 
 .alpq-borderColor-inactive {
     @include alpq-border();
-    border-color: $inactive !important;
+    border-color: var(--alpq-color-inactive) !important;
 }
 
 .alpq-borderColor-white {
     @include alpq-border();
-    border-color: $contrast !important;
+    border-color: var(--alpq-color-contrast) !important;
 }
 
 .alpq-borderColor-background {
     @include alpq-border();
-    border-color: $background !important;
+    border-color: var(--alpq-color-background) !important;
 }
 
 .alpq-borderColor-gray {
     @include alpq-border();
-    border-color: $H4 !important;
+    border-color: var(--alpq-color-H4) !important;
 }
 
 .alpq-borderColor-helper {
     @include alpq-border();
-    border-color: $helper !important;
+    border-color: var(--alpq-color-helper) !important;
 }
 
 .alpq-borderColor-highlight {
     @include alpq-border();
-    border-color: $highlight!important;
+    border-color: var(--alpq-color-highlight) !important;
 }

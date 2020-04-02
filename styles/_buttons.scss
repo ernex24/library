@@ -5,36 +5,36 @@
     @extend .alpq-padding-left-right-m;
     @extend .alpq-textSize-p;
     border: 0;
-    height: $space-xxxl;
+    height: var(--alpq-space-xxl);
     min-width: 160px;
-    transition: $transition;
+    transition: var(--alpq-transition);
     &:hover {
         @extend .alpq-bgColor-info;
-        transition: $transition;
+        transition: var(--alpq-transition);
     }
     &:active {
-        background-color: $primary !important;
+        background-color: var(--alpq-color-primary)!important;
     }
     &:disabled {
         @extend .alpq-bgColor-inactive;
         @extend .alpq-textColor-gray;
         border: 0;
-        height: $space-xxxl;
+        height: var(--alpq-space-xxxl);
         min-width: 160px;
         cursor: default;
     }
 }
 
 .alpq-btn-primary>i {
-    margin-right: $space-m;
-    height: $space-m;
-    width: $space-m;
+    margin-right: var(--alpq-space-m);
+    height: var(--alpq-space-m);
+    width: var(--alpq-space-m);
 }
 
 .alpq-btn-primary>img {
-    margin-right: $space-s;
-    height: $space-m;
-    width: $space-m;
+    margin-right: var(--alpq-space-s);
+    height: var(--alpq-space-m);
+    width: var(--alpq-space-m);
 }
 
 .alpq-btn-secondary {
@@ -43,39 +43,39 @@
     @extend .alpq-borderRadius;
     @extend .alpq-padding-left-right-m;
     @extend .alpq-textSize-p;
-    height: $space-xxxl;
+    height: var(--alpq-space-xxxl);
     min-width: 160px;
-    transition: $transition;
+    transition: var(--alpq-transition);
     &:hover {
         @extend .alpq-bgColor-primary;
         @extend .alpq-textColor-secondary;
-        transition: $transition;
+        transition: var(--alpq-transition);
     }
     &:active {
-        background-color: $contrast !important;
+        background-color: var(--alpq-color-contrast) !important;
         @extend .alpq-borderColor-primary;
-        color: $primary !important;
+        color: var(--alpq-color-primary) !important;
     }
     &:disabled {
         @extend .alpq-bgColor-inactive;
         @extend .alpq-textColor-gray;
         border: 0;
-        height: $space-xxxl;
+        height: var(--alpq-space-xxxl);
         min-width: 160px;
         cursor: default;
     }
 }
 
 .alpq-btn-secondary>i {
-    margin-right: $space-m;
-    height: $space-m;
-    width: $space-m;
+    margin-right: var(--alpq-space-m);
+    height: var(--alpq-space-m);
+    width: var(--alpq-space-m);
 }
 
 .alpq-btn-secondary>img {
-    margin-right: $space-s;
-    height: $space-m;
-    width: $space-m;
+    margin-right: var(--alpq-space-s);
+    height: var(--alpq-space-m);
+    width: var(--alpq-space-m);
 }
 
 .alpq-btn-text {
@@ -85,37 +85,37 @@
     @extend .alpq-padding-left-right-m;
     @extend .alpq-textSize-p;
     border: 0;
-    height: $space-xxxl;
+    height: var(--alpq-space-xxxl);
     min-width: 160px;
-    transition: $transition;
+    transition: var(--alpq-transition);
     &:hover {
         @extend .alpq-bgColor-highlight;
-        transition: $transition;
+        transition: var(--alpq-transition);
     }
     &:active {
-        background-color: $contrast !important;
-        color: $primary !important;
+        background-color: var(--alpq-color-contrast) !important;
+        color: var(--alpq-color-primary) !important;
     }
     &:disabled {
         @extend .alpq-bgColor-inactive;
         @extend .alpq-textColor-gray;
         border: 0;
-        height: $space-xxxl;
+        height: var(--alpq-space-xxxl);
         min-width: 160px;
         cursor: default;
     }
 }
 
 .alpq-btn-text>i {
-    margin-right: $space-m;
-    height: $space-m;
-    width: $space-m;
+    margin-right: var(--alpq-space-m);
+    height: var(--alpq-space-m);
+    width: var(--alpq-space-m);
 }
 
 .alpq-btn-text>img {
-    margin-right: $space-s;
-    height: $space-m;
-    width: $space-m;
+    margin-right: var(--alpq-space-s);
+    height: var(--alpq-space-m);
+    width: var(--alpq-space-m);
 }
 
 button:focus {

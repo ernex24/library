@@ -1,51 +1,51 @@
 .alpq-bgShadow {
-    box-shadow: $shadow;
+    box-shadow: var(--alpq-shadow-s) !important;
 }
 
 .alpq-bgColor-primary {
-    background-color: $primary !important;
+    background-color: var(--alpq-color-primary) !important;
 }
 
 .alpq-bgColor-secondary {
-    background-color: $secondary !important;
+    background-color: var(--alpq-color-secondary) !important;
 }
 
 .alpq-bgColor-success {
-    background-color: $success !important;
+    background-color: var(--alpq-color-success) !important;
 }
 
 .alpq-bgColor-error {
-    background-color: $Error !important;
+    background-color: var(--alpq-color-error )!important;
 }
 
 .alpq-bgColor-warning {
-    background-color: $link-hover !important;
+    background-color: var(--alpq-color-link-hover) !important;
 }
 
 .alpq-bgColor-info {
-    background-color: $link !important;
+    background-color: var(--alpq-color-link) !important;
 }
 
 .alpq-bgColor-inactive {
-    background-color: $inactive !important;
+    background-color: var(--alpq-color-inactive) !important;
 }
 
 .alpq-bgColor-contrast {
-    background-color: $contrast !important;
+    background-color: var(--alpq-color-contrast) !important;
 }
 
 .alpq-bgColor-background {
-    background-color: $background !important;
+    background-color: var(--alpq-color-background) !important;
 }
 
 .alpq-bgColor-highlight {
-    background-color: $highlight !important;
+    background-color: var(--alpq-color-highlight) !important;
 }
 
 .alpq-bgColor-gray {
-    background-color: $H4 !important;
+    background-color: var(--alpq-color-H4) !important;
 }
 
 .alpq-bgColor-helper {
-    background-color: $helper !important;
+    background-color: var(--alpq-color-helper) !important;
 }

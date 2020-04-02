@@ -28,16 +28,16 @@
       Let the content set the size of the tooltips 
       but this will also keep them from being obnoxious
       */
-    min-width: $space-xxxl;
+    min-width: var(--alpq-space-xxxl);
     max-width: 21em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: $space-s $space-m;
-    border-radius: $borderadius;
-    box-shadow: 0 $space-m $space-l -.5em rgba(0, 0, 0, 0.35);
-    background: $primary;
-    color: #fff;
+    padding: var(--alpq-space-s) var(--alpq-space-m);
+    border-radius: var(--alpq-borderadius);
+    box-shadow: 0 var(--alpq-space-m) var(--alpq-space-l) -.5em var(--alpq-shadow-l);
+    background: var(--alpq-color-primary);
+    color: var(--alpq-font-color-contrast);
     z-index: 1000; /* absurdity 2 */
   }
   
@@ -58,7 +58,7 @@
   [tooltip][flow^="up"]::before {
     bottom: 100%;
     border-bottom-width: 0;
-    border-top-color: $primary;
+    border-top-color: var(--alpq-color-primary);
   }
   [tooltip]:not([flow])::after,
   [tooltip][flow^="up"]::after {
@@ -76,7 +76,7 @@
   [tooltip][flow^="down"]::before {
     top: 100%;
     border-top-width: 0;
-    border-bottom-color: $primary;
+    border-bottom-color: var(--alpq-color-primary);
   }
   [tooltip][flow^="down"]::after {
     top: calc(100% + 5px);
@@ -91,7 +91,7 @@
   [tooltip][flow^="left"]::before {
     top: 50%;
     border-right-width: 0;
-    border-left-color: $primary;
+    border-left-color: var(--alpq-color-primary);
     left: calc(0em - 5px);
     transform: translate(-.5em, -50%);
   }
@@ -105,7 +105,7 @@
   [tooltip][flow^="right"]::before {
     top: 50%;
     border-left-width: 0;
-    border-right-color: $primary;
+    border-right-color: var(--alpq-color-primary);
     right: calc(0em - 5px);
     transform: translate(.5em, -50%);
   }

@@ -1,155 +1,154 @@
 
 a {
-	color: $font-link !important;
-	transition: $transition
+	color: var(--alpq-font-color-link) !important;
+	transition: var(--alpq-transition);
 }
 
 a:hover{
-	color: $font-link-hover !important;
-	transition: $transition
+	color: var(--alpq-font-color-link-hover) !important;
+	transition: var(--alpq-transition);
 }
 
 .alpq-textColor-primary{
-	color: $font-primary !important;
+	color: var(--alpq-font-color-primary) !important;
 }
 
 .alpq-textColor-secondary{
-	color: $font-secondary !important;
+	color: var(--alpq-font-color-secondary) !important;
 }
 
 .alpq-textColor-success{
-	color: $font-success !important;
+	color: var(--alpq-font-color-success) !important;
 }
 
 .alpq-textColor-error{
-	color: $font-Error !important;
+	color:  var(--alpq-font-color-error) !important;
 }
 
 .alpq-textColor-warning{
-	color: $font-link-hover !important;
+	color: var(--alpq-font-color-link-hover) !important;
 }
 
 .alpq-textColor-info{
-	color: $font-link !important;
+	color: var(--alpq-font-color-link) !important;
 }
 
 .alpq-textColor-inactive{
-color: $font-inactive !important;
+color: var(--alpq-font-color-inactive) !important;
 }
 
 .alpq-textColor-contrast{
-	color: $font-contrast !important;
+	color: var(--alpq-font-color-contrast) !important;
 }
 
 .alpq-textColor-link{
-	color: $font-link !important;
+	color: var(--alpq-font-color-link) !important;
 }
 
 .alpq-textColor-gray{
-	color: $font-H4 !important;
+	color: var(--alpq-font-color-H4)!important;
 }
 
 .alpq-textColor-helper{
-	color: $font-helper !important;
+	color: var(--alpq-font-color-helper)  !important;
 }
 
 .alpq-textColor-highlight{
-	color: $font-highlight !important;
+	color: var(--alpq-font-color-highlight) !important;
 }
 
 .alpq-textColor-background{
-	color: $font-background!important;
+	color: var(--alpq-font-color-background) !important;
 }
-
 
 .alpq-textSize-H1 {
 	font-family: "secondaryLight";
-	font-size: 64px;
+	font-size: var(--alpq-font-size-xxl);
 	font-weight: 300;
-  line-height: 48px;
-	color: $font-primary;
+  line-height: var(--alpq-space-xxxl);
+	color: var(--alpq-font-color-primary);
 	margin: 0;
 }
 
 .alpq-textSize-H2 {
 	font-family: "secondaryBold";
-	font-size: 40px;
-  line-height: 40px;
-	color: $font-primary;
+	font-size: var(--alpq-font-size-xl);
+  line-height: var(--alpq-space-xxl);
+	color: var(--alpq-font-color-primary);
 	margin: 0;
 }
 
 .alpq-textSize-H3 {
 	font-family: "secondaryBold";
-	font-size: 32px;
-	line-height: 40px;
-	color: $font-primary;
+	font-size: var(--alpq-font-size-l);
+	line-height: var(--alpq-space-xxl);
+	color: var(--alpq-font-color-primary);
 	margin: 0;
 }
 
 .alpq-textSize-H4 {
 	font-family: "primaryBook";
-	font-size: 24px;
-  line-height: 32px;
-	color: $font-H4;
+	font-size: var(--alpq-font-size-l);
+  line-height: var(--alpq-space-xl);
+	color: var(--alpq-font-color-H4);
 	margin: 0;
 }
 
 .alpq-textSize-p {
 	font-family: "primaryBook";
-	font-size: 16px;
-  line-height: 24px;
-	color: $font-primary;
+	font-size: var(--alpq-font-size-m);
+  line-height: var(--alpq-space-l);
+	color: var(--alpq-font-color-primary);
 	margin: 0;
 }
 
 .alpq-textSize-p-bold {
 	font-family: "primaryBold";
-	font-size: 16px;
+	font-size: var(--alpq-font-size-m);
 	font-weight: bold;
-  line-height: 24px;
-	color: $font-primary;
+  line-height: var(--alpq-space-l);
+	color: var(--alpq-font-color-primary);
 	margin: 0;
 }
 
 .alpq-textSize-p-desc {
 	font-family: "primaryBook";
-	font-size: 12px;
-  line-height: 16px;
-	color: $font-H4;
+	font-size: var(--alpq-font-size-s);
+  line-height: var(--alpq-space-m);
+	color: var(--alpq-font-color-H4);
 	margin: 0;
 }
 
 .alpq-textSize-p-desc-bold {
 	font-family: "primaryBold";
-	font-size: 12px;
+	font-size: var(--alpq-font-size-s);
 	font-weight: bold;
-  line-height: 16px;
-	color: $font-H4;
+  line-height: var(--alpq-space-m);
+	color: var(--alpq-font-color-H4);
 	margin: 0;
 }
 
 .alpq-textSize-placeholder {
 	font-family: "primaryBook";
-	font-size: 16px;
-  line-height: 16px;
-	color: $font-helper;
+	font-size: var(--alpq-font-size-m);
+  line-height: var(--alpq-space-m);
+	color: var(--alpq-font-color-helper);
 	margin: 0;
 }
 
 .alpq-textSize-label {
 	font-family: "primaryBook";
-	font-size: 12px;
-  line-height: 16px;
-	color: $font-primary;
+	font-size: var(--alpq-font-size-s);
+  line-height: var(--alpq-space-m);
+	color: var(--alpq-font-color-primary);
 	margin: 0;
 }
 
 .alpq-textSize-sidebar {
 	font-family: "primaryBold";
-	font-size: 8px;
-	line-height: 8px;
-	color: $font-primary;
+	font-size: var(--alpq-font-size-xs);;
+	line-height: var(--alpq-space-s);
+	color: var(--alpq-font-color-primary);
 	text-align: center;
 	text-transform: uppercase;
 	margin: 0;

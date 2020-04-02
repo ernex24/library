@@ -1,0 +1,55 @@
+ 
+/* CSS Custom Properties */
+:root {
+    --alpq-color-primary: #{$primary}; /* set the value with the SASS vars (with interpolation) */
+    --alpq-color-secondary: #{$secondary};
+    --alpq-color-contrast: #{$contrast};
+    --alpq-color-highlight: #{$highlight};
+    --alpq-color-error: #{$Error};
+    --alpq-color-success: #{$success};
+    --alpq-color-H4: #{$H4};
+    --alpq-color-link-hover: #{$link-hover};
+    --alpq-color-helper: #{$helper};
+    --alpq-color-link: #{$link};
+    --alpq-color-inactive: #{$inactive};
+    --alpq-color-background: #{$background};
+
+    --alpq-font-color-primary: #{$primary}; /* set the value with the SASS vars (with interpolation) */
+    --alpq-font-color-secondary: #{$secondary};
+    --alpq-font-color-contrast: #{$contrast};
+    --alpq-font-color-highlight: #{$highlight};
+    --alpq-font-color-error: #{$Error};
+    --alpq-font-color-success: #{$success};
+    --alpq-font-color-H4: #{$H4};
+    --alpq-font-color-link-hover: #{$link-hover};
+    --alpq-font-color-helper: #{$helper};
+    --alpq-font-color-link: #{$link};
+    --alpq-font-color-inactive: #{$inactive};
+    --alpq-font-color-background: #{$background};
+
+    --alpq-font-size-xs: #{$font-size-xs};
+    --alpq-font-size-s: #{$font-size-s};
+    --alpq-font-size-m: #{$font-size-m};
+    --alpq-font-size-l: #{$font-size-l};
+    --alpq-font-size-xl: #{$font-size-xl};
+    --alpq-font-size-xxl: #{$font-size-xxl};
+
+    --alpq-space-xs: #{$space-xs};
+    --alpq-space-s: #{$space-s};
+    --alpq-space-m: #{$space-m};
+    --alpq-space-l: #{$space-l};
+    --alpq-space-xl: #{$space-xl};
+    --alpq-space-xxl: #{$space-xxl};
+    --alpq-space-xxxl: #{$space-xxxl};
+    --alpq-space-xxxxl: #{$space-xxxxl};
+    --alpq-space-xxxxxl: #{$space-xxxxxl};
+
+    --alpq-shadow-s: #{$shadow-s};
+    --alpq-shadow-l: #{$shadow-l};
+
+    --alpq-borderadius: #{$borderadius};
+    --alpq-borderwidth: #{$borderwidth};
+
+    --alpq-transition: #{$transition};
+
+}
