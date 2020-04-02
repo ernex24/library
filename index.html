@@ -18,7 +18,7 @@
         <div class=" alpq-content-wrap">
 
             <!-- Header Menu -->
-            <nav id="menu" class="alpq-header alpq-dist-hor-spaceBetween alpq-pos-vert-center">
+            <nav id="menu" class="alpq-header alpq-pos-fixed alpq-dist-hor-spaceBetween alpq-pos-vert-center">
                 <img class="alpq-margin-m alpq-header-logo" src="styles/logo/alpiq-logo.svg?sanitize=true">
                 <div class="alpq-pos-end-center">
                     <img class="alpq-margin-s" src="styles/icons/icon-global.svg?sanitize=true">
@@ -30,7 +30,7 @@
             </nav>
 
             <!-- Sidebar main menu -->
-            <div class="alpq-main-sidebar">
+            <div class="alpq-main-sidebar alpq-pos-fixed">
                 <a href="index.html">
                     <div class="alpq-main-sidebar-item alpq-pos-column alpq-active">
                         <img class="" src="styles/icons/home.svg?sanitize=true">
@@ -49,18 +49,22 @@
                         <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Molecules</div>
                     </div>
                 </a>
-                <div class="alpq-main-sidebar-item alpq-pos-column">
-                    <img class="" src="styles/icons/organism.svg?sanitize=true">
-                    <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Organism</div>
-                </div>
+                <a href="organism.html">
+                    <div class="alpq-main-sidebar-item alpq-pos-column">
+                        <img class="" src="styles/icons/organism.svg?sanitize=true">
+                        <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Organism</div>
+                    </div>
+                </a>
+                <a href="templates.html">
                 <div class="alpq-main-sidebar-item alpq-pos-column">
                     <img class="" src="styles/icons/templates.svg?sanitize=true">
                     <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Templates</div>
                 </div>
+                </a>
             </div>
 
             <!-- Sidebar corporative menu -->
-            <div class="alpq-corporative-menu alpq-corporative-menu-toggle">
+            <div class="alpq-corporative-menu alpq-pos-fixed alpq-corporative-menu-toggle">
                 <div class="alpq-corporative-menu-item">ernesto.perezaraque@alpiq.com</div>
                 <div class="alpq-corporative-menu-divider">Account management</div>
                 <div class="alpq-corporative-menu-item">
@@ -69,27 +73,22 @@
                     <i class="far fa-envelope"></i> Messages</div>
                 <div class="alpq-corporative-menu-divider">Alpiq software suite</div>
                 <div class="alpq-corporative-menu-item">
-                    <img src="styles/icons/icon-apollo.svg?sanitize=true">Apollo</div>
-                <div class="alpq-corporative-menu-item">
-                    <img src="styles/icons/icon-iqube.svg?sanitize=true">
-                    </i>IQ-ube</div>
+                    <img src="styles/icons/icon-apollo.svg?sanitize=true">Quinn Charge</div>
                 <div class="alpq-corporative-menu-item">
                     <img src="styles/icons/icon-eutportal.svg?sanitize=true">
-                    </i>EUT Portal</div>
+                    </i>Quinn Energy</div>
                 <div class="alpq-corporative-menu-divider">More functionalities</div>
                 <div class="alpq-corporative-menu-item">Item 2</div>
                 <div class="alpq-corporative-menu-item">Item 3</div>
                 <div class="alpq-corporative-menu-item">Item 2</div>
                 <div class="alpq-corporative-menu-item">Item 3</div>
-                <div class="alpq-corporative-menu-logut">Log out</div>
+                <div class="alpq-corporative-menu-logut alpq-pos-fixed">Log out</div>
             </div>
 
             <!-- Main container -->
             <div class="alpq-container">
                 <p class="alpq-textSize-H2 alpq-pos-start-center alpq-margin-left-m">Alpiq design system</p>
                 <p class="alpq-textSize-p alpq-pos-start-center alpq-margin-left-m">Library and styleguide about the new Alpiq design system</p>
-
-
 
                 <!-- Card container -->
                 <div class="alpq-bgColor-contrast alpq-margin-m alpq-borderRadius alpq-bgShadow">
@@ -181,7 +180,7 @@
         </div>
 
         <!-- Footer -->
-        <div class="alpq-footer">Alpiq Holding AG all rigths reserved 2020,
+        <div class="alpq-footer alpq-position-absolute">Alpiq Holding AG all rigths reserved 2020,
             <a href="#"> privacy policy</a>
         </div>
     </div>

@@ -1315,10 +1315,19 @@ hr.alpq-divider-xs {
 .alpq-position-absolute {
   position: absolute; }
 
+/* Wraping clases with flex */
+.alpq-pos-absolute {
+  position: absolute; }
+
+.alpq-pos-relative {
+  position: relative; }
+
+.alpq-pos-fixed {
+  position: fixed; }
+
 .alpq-header {
   width: 100%;
   height: 56px;
-  position: fixed;
   top: 0;
   z-index: 10; }
 
@@ -1343,7 +1352,6 @@ hr.alpq-divider-xs {
 .alpq-main-sidebar {
   width: 64px;
   height: 100%;
-  position: fixed;
   left: 0;
   top: 56px;
   overflow: scroll;
@@ -1488,7 +1496,6 @@ div[class~=alertBox] > i {
 .alpq-corporative-menu {
   height: calc(100% - 56px);
   width: 320px;
-  position: fixed;
   top: 56px;
   right: 0;
   line-height: 1;
@@ -1569,7 +1576,6 @@ div[class~=alertBox] > i {
       -ms-flex-align: center;
           align-items: center;
   bottom: 0;
-  position: fixed;
   cursor: pointer; }
   .alpq-corporative-menu-logut:hover {
     background-color: #007db3; }
@@ -1586,7 +1592,6 @@ div[class~=alertBox] > i {
   /* height of your footer */ }
 
 .alpq-footer {
-  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;

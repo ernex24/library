@@ -3,7 +3,6 @@
     @extend .alpq-bgShadow;
     height: calc(100% - 56px);
     width: 320px;
-    position: fixed;
     top: $space-xxxxl;
     right: 0;
     line-height: 1;
@@ -71,7 +70,6 @@
     justify-content: center;
     align-items: center;
     bottom: 0;
-    position: fixed;
     cursor: pointer;
     &:hover {
         background-color: $link;

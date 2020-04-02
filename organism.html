@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" media="all" href="content.css">
+    <script src="https://kit.fontawesome.com/2dfcb74320.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alpiq Styleguide</title>
+</head>
+
+<body class="alpq-textSize-p alpq-bgColor-background">
+
+    <div class="alpq-page-container">
+        <div class=" alpq-content-wrap">
+
+            <!-- Header Menu -->
+            <nav id="menu" class="alpq-header alpq-pos-fixed alpq-dist-hor-spaceBetween alpq-pos-vert-center">
+                <img class="alpq-margin-m alpq-header-logo" src="styles/logo/alpiq-logo.svg?sanitize=true">
+                <div class="alpq-pos-end-center">
+                    <img class="alpq-margin-s" src="styles/icons/icon-global.svg?sanitize=true">
+                    <div class="alpq-textColor-contrast">GLobal, English
+                        <i class="fas fa-angle-down alpq-margin-left-right-s"></i>
+                    </div>
+                    <img onclick="toggleCorporativeMenu()" class="alpq-header-icon alpq-margin-left-xxl alpq-margin-right-m" src="styles/icons/icon-menu-hamburger.svg?sanitize=true">
+                </div>
+            </nav>
+
+            <!-- Sidebar main menu -->
+            <div class="alpq-main-sidebar alpq-pos-fixed">
+                <a href="index.html">
+                    <div class="alpq-main-sidebar-item alpq-pos-column">
+                        <img class="" src="styles/icons/home.svg?sanitize=true">
+                        <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Home</div>
+                    </div>
+                </a>
+                <a href="atoms.html">
+                    <div class="alpq-main-sidebar-item alpq-pos-column">
+                        <img class="" src="styles/icons/atoms.svg?sanitize=true">
+                        <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Atoms</div>
+                    </div>
+                </a>
+                <a href="molecules.html">
+                    <div class="alpq-main-sidebar-item alpq-pos-column">
+                        <img class="" src="styles/icons/molecules.svg?sanitize=true">
+                        <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Molecules</div>
+                    </div>
+                </a>
+                <a href="organism.html">
+                    <div class="alpq-main-sidebar-item alpq-pos-column alpq-active">
+                        <img class="" src="styles/icons/organism.svg?sanitize=true">
+                        <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Organisms</div>
+                    </div>
+                </a>
+                <a href="templates.html">
+                    <div class="alpq-main-sidebar-item alpq-pos-column">
+                        <img class="" src="styles/icons/templates.svg?sanitize=true">
+                        <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Templates</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Sidebar corporative menu -->
+            <div class="alpq-corporative-menu alpq-pos-fixed alpq-corporative-menu-toggle">
+                <div class="alpq-corporative-menu-item">ernesto.perezaraque@alpiq.com</div>
+                <div class="alpq-corporative-menu-divider">Account management</div>
+                <div class="alpq-corporative-menu-item">
+                    <i class="far fa-user-circle"></i> User profile</div>
+                <div class="alpq-corporative-menu-item">
+                    <i class="far fa-envelope"></i> Messages</div>
+                <div class="alpq-corporative-menu-divider">Alpiq software suite</div>
+                <div class="alpq-corporative-menu-item">
+                    <img src="styles/icons/icon-apollo.svg?sanitize=true">Quinn Charge</div>
+                <div class="alpq-corporative-menu-item">
+                    <img src="styles/icons/icon-eutportal.svg?sanitize=true">
+                    </i>Quinn Energy</div>
+                <div class="alpq-corporative-menu-divider">More functionalities</div>
+                <div class="alpq-corporative-menu-item">Item 2</div>
+                <div class="alpq-corporative-menu-item">Item 3</div>
+                <div class="alpq-corporative-menu-item">Item 2</div>
+                <div class="alpq-corporative-menu-item">Item 3</div>
+                <div class="alpq-corporative-menu-logut alpq-pos-fixed">Log out</div>
+            </div>
+
+            <!-- Main container -->
+            <div class="alpq-container">
+                <p class="alpq-textSize-H2 alpq-pos-start-center alpq-margin-left-m">Organisms</p>
+                <p class="alpq-textSize-p alpq-pos-start-center alpq-margin-left-m">A group of molecules</p>
+
+                <!-- Card container -->
+                <div class="alpq-bgColor-contrast alpq-margin-m alpq-borderRadius alpq-bgShadow">
+                    <p class="alpq-textSize-H3 alpq-pos-start-center alpq-padding-m">Layout</p>
+
+                    <div class="alpq-accordion">
+                        <div class="alpq-accordion-header">
+                            <span class="alpq-accordion-title alpq-textSize-p ">Headers (responsive)</span>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="alpq-accordion-content">
+                            <div class="alpq-iner-container">
+                                <div class="alpq-margin-bottom-xl">
+
+
+                                    <nav id="menu" class="alpq-header alpq-dist-hor-spaceBetween alpq-pos-vert-center">
+                                        <img class="alpq-margin-m alpq-header-logo" src="styles/logo/alpiq-logo.svg?sanitize=true">
+                                        <div class="alpq-pos-end-center">
+                                            <img class="alpq-margin-s" src="styles/icons/icon-global.svg?sanitize=true">
+                                            <div class="alpq-textColor-contrast">GLobal, English
+                                                <i class="fas fa-angle-down alpq-margin-left-right-s"></i>
+                                            </div>
+                                            <div class="alpq-textColor-contrast">
+                                                <i class="far fa-envelope alpq-margin-left-m alpq-margin-right-s"></i>
+                                            </div>
+                                            <img class="alpq-header-icon alpq-margin-left-m alpq-margin-right-m" src="styles/icons/icon-menu-hamburger.svg?sanitize=true">
+                                        </div>
+                                    </nav>
+
+                                    <pre><code class="language-html">&lt;nav id=&quot;menu&quot; class=&quot;alpq-header alpq-dist-hor-spaceBetween alpq-pos-vert-center&quot;&gt;
+&lt;img class=&quot;alpq-margin-m alpq-header-logo&quot; src=&quot;styles/logo/alpiq-logo.svg?sanitize=true&quot;&gt;
+&lt;div class=&quot;alpq-pos-end-center&quot;&gt;
+    &lt;img class=&quot;alpq-margin-s&quot; src=&quot;styles/icons/icon-global.svg?sanitize=true&quot;&gt;
+    &lt;div class=&quot;alpq-textColor-contrast&quot;&gt;GLobal, English
+        &lt;i class=&quot;fas fa-angle-down alpq-margin-left-right-s&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alpq-textColor-contrast&quot;&gt;
+        &lt;i class=&quot;far fa-envelope alpq-margin-left-m alpq-margin-right-s&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;img class=&quot;alpq-header-icon alpq-margin-left-m alpq-margin-right-m&quot; src=&quot;styles/icons/icon-menu-hamburger.svg?sanitize=true&quot;&gt;
+&lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+                                </div>
+
+
+                                <div class="alpq-margin-bottom-xl">
+
+                                    <nav id="menu" class="alpq-header alpq-dist-hor-spaceBetween alpq-pos-vert-center">
+                                        <img class="alpq-margin-m alpq-header-logo" src="styles/logo/alpiq-logo.svg?sanitize=true">
+                                        <div class="alpq-pos-end-center">
+                                            <div class="alpq-textColor-contrast">English
+                                                <i class="fas fa-angle-down alpq-margin-left-right-s"></i>
+                                            </div>
+
+                                            <div class="alpq-textColor-contrast">
+                                                <i class="far fa-envelope alpq-margin-left-m alpq-margin-right-s"></i>
+                                            </div>
+
+                                            <img class="alpq-header-icon alpq-margin-left-right-m" src="styles/icons/icon-menu-hamburger.svg?sanitize=true">
+                                        </div>
+                                    </nav>
+
+                                    <pre><code class="language-html">&lt;nav id=&quot;menu&quot; class=&quot;alpq-header alpq-dist-hor-spaceBetween alpq-pos-vert-center&quot;&gt;
+&lt;img class=&quot;alpq-margin-m alpq-header-logo&quot; src=&quot;styles/logo/alpiq-logo.svg?sanitize=true&quot;&gt;
+&lt;div class=&quot;alpq-pos-end-center&quot;&gt;
+    &lt;div class=&quot;alpq-textColor-contrast&quot;&gt;English
+        &lt;i class=&quot;fas fa-angle-down alpq-margin-left-right-s&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;alpq-textColor-contrast&quot;&gt;
+        &lt;i class=&quot;far fa-envelope alpq-margin-left-m alpq-margin-right-s&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+
+    &lt;img class=&quot;alpq-header-icon alpq-margin-left-right-m&quot; src=&quot;styles/icons/icon-menu-hamburger.svg?sanitize=true&quot;&gt;
+&lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+
+                                </div>
+
+                                <div class="alpq-margin-bottom-xl">
+
+                                    <nav id="menu" class="alpq-header alpq-dist-hor-spaceBetween alpq-pos-vert-center">
+                                        <img class="alpq-margin-m alpq-header-logo" src="styles/logo/alpiq-logo.svg?sanitize=true">
+                                        <div class="alpq-pos-end-center">
+                                            <div class="alpq-textColor-contrast">English
+                                                <i class="fas fa-angle-down alpq-margin-left-right-s"></i>
+                                            </div>
+                                            <img class="alpq-header-icon alpq-margin-left-m alpq-margin-right-m" src="styles/icons/icon-menu-hamburger.svg?sanitize=true">
+                                        </div>
+                                    </nav>
+
+                                    <pre><code class="language-html">&lt;nav id=&quot;menu&quot; class=&quot;alpq-header alpq-dist-hor-spaceBetween alpq-pos-vert-center&quot;&gt;
+    &lt;img class=&quot;alpq-margin-m alpq-header-logo&quot; src=&quot;styles/logo/alpiq-logo.svg?sanitize=true&quot;&gt;
+    &lt;div class=&quot;alpq-pos-end-center&quot;&gt;
+        &lt;div class=&quot;alpq-textColor-contrast&quot;&gt;English
+            &lt;i class=&quot;fas fa-angle-down alpq-margin-left-right-s&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;img class=&quot;alpq-header-icon alpq-margin-left-m alpq-margin-right-m&quot; src=&quot;styles/icons/icon-menu-hamburger.svg?sanitize=true&quot;&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+
+                                </div>
+
+                                <div class="alpq-margin-bottom-xl">
+                                    <nav id="menu" class="alpq-header alpq-dist-hor-spaceBetween alpq-pos-vert-center">
+                                        <img class="alpq-margin-m alpq-header-logo" src="styles/logo/alpiq-logo.svg?sanitize=true">
+                                        <div class="alpq-pos-end-center">
+                                            <img class="alpq-header-icon alpq-margin-left-xxl alpq-margin-right-m" src="styles/icons/icon-menu-hamburger.svg?sanitize=true">
+                                        </div>
+                                    </nav>
+
+                                    <pre><code class="language-html">&lt;nav id=&quot;menu&quot; class=&quot;alpq-header alpq-dist-hor-spaceBetween alpq-pos-vert-center&quot;&gt;
+&lt;img class=&quot;alpq-margin-m alpq-header-logo&quot; src=&quot;styles/logo/alpiq-logo.svg?sanitize=true&quot;&gt;
+&lt;div class=&quot;alpq-pos-end-center&quot;&gt;
+    &lt;img class=&quot;alpq-header-icon alpq-margin-left-xxl alpq-margin-right-m&quot; src=&quot;styles/icons/icon-menu-hamburger.svg?sanitize=true&quot;&gt;
+&lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alpq-accordion">
+                        <div class="alpq-accordion-header">
+                            <span class="alpq-accordion-title alpq-textSize-p ">Footers</span>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="alpq-accordion-content">
+
+                            <div class="alpq-bgColor-background alpq-padding-top-bottom-l">
+                                <div class="alpq-footer alpq-margin-top-bottom-l">Alpiq Holding AG all rigths reserved 2020,
+                                    <a href="#"> privacy policy</a>
+                                </div>
+
+
+                                <pre><code class="language-html">&lt;div class=&quot;alpq-footer alpq-position-absolute &quot;&gt;Alpiq Holding AG all rigths reserved 2020,
+    &lt;a href=&quot;#&quot;&gt; privacy policy&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+                            </div>
+
+                            <div class="alpq-padding-top-bottom-l">
+                                <div class="alpq-footer alpq-margin-top-bottom-l alpq-bgColor-background ">Alpiq Holding AG all rigths reserved 2020,
+                                    <a href="#"> privacy policy</a>
+                                </div>
+
+
+                                <pre><code class="language-html">&lt;div class=&quot;alpq-footer alpq-position-absolute alpq-bgColor-background&quot;&gt;Alpiq Holding AG all rigths reserved 2020,
+    &lt;a href=&quot;#&quot;&gt; privacy policy&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alpq-accordion">
+                        <div class="alpq-accordion-header">
+                            <span class="alpq-accordion-title alpq-textSize-p ">Sidebar</span>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="alpq-accordion-content">
+
+                            <!-- Sidebar main menu -->
+                            <div class="alpq-main-sidebar">
+                                <a href="#">
+                                    <div class="alpq-main-sidebar-item alpq-pos-column alpq-active">
+                                        <img class="" src="styles/icons/home.svg?sanitize=true">
+                                        <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Home</div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="alpq-main-sidebar-item alpq-pos-column">
+                                        <img class="" src="styles/icons/atoms.svg?sanitize=true">
+                                        <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Atoms</div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="alpq-main-sidebar-item alpq-pos-column">
+                                        <img class="" src="styles/icons/molecules.svg?sanitize=true">
+                                        <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Molecules</div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="alpq-main-sidebar-item alpq-pos-column">
+                                        <img class="" src="styles/icons/organism.svg?sanitize=true">
+                                        <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Organisms</div>
+                                    </div>
+                                </a>
+                                <a class="#">
+                                    <div class="alpq-main-sidebar-item alpq-pos-column">
+                                        <img class="" src="styles/icons/templates.svg?sanitize=true">
+                                        <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Templates</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <pre><code class="language-html">&lt;div class=&quot;alpq-main-sidebar alpq-pos-fixed&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+        &lt;div class=&quot;alpq-main-sidebar-item alpq-pos-column alpq-active&quot;&gt;
+            &lt;img class=&quot;&quot; src=&quot;styles/icons/home.svg?sanitize=true&quot;&gt;
+            &lt;div class=&quot;alpq-textSize-sidebar alpq-margin-left-right-s&quot;&gt;Home&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;
+        &lt;div class=&quot;alpq-main-sidebar-item alpq-pos-column&quot;&gt;
+            &lt;img class=&quot;&quot; src=&quot;styles/icons/atoms.svg?sanitize=true&quot;&gt;
+            &lt;div class=&quot;alpq-textSize-sidebar alpq-margin-left-right-s&quot;&gt;Atoms&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;
+        &lt;div class=&quot;alpq-main-sidebar-item alpq-pos-column&quot;&gt;
+            &lt;img class=&quot;&quot; src=&quot;styles/icons/molecules.svg?sanitize=true&quot;&gt;
+            &lt;div class=&quot;alpq-textSize-sidebar alpq-margin-left-right-s&quot;&gt;Molecules&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;
+        &lt;div class=&quot;alpq-main-sidebar-item alpq-pos-column&quot;&gt;
+            &lt;img class=&quot;&quot; src=&quot;styles/icons/organism.svg?sanitize=true&quot;&gt;
+            &lt;div class=&quot;alpq-textSize-sidebar alpq-margin-left-right-s&quot;&gt;Organisms&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;#&quot;&gt;
+        &lt;div class=&quot;alpq-main-sidebar-item alpq-pos-column&quot;&gt;
+            &lt;img class=&quot;&quot; src=&quot;styles/icons/templates.svg?sanitize=true&quot;&gt;
+            &lt;div class=&quot;alpq-textSize-sidebar alpq-margin-left-right-s&quot;&gt;Templates&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+                        </div>
+                    </div>
+
+
+                    <div class="alpq-accordion">
+                        <div class="alpq-accordion-header">
+                            <span class="alpq-accordion-title alpq-textSize-p ">Corporative Sidebar</span>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="alpq-accordion-content">
+
+                            <!-- Sidebar corporative menu -->
+                            <div class="alpq-corporative-menu alpq-corporative-menu-toggle">
+                                <div class="alpq-corporative-menu-item">ernesto.perezaraque@alpiq.com</div>
+                                <div class="alpq-corporative-menu-divider">Account management</div>
+                                <div class="alpq-corporative-menu-item">
+                                    <i class="far fa-user-circle"></i> User profile</div>
+                                <div class="alpq-corporative-menu-item">
+                                    <i class="far fa-envelope"></i> Messages</div>
+                                <div class="alpq-corporative-menu-divider">Alpiq software suite</div>
+                                <div class="alpq-corporative-menu-item">
+                                    <img src="styles/icons/icon-apollo.svg?sanitize=true">Apollo</div>
+                                <div class="alpq-corporative-menu-item">
+                                    <img src="styles/icons/icon-iqube.svg?sanitize=true">
+                                    </i>IQ-ube</div>
+                                <div class="alpq-corporative-menu-item">
+                                    <img src="styles/icons/icon-eutportal.svg?sanitize=true">
+                                    </i>EUT Portal</div>
+                                <div class="alpq-corporative-menu-divider">More functionalities</div>
+                                <div class="alpq-corporative-menu-item">Item 2</div>
+                                <div class="alpq-corporative-menu-item">Item 3</div>
+                                <div class="alpq-corporative-menu-item">Item 2</div>
+                                <div class="alpq-corporative-menu-item">Item 3</div>
+                                <div class="alpq-corporative-menu-logut">Log out</div>
+                            </div>
+
+                            <pre><code class="language-html">&lt;div class=&quot;alpq-corporative-menu alpq-pos-fixed alpq-corporative-menu-toggle&quot;&gt;
+    &lt;div class=&quot;alpq-corporative-menu-item&quot;&gt;ernesto.perezaraque@alpiq.com&lt;/div&gt;
+    &lt;div class=&quot;alpq-corporative-menu-divider&quot;&gt;Account management&lt;/div&gt;
+    &lt;div class=&quot;alpq-corporative-menu-item&quot;&gt;
+        &lt;i class=&quot;far fa-user-circle&quot;&gt;&lt;/i&gt; User profile&lt;/div&gt;
+    &lt;div class=&quot;alpq-corporative-menu-item&quot;&gt;
+        &lt;i class=&quot;far fa-envelope&quot;&gt;&lt;/i&gt; Messages&lt;/div&gt;
+    &lt;div class=&quot;alpq-corporative-menu-divider&quot;&gt;Alpiq software suite&lt;/div&gt;
+    &lt;div class=&quot;alpq-corporative-menu-item&quot;&gt;
+        &lt;img src=&quot;styles/icons/icon-apollo.svg?sanitize=true&quot;&gt;Apollo&lt;/div&gt;
+    &lt;div class=&quot;alpq-corporative-menu-item&quot;&gt;
+        &lt;img src=&quot;styles/icons/icon-iqube.svg?sanitize=true&quot;&gt;
+        &lt;/i&gt;IQ-ube&lt;/div&gt;
+    &lt;div class=&quot;alpq-corporative-menu-item&quot;&gt;
+        &lt;img src=&quot;styles/icons/icon-eutportal.svg?sanitize=true&quot;&gt;
+        &lt;/i&gt;EUT Portal&lt;/div&gt;
+    &lt;div class=&quot;alpq-corporative-menu-divider&quot;&gt;More functionalities&lt;/div&gt;
+    &lt;div class=&quot;alpq-corporative-menu-item&quot;&gt;Item 2&lt;/div&gt;
+    &lt;div class=&quot;alpq-corporative-menu-item&quot;&gt;Item 3&lt;/div&gt;
+    &lt;div class=&quot;alpq-corporative-menu-item&quot;&gt;Item 2&lt;/div&gt;
+    &lt;div class=&quot;alpq-corporative-menu-item&quot;&gt;Item 3&lt;/div&gt;
+    &lt;div class=&quot;alpq-corporative-menu-logut alpq-pos-fixed &quot;&gt;Log out&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alpq-bgColor-contrast alpq-margin-m alpq-borderRadius alpq-bgShadow">
+                    <p class="alpq-textSize-H3 alpq-pos-start-center alpq-padding-m">Elements</p>
+                    <div class="alpq-accordion">
+                        <div class="alpq-accordion-header">
+                            <span class="alpq-accordion-title alpq-textSize-p ">Modals</span>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="alpq-accordion-content">
+                            <div class="alpq-iner-container">
+                                Work in progress
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="alpq-footer alpq-position-absolute">Alpiq Holding AG all rigths reserved 2020,
+                <a href="#"> privacy policy</a>
+            </div>
+        </div>
+    </div>
+    <script src="./styles/js/functions.js"></script>
+    <script src="https://kit.fontawesome.com/2dfcb74320.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+</body>
+
+</html>
