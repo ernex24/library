@@ -1,0 +1,107 @@
+.alpq-toggle-btn-primary{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.alpq-toggle-label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 50px;
+	height: 25px;
+	background: var(--alpq-color-inactive);
+	display: block;
+	border-radius: 100px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.alpq-toggle-label:after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 21px;
+	height: 21px;
+	background: var(--alpq-color-primary);
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+.alpq-toggle-btn-primary:checked + .alpq-toggle-label {
+    background: var(--alpq-color-link);
+    transition: 0.3s;
+}
+
+.alpq-toggle-btn-primary:checked + .alpq-toggle-label:after {
+	left: calc(100% - 2px);
+	transform: translateX(-100%);
+}
+
+.alpq-toggle-btn-primary:active:after {
+	width: 130px;
+}
+
+
+
+.alpq-toggle-btn-warning{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.alpq-toggle-btn-warning:checked + .alpq-toggle-label {
+    background: var(--alpq-color-secondary);
+    transition: 0.3s;
+}
+
+.alpq-toggle-btn-warning:checked + .alpq-toggle-label:after {
+	left: calc(100% - 2px);
+	transform: translateX(-100%);
+}
+
+.alpq-toggle-btn-warning:active:after {
+	width: 130px;
+}
+
+
+.alpq-toggle-btn-error{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.alpq-toggle-btn-error:checked + .alpq-toggle-label {
+    background: var(--alpq-color-error);
+    transition: 0.3s;
+}
+
+.alpq-toggle-btn-error:checked + .alpq-toggle-label:after {
+	left: calc(100% - 2px);
+	transform: translateX(-100%);
+}
+
+.alpq-toggle-btn-error:active:after {
+	width: 130px;
+}
+
+
+.alpq-toggle-btn-success{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.alpq-toggle-btn-success:checked + .alpq-toggle-label {
+    background: var(--alpq-color-success);
+    transition: 0.3s;
+}
+
+.alpq-toggle-btn-success:checked + .alpq-toggle-label:after {
+	left: calc(100% - 2px);
+	transform: translateX(-100%);
+}
+
+.alpq-toggle-btn-success:active:after {
+	width: 130px;
+}
