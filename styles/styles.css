@@ -576,7 +576,8 @@ textarea,
 a {
   color: var(--alpq-font-color-link) !important;
   -webkit-transition: var(--alpq-transition);
-  transition: var(--alpq-transition); }
+  transition: var(--alpq-transition);
+  text-decoration: none !important; }
 
 a:hover {
   color: var(--alpq-font-color-link-hover) !important;
@@ -2198,4 +2199,5 @@ div[class~=alertBox] > i {
 [tooltip][flow^="right"]:hover::after {
   -webkit-animation: tooltips-horz 300ms ease-out forwards;
           animation: tooltips-horz 300ms ease-out forwards; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -29,7 +29,7 @@ for (i = 0; i < x.length; i++) {
     create a new DIV that will act as an option item:*/
 		c = document.createElement('DIV');
 		c.innerHTML = selElmnt.options[j].innerHTML;
-		c.addEventListener('click', function(e) {
+		c.addEventListener('click', function (e) {
 			/*when an item is clicked, update the original select box,
       and the selected item:*/
 			var y, i, k, s, h;
@@ -52,7 +52,7 @@ for (i = 0; i < x.length; i++) {
 		b.appendChild(c);
 	}
 	x[i].appendChild(b);
-	a.addEventListener('click', function(e) {
+	a.addEventListener('click', function (e) {
 		/*when the select box is clicked, close any other select boxes,
     and open/close the current select box:*/
 		e.stopPropagation();
@@ -111,23 +111,66 @@ accordion.forEach((e) => {
 	this.addEventListener('click', openAccordion);
 });
 
-// change colors
+// change colors dark mode
 
 const darkmodeHandler = () => {
-	document.documentElement.style.setProperty('--alpq-color-contrast', '#353535');
-	document.documentElement.style.setProperty('--alpq-color-background', '#2d2d2d');
-	document.documentElement.style.setProperty('--alpq-font-color-primary', '#eaeaea');
-	document.documentElement.style.setProperty('--alpq-color-highlight', '#303d42');
-	document.documentElement.style.setProperty('--alpq-shadow-s', '0 0 16px rgba(0, 0, 0, 0.3)');
+	showDark = !showDark
+	if (showDark === true) {
+		window.localStorage.setItem('dark-theme', 'true');
+	} else {
+		window.localStorage.setItem('dark-theme', 'false');
+	}
+	darkmodeListener();
+}
 
-	sidebar = document.querySelectorAll('.alpq-main-sidebar > a > div > img');
-	sidebar.forEach(() => {
-		sidebar;
-		sidebar.forEach((i) => {
-			i.style.filter = 'grayscale(1) invert(1)';
+window.addEventListener('DOMContentLoaded', () => {
+	darkmodeListener();
+});
+
+const darkmodeListener = () => {
+	data = localStorage.getItem('dark-theme');
+
+	console.log(data)
+
+	if (data === 'true') {
+
+		console.log('true')
+
+		document.documentElement.style.setProperty('--alpq-color-contrast', '#353535');
+		document.documentElement.style.setProperty('--alpq-color-background', '#2d2d2d');
+		document.documentElement.style.setProperty('--alpq-font-color-primary', '#eaeaea');
+		document.documentElement.style.setProperty('--alpq-color-highlight', '#303d42');
+		document.documentElement.style.setProperty('--alpq-shadow-s', '0 0 16px rgba(0, 0, 0, 0.3)');
+
+		sidebar = document.querySelectorAll('.alpq-main-sidebar > a > div > img');
+		sidebar.forEach(() => {
+			sidebar;
+			sidebar.forEach((i) => {
+				i.style.filter = 'grayscale(1) invert(1)';
+			});
 		});
-	});
-};
+
+	} else {
+
+		document.documentElement.style.setProperty('--alpq-color-contrast', '');
+		document.documentElement.style.setProperty('--alpq-color-background', '');
+		document.documentElement.style.setProperty('--alpq-font-color-primary', '');
+		document.documentElement.style.setProperty('--alpq-color-highlight', '');
+		document.documentElement.style.setProperty('--alpq-shadow-s', '');
+
+		sidebar = document.querySelectorAll('.alpq-main-sidebar > a > div > img');
+		sidebar.forEach(() => {
+			sidebar;
+			sidebar.forEach((i) => {
+				i.style.filter = 'grayscale(0) invert(0)';
+			});
+		});
+
+
+	}
+}
+
+let showDark = false
 
 const color = document.querySelector('.selectedcolor');
 
