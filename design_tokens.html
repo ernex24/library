@@ -21,11 +21,11 @@
             <nav id="menu" class="alpq-header alpq-pos-fixed alpq-dist-hor-spaceBetween alpq-pos-vert-center">
                 <img class="alpq-margin-m alpq-header-logo" src="styles/logo/alpiq-logo.svg?sanitize=true">
                 <div class="alpq-pos-end-center">
-                    <img class="alpq-margin-s" src="styles/icons/icon-global.svg?sanitize=true">
+                    <span class="icon-global alpq-margin-right-s"></span>
                     <div class="alpq-textColor-contrast">GLobal, English
-                        <i class="fas fa-angle-down alpq-margin-left-right-s"></i>
+                        <span class="icon-carat-down-contrast alpq-margin-left-right-xs"></span>
                     </div>
-                    <img onclick="toggleCorporativeMenu()" class="alpq-header-icon alpq-margin-left-xxl alpq-margin-right-m" src="styles/icons/icon-menu-hamburger.svg?sanitize=true">
+                    <span onclick="toggleCorporativeMenu()" class="icon-menu-hamburger alpq-margin-left-m alpq-margin-right-l"></span>
                 </div>
             </nav>
 
@@ -33,40 +33,40 @@
             <div class="alpq-main-sidebar alpq-pos-fixed">
                 <a href="index.html">
                     <div class="alpq-main-sidebar-item alpq-pos-column">
-                        <img class="" src="styles/icons/home.svg?sanitize=true">
+                        <span class="icon-home"></span>
                         <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Home</div>
                     </div>
                 </a>
                 <a href="atoms.html">
                     <div class="alpq-main-sidebar-item alpq-pos-column">
-                        <img class="" src="styles/icons/atoms.svg?sanitize=true">
+                            <span class="icon-atoms"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
                         <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Atoms</div>
                     </div>
                 </a>
                 <a href="molecules.html">
                     <div class="alpq-main-sidebar-item alpq-pos-column">
-                        <img class="" src="styles/icons/molecules.svg?sanitize=true">
+                            <span class="icon-molecules"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span></span>
                         <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Molecules</div>
                     </div>
                 </a>
                 <a href="organism.html">
                     <div class="alpq-main-sidebar-item alpq-pos-column ">
-                        <img class="" src="styles/icons/organism.svg?sanitize=true">
+                            <span class="icon-organism"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span><span class="path21"></span><span class="path22"></span><span class="path23"></span><span class="path24"></span><span class="path25"></span><span class="path26"></span><span class="path27"></span><span class="path28"></span><span class="path29"></span><span class="path30"></span><span class="path31"></span><span class="path32"></span><span class="path33"></span><span class="path34"></span><span class="path35"></span><span class="path36"></span><span class="path37"></span><span class="path38"></span><span class="path39"></span><span class="path40"></span><span class="path41"></span></span>
                         <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Organisms</div>
                     </div>
                 </a>
                 <a href="templates.html">
-                <div class="alpq-main-sidebar-item alpq-pos-column">
-                    <img class="" src="styles/icons/templates.svg?sanitize=true">
-                    <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Templates</div>
-                </div>
-            </a>
+                    <div class="alpq-main-sidebar-item alpq-pos-column">
+                            <span  class="icon-templates"></span>
+                        <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Templates</div>
+                    </div>
+                </a>
                 <a href="design_tokens.html">
-                        <div class="alpq-main-sidebar-item alpq-pos-column alpq-active">
-                            <img class="" src="styles/icons/design.svg?sanitize=true">
-                            <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Design Tokens</div>
-                        </div>
-                    </a>
+                    <div class="alpq-main-sidebar-item alpq-pos-column alpq-active">
+                            <span class="icon-design"></span>
+                        <div class="alpq-textSize-sidebar alpq-margin-left-right-s">Design Tokens</div>
+                    </div>
+                </a>
             </div>
 
             <!-- Sidebar corporative menu -->
@@ -97,12 +97,53 @@
                 <p class="alpq-textSize-p alpq-pos-start-center alpq-margin-left-m">Whitelabeling the apps</p>
 
                 <!-- Card container -->
-                <div class="alpq-bgColor-contrast alpq-margin-m alpq-borderRadius alpq-bgShadow alpq-padding-m">
-                    <p class="alpq-textSize-H3 alpq-pos-start-center alpq-padding-m">Brand variables</p>     
-                    
-                    <button class="alpq-btn-primary" onclick="darkmodeHandler()">Activate Dark Mode</button>
+                <div class="alpq-bgColor-contrast alpq-margin-m alpq-borderRadius alpq-bgShadow">
 
-                    <input class="selectedcolor" type="color">
+                    <p class="alpq-textSize-H3 alpq-pos-start-center alpq-padding-m">Design tokens</p>
+
+                    <div class="alpq-accordion">
+                        <div class="alpq-accordion-header">
+
+                            <span class="alpq-accordion-title alpq-textSize-p ">Dark Mode</span>
+                            
+                            <span class="icon-carat-down-primary alpq-textColor-primary alpq-margin-left-right-xs"></span>
+                        </div>
+                        <div class="alpq-accordion-content">
+                                <button class="alpq-btn-primary" onclick="darkmodeHandler()">Activate Dark Mode</button>
+                        </div>
+                    </div>
+
+
+                    <div class="alpq-accordion">
+                        <div class="alpq-accordion-header">
+                            <span class="alpq-accordion-title alpq-textSize-p ">White-labeling</span>
+                            <span class="icon-carat-down-primary alpq-textColor-primary alpq-margin-left-right-xs"></span>
+                        </div>
+                        <div class="alpq-accordion-content">
+
+                            <div class="alpq-iner-container">
+                                <div class="alpq-selector">
+
+                                    <select id="brandSelector" onchange="brandSelector()">
+                                        <option>Select Value</option>
+                                        <option value="alpiq">Alpiq</option>
+                                        <option value="mercedesBenz">Mercedes-Benz</option>
+                                        <option value="porsche">Porsche</option>
+                                        <option value="audi">Audi</option>
+                                        <option value="bmw">BMW</option>
+                                    </select>
+
+                                    
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
 
                 </div>
 

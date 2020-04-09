@@ -234,10 +234,10 @@
   .select-selected {
     color: var(--alpq-color-primary);
     padding: 11px 16px;
-    border: 1px solid var(--alpq-color-primary);
+    border: var(--alpq-borderwidth) solid var(--alpq-color-primary);
     border-color: var(--alpq-color-primary);
     cursor: pointer;
-    border-radius: $borderadius; 
+    border-radius: var(--alpq-borderadius); 
   }
   
   /* Style items (options): */
@@ -248,10 +248,10 @@
     left: 0;
     right: 0;
     z-index: 1;
-    border-left: var(--alpq-borderwidth) solid $primary;
-    border-right: var(--alpq-borderwidth) solid $primary;
-    border-bottom: var(--alpq-borderwidth) solid $primary;
-    border-radius: 0 0 $borderadius $borderadius;
+    border-left: var(--alpq-borderwidth) solid var(--alpq-color-primary);
+    border-right: var(--alpq-borderwidth) solid var(--alpq-color-primary);
+    border-bottom: var(--alpq-borderwidth) solid var(--alpq-color-primary);
+    border-radius: 0 0 var(--alpq-borderadius) var(--alpq-borderadius);
   }
   
   /* Hide the items when the select box is closed: */

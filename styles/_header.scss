@@ -1,9 +1,10 @@
 .alpq-header{
-    @extend .alpq-bgColor-primary;
+    background-color: var(--alpq-color-primary);
     width: 100%;
     height: var(--alpq-space-xxxxl);
     top: 0;
     z-index: 10;
+    box-shadow: var(--alpq-shadow-s);
 }
 
 .alpq-header-logo{

@@ -1,0 +1,78 @@
+{
+    "logo": {
+        "url": "styles/logo/mercedes-benz.svg"
+    },
+    "colors": {
+        "primary": "#000000",
+        "secondary": "#00ADEF",
+        "contrast": "#ffffff",
+        "background": "#f2f4f5",
+        "inactive": "#eeeeee",
+        "$H4": "#666058",
+        "highlight": "#00ADEF",
+        "link": "#00ADEF",
+        "linkHover": "#00ADEF",
+        "Error": "#de592e",
+        "success": "#99cc51",
+        "helper": "#00ADEF"
+    },
+    "fontColors": {
+        "primary": "#000000",
+        "secondary": "#00ADEF",
+        "contrast": "#ffffff",
+        "background": "#f2f4f5",
+        "inactive": "#eeeeee",
+        "$H4": "#666058",
+        "highlight": "#b2d8e8",
+        "link": "#000000",
+        "linkHover": "#00ADEF",
+        "Error": "#de592e",
+        "success": "#99cc51",
+        "helper": "#999999"
+    },
+    "fonts": {
+        "primaryRegular": {
+            "fontFamily": "primaryBook",
+            "url": "./fonts/vistaSansBold.woff"
+        },
+        "primaryBold": {
+            "fontFamily": "primaryBold",
+            "url": "./fonts/vistaSansBold.woff"
+        },
+        "secondaryRegular": {
+            "fontFamily": "secondaryLight",
+            "url": "./fonts/vistaSansBold.woff"
+        },
+        "secondaryBold": {
+            "fontFamily": "secondaryBold",
+            "url": "./fonts/vistaSansBold.woff"
+        }
+    },
+    "fontSize": {
+        "fontSizeXs": "8px",
+        "fontSizeS": "12px",
+        "fontSizeM": "16px",
+        "fontSizeL": "24px",
+        "fontSizeXl": "32px",
+        "fontSizeXxl": "64px"
+    },
+    "spacing": {
+        "spaceXs": "4px",
+        "spaceS": "8px",
+        "spaceM": "16px",
+        "spaceL": "24px",
+        "spaceXl": "32px",
+        "spaceXxl": "40px",
+        "spaceXxxl": "48px",
+        "spaceXxxxl": "56px",
+        "spaceXxxxxl": "64px"
+    },
+    "shadows": {
+        "shadowS": "0 0 16px rgba(0, 0, 0, 0.1)",
+        "shadowL": "0 16px 24px -.5em rgba(0, 0, 0, 0.35)"
+    },
+    "border": {
+        "borderadius": "0",
+        "borderwidth": "1px"
+    }
+}
