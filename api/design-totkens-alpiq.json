@@ -33,19 +33,19 @@
     "fonts": {
         "primaryRegular": {
             "fontFamily": "primaryBook",
-            "url": "./fonts/vistaSansBold.woff"
+            "url": "styles/fonts/vistaSansBook.woff"
         },
         "primaryBold": {
             "fontFamily": "primaryBold",
-            "url": "./fonts/vistaSansBold.woff"
+            "url": "styles/fonts/vistaSansBold.woff"
         },
         "secondaryRegular": {
             "fontFamily": "secondaryLight",
-            "url": "./fonts/vistaSansBold.woff"
+            "url": "styles/fonts/vistaSlabLigth.woff2"
         },
         "secondaryBold": {
             "fontFamily": "secondaryBold",
-            "url": "./fonts/vistaSansBold.woff"
+            "url": "styles/fonts/vistaSlabBook.woff"
         }
     },
     "fontSize": {

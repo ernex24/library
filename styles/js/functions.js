@@ -187,6 +187,7 @@ const designTokens = () => {
 
 				// Background color
 
+
 				document.documentElement.style.setProperty('--alpq-color-primary', brand.colors.primary);
 				document.documentElement.style.setProperty('--alpq-color-contrast', brand.colors.contrast);
 				document.documentElement.style.setProperty('--alpq-color-secondary', brand.colors.secondary);
@@ -219,13 +220,79 @@ const designTokens = () => {
 				//Logo
 				document.querySelector('.alpq-header-logo').src = brand.logo.url
 
+				//Adding font
+
+				var newStyle = document.createElement('style');
+				newStyle.setAttribute('data-name', 'font-changer');
+
+				newStyle.appendChild(document.createTextNode("\
+					@font-face {\
+						font-family: " + brand.fonts.primaryRegular.fontFamily + ";\
+						src: url('" + brand.fonts.primaryRegular.url + "') format('truetype');\
+					}\
+					\
+					@font-face {\
+						font-family: " + brand.fonts.primaryBold.fontFamily + ";\
+						src: url('" + brand.fonts.primaryBold.url + "') format('truetype');\
+					}\
+					\
+					@font-face {\
+						font-family: " + brand.fonts.secondaryRegular.fontFamily + ";\
+						src: url('" + brand.fonts.secondaryRegular.url + "') format('truetype');\
+					}\
+					\
+					@font-face {\
+						font-family: " + brand.fonts.secondaryBold.fontFamily + ";\
+						src: url('" + brand.fonts.secondaryBold.url + "') format('truetype');\
+					}\
+				"));
+
+				document.head.appendChild(newStyle);
+
+				var element = document.querySelectorAll('style[data-name="font-changer"]');
+				console.log(element)
+				if(element.length === 3){
+					element.forEach( item => item.parentNode.removeChild(item) )
+				}
+				
+
+				// var primaryBook_font = new FontFace('primaryBook', 'url(' + brand.fonts.primaryRegular.url + ')');
+				// primaryBook_font.load().then(function (loaded_face) {
+				// 	document.fonts.add(loaded_face);
+				// 	document.body.style.fontFamily = '"primaryBook", Arial';
+				// }).catch(function (error) {
+				// 	console.error(error)
+				// });
+
+				// var primaryBold_font = new FontFace('primaryBold', 'url(' + brand.fonts.primaryBold.url + ')');
+				// primaryBold_font.load().then(function (loaded_face) {
+				// 	document.fonts.add(loaded_face);
+				// 	document.body.style.fontFamily = '"primaryBold", Arial';
+				// }).catch(function (error) {
+				// 	console.error(error)
+				// });
+
+				// var secondaryLight_font = new FontFace('secondaryLight', 'url(' + brand.fonts.secondaryRegular.url + ')');
+				// secondaryLight_font.load().then(function (loaded_face) {
+				// 	document.fonts.add(loaded_face);
+				// 	document.body.style.fontFamily = '"secondaryLight", Arial';
+				// }).catch(function (error) {
+				// 	console.error(error)
+				// });
+
+				// var secondaryBold_font = new FontFace('secondaryBold', 'url(' + brand.fonts.secondaryBold.url + ')');
+				// secondaryBold_font.load().then(function (loaded_face) {
+				// 	document.fonts.add(loaded_face);
+				// 	document.body.style.fontFamily = '"secondaryBold", Arial';
+				// }).catch(function (error) {
+				// 	console.error(error)
+				// });
+
 				if (brand.colors.primary === '#000') {
-					
+
 					document.querySelector('.alpq-header').style.backgroundColor = '#ffffff';
 					document.documentElement.style.setProperty('--alpq-font-color-contrast', brand.fontColors.primary);
-
 					document.querySelector('.alpq-header-icon').style.filter = 'grayscale(1)';
-					
 					sidebar = document.querySelectorAll('.alpq-main-sidebar > a > div > img');
 					sidebar.forEach(() => {
 						sidebar;
@@ -234,11 +301,9 @@ const designTokens = () => {
 						});
 					});
 
-				} else{
+				} else {
 					document.querySelector('.alpq-header').style.backgroundColor = brand.colors.primary;
-
 					document.querySelector('.alpq-header-icon').style.filter = 'grayscale(0)';
-
 					sidebar = document.querySelectorAll('.alpq-main-sidebar > a > div > img');
 					sidebar.forEach(() => {
 						sidebar;
@@ -246,16 +311,17 @@ const designTokens = () => {
 							i.style.filter = 'grayscale(0)';
 						});
 					});
-
 				}
 
 				sidebar = document.querySelectorAll('.alpq-main-sidebar > a > div > img');
-					sidebar.forEach(() => {
-						sidebar;
-						sidebar.forEach((i) => {
-							i.style.filter = 'grayscale(1)';
-						});
+				sidebar.forEach(() => {
+					sidebar;
+					sidebar.forEach((i) => {
+						i.style.filter = 'grayscale(1)';
 					});
+				});
+
+
 
 			}).catch(err => {
 				// There was an error

@@ -53,21 +53,21 @@ $transition: all 0.5s;
 /* Fonts */
 
 @font-face {
-    font-family: "primaryBold";
-    src: local(primaryBold), //   url("./fonts/vistaSansBold.woff2") format("woff2"),
-    url("./fonts/vistaSansBold.woff") format("woff");
-    //   url("./fonts/vistaSansBold.ttf") format("truetype");
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-}
-
-@font-face {
     font-family: "primaryBook";
     src: local(primaryBook), //   url("./fonts/vistaSansBook.woff2") format("woff2"),
     url("./fonts/vistaSansBook.woff") format("woff");
     //   url("./fonts/vistaSansBook.ttf") format("truetype");
     font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "primaryBold";
+    src: local(primaryBold), //   url("./fonts/vistaSansBold.woff2") format("woff2"),
+    url("./fonts/vistaSansBold.woff") format("woff");
+    //   url("./fonts/vistaSansBold.ttf") format("truetype");
+    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
 }

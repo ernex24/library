@@ -70,3 +70,7 @@ code, kbd, samp {
     font-family: monospace, monospace;
     font-size: 12px;
 }
+
+.select-selected{
+    margin-bottom: 250px;
+}
