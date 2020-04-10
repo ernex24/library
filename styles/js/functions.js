@@ -177,7 +177,7 @@ const designTokens = () => {
 	const vare = select.addEventListener('click', () => {
 		const sa = select.innerHTML.toLowerCase()
 
-		fetch('/api/design-totkens-' + sa + '.json')
+		fetch('api/design-totkens-' + sa + '.json')
 			.then(res => {
 				return res.json()
 			}).then(json => {
