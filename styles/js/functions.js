@@ -138,11 +138,37 @@ const darkmodeListener = () => {
 	console.log(data)
 	if (data === 'true') {
 		console.log('true')
-		document.documentElement.style.setProperty('--alpq-color-contrast', '#353535');
-		document.documentElement.style.setProperty('--alpq-color-background', '#2d2d2d');
-		document.documentElement.style.setProperty('--alpq-font-color-primary', '#eaeaea');
-		document.documentElement.style.setProperty('--alpq-color-highlight', '#303d42');
-		document.documentElement.style.setProperty('--alpq-shadow-s', '0 0 16px rgba(0, 0, 0, 0.3)');
+		const setStyle = document.documentElement.style;
+		
+		setStyle.setProperty('--alpq-color-contrast', '#353535');
+		setStyle.setProperty('--alpq-color-background', '#2d2d2d');
+		setStyle.setProperty('--alpq-font-color-primary', '#eaeaea');
+		setStyle.setProperty('--alpq-color-highlight', '#303d42');
+		setStyle.setProperty('--alpq-shadow-s', '0 0 16px rgba(0, 0, 0, 0.3)');
+
+		setStyle.setProperty('--alpq-font-color-primary', '#ffffff');
+
+		setStyle.setProperty('--alpq-font-color-highlight', '#ffffff');
+		setStyle.setProperty('--alpq-font-color-helper', '#ffffff');
+
+		setStyle.setProperty('--alpq-font-color-h1', '#ffffff');
+		setStyle.setProperty('--alpq-font-color-h2', '#ffffff');
+		setStyle.setProperty('--alpq-font-color-h3', '#ffffff');
+		setStyle.setProperty('--alpq-font-color-h4', '#ffffff');
+		setStyle.setProperty('--alpq-font-color-p', '#ffffff');
+		setStyle.setProperty('--alpq-font-color-pbold', '#ffffff');
+		setStyle.setProperty('--alpq-font-color-description', '#ffffff');
+		setStyle.setProperty('--alpq-font-color-description-bold', '#ffffff');
+		setStyle.setProperty('--alpq-font-color-sidebar', '#ffffff');
+		setStyle.setProperty('--alpq-font-color-placeholder', '#ffffff');
+		setStyle.setProperty('--alpq-font-color-label', '#ffffff');
+		setStyle.setProperty('--alpq-font-color-link', '#ffffff');
+		setStyle.setProperty('--alpq-font-color-linkhover', '#ffffff');
+		setStyle.setProperty(' --alpq-font-color-contrast', '#ffffff');
+		setStyle.setProperty('--alpq-font-color-warning', '#f3b229');
+		setStyle.setProperty('--alpq-font-color-error', '#de592e');
+		setStyle.setProperty('--alpq-font-color-success','#99cc51');
+
 		sidebar = document.querySelectorAll('.alpq-main-sidebar > a > div > img');
 		sidebar.forEach(() => {
 			sidebar;
@@ -207,18 +233,11 @@ const designTokens = (brand) => {
 
 				// Font Colors
 				setStyle.setProperty('--alpq-font-color-primary', brand.fontColors.primary);
-			
 				setStyle.setProperty('--alpq-font-color-secondary', brand.fontColors.secondary);
 				setStyle.setProperty('--alpq-font-color-highlight', brand.fontColors.highlight);
-				setStyle.setProperty('--alpq-font-color-warning', brand.fontColors.warning);
-				setStyle.setProperty('--alpq-font-color-error', brand.fontColors.error);
-				setStyle.setProperty('--alpq-font-color-success', brand.fontColors.success);
-	
 				setStyle.setProperty('--alpq-font-color-helper', brand.fontColors.helper);
-	
 				setStyle.setProperty('--alpq-font-color-inactive', brand.fontColors.inactive);
-				setStyle.setProperty('--alpq-font-color-background', brand.fontColors.background);
-				
+				setStyle.setProperty('--alpq-font-color-background', brand.fontColors.background);	
 				setStyle.setProperty('--alpq-font-color-h1', brand.fontColors.h1);
 				setStyle.setProperty('--alpq-font-color-h2', brand.fontColors.h2);
 				setStyle.setProperty('--alpq-font-color-h3', brand.fontColors.h3);
@@ -231,7 +250,6 @@ const designTokens = (brand) => {
 				setStyle.setProperty('--alpq-font-color-placeholder', brand.fontColors.placeholder);
 				setStyle.setProperty('--alpq-font-color-label', brand.fontColors.label);
 				setStyle.setProperty('--alpq-font-color-link', brand.fontColors.link);
-
 				setStyle.setProperty('--alpq-font-color-linkhover', brand.fontColors.linkHover);
 				setStyle.setProperty(' --alpq-font-color-contrast', brand.fontColors.contrast);
 				setStyle.setProperty('--alpq-font-color-warning', brand.fontColors.warning);
@@ -276,31 +294,6 @@ const designTokens = (brand) => {
 				"));
 
 				document.head.appendChild(newStyle);
-
-				// if (brand.colors.primary === '#000') {
-
-				// 	document.querySelector('.alpq-header').style.backgroundColor = '#ffffff';
-				// 	document.documentElement.style.setProperty('--alpq-font-color-contrast', brand.fontColors.primary);
-				// 	document.querySelector('.alpq-header-icon').style.filter = 'grayscale(1)';
-				// 	sidebar = document.querySelectorAll('.alpq-main-sidebar > a > div > img');
-				// 	sidebar.forEach(() => {
-				// 		sidebar;
-				// 		sidebar.forEach((i) => {
-				// 			i.style.filter = 'grayscale(1)';
-				// 		});
-				// 	});
-
-				// } else {
-				// 	document.querySelector('.alpq-header').style.backgroundColor = brand.colors.primary;
-				// 	document.querySelector('.alpq-header-icon').style.filter = 'grayscale(0)';
-				// 	sidebar = document.querySelectorAll('.alpq-main-sidebar > a > div > img');
-				// 	sidebar.forEach(() => {
-				// 		sidebar;
-				// 		sidebar.forEach((i) => {
-				// 			i.style.filter = 'grayscale(0)';
-				// 		});
-				// 	});
-				// }
 
 				sidebar = document.querySelectorAll('.alpq-main-sidebar > a > div > img');
 				sidebar.forEach(() => {
