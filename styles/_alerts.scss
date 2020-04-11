@@ -19,9 +19,9 @@
 }
 
 .alpq-alertBox-error{
-    background-color: lighten($Error, 15%);
-    color: darken($Error, 30%);
-    border: var(--alpq-borderwidth) solid lighten($Error, 5%);
+    background-color: var(--alpq-color-error);
+    color: var(--alpq-color-error);
+    border: var(--alpq-borderwidth) solid var(--alpq-color-error);
     @extend .alpq-borderRadius;
     @extend .alpq-pos-center-center;
     height: var(--alpq-space-xxxxl);

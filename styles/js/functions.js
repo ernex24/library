@@ -117,6 +117,12 @@ accordion.forEach((e) => {
 
 // change colors dark mode
 
+window.addEventListener('DOMContentLoaded', () => {
+	designTokens();
+	darkmodeListener();
+});
+
+
 const darkmodeHandler = () => {
 	showDark = !showDark
 	if (showDark === true) {
@@ -126,12 +132,6 @@ const darkmodeHandler = () => {
 	}
 	darkmodeListener();
 }
-
-
-window.addEventListener('DOMContentLoaded', () => {
-	darkmodeListener();
-	designTokens();
-});
 
 const darkmodeListener = () => {
 	data = localStorage.getItem('dark-theme');
@@ -168,33 +168,31 @@ const darkmodeListener = () => {
 
 let showDark = false
 
+const designTokensHandler = (brand) => {
+	window.localStorage.setItem('brand', brand);
+	designTokens();
+}
 
+const designTokens = (brand) => {
 
-const designTokens = () => {
+	brand = localStorage.getItem('brand');
 
-	const select = document.querySelector(".select-selected");
-
-	const vare = select.addEventListener('click', () => {
-		const sa = select.innerHTML.toLowerCase()
-
-		fetch('api/design-totkens-' + sa + '.json')
+		fetch('api/design-totkens-' + brand + '.json')
 			.then(res => {
 				return res.json()
 			}).then(json => {
 
 				console.log('success!', json);
 				const brand = json
-
+				
 				// Background color
-
-
 				document.documentElement.style.setProperty('--alpq-color-primary', brand.colors.primary);
 				document.documentElement.style.setProperty('--alpq-color-contrast', brand.colors.contrast);
 				document.documentElement.style.setProperty('--alpq-color-secondary', brand.colors.secondary);
 				document.documentElement.style.setProperty('--alpq-color-highlight', brand.colors.highlight);
 				document.documentElement.style.setProperty('--alpq-color-error', brand.colors.error);
 				document.documentElement.style.setProperty('--alpq-color-success', brand.colors.success);
-				document.documentElement.style.setProperty('--alpq-color-H4', brand.colors.H4);
+				document.documentElement.style.setProperty('--alpq-color-h4', brand.colors.h4);
 				document.documentElement.style.setProperty('--alpq-color-link-hover', brand.colors.linkHover);
 				document.documentElement.style.setProperty('--alpq-color-helper', brand.colors.helper);
 				document.documentElement.style.setProperty('--alpq-color-link', brand.colors.link);
@@ -208,20 +206,24 @@ const designTokens = () => {
 				document.documentElement.style.setProperty('--alpq-font-color-highlight', brand.fontColors.highlight);
 				document.documentElement.style.setProperty('--alpq-font-color-error', brand.fontColors.error);
 				document.documentElement.style.setProperty('--alpq-font-color-success', brand.fontColors.success);
-				document.documentElement.style.setProperty('--alpq-font-color-H4', brand.fontColors.H4);
+				document.documentElement.style.setProperty('--alpq-font-color-h4', brand.fontColors.h4);
 				document.documentElement.style.setProperty('--alpq-font-color-link-hover', brand.fontColors.linkHover);
 				document.documentElement.style.setProperty('--alpq-font-color-helper', brand.fontColors.helper);
 				document.documentElement.style.setProperty('--alpq-font-color-link', brand.fontColors.link);
 				document.documentElement.style.setProperty('--alpq-font-color-inactive', brand.fontColors.inactive);
 				document.documentElement.style.setProperty('--alpq-font-color-background', brand.fontColors.background);
-
 				document.documentElement.style.setProperty('--alpq-borderadius', brand.border.borderadius);
 
 				//Logo
 				document.querySelector('.alpq-header-logo').src = brand.logo.url
 
-				//Adding font
+				var element = document.querySelectorAll('style[data-name="font-changer"]');
+				console.log(element)
+				if(element.length === 2){
+					element.forEach( item => item.parentNode.removeChild(item) )
+				}
 
+				//Fonts
 				var newStyle = document.createElement('style');
 				newStyle.setAttribute('data-name', 'font-changer');
 
@@ -248,45 +250,6 @@ const designTokens = () => {
 				"));
 
 				document.head.appendChild(newStyle);
-
-				var element = document.querySelectorAll('style[data-name="font-changer"]');
-				console.log(element)
-				if(element.length === 3){
-					element.forEach( item => item.parentNode.removeChild(item) )
-				}
-				
-
-				// var primaryBook_font = new FontFace('primaryBook', 'url(' + brand.fonts.primaryRegular.url + ')');
-				// primaryBook_font.load().then(function (loaded_face) {
-				// 	document.fonts.add(loaded_face);
-				// 	document.body.style.fontFamily = '"primaryBook", Arial';
-				// }).catch(function (error) {
-				// 	console.error(error)
-				// });
-
-				// var primaryBold_font = new FontFace('primaryBold', 'url(' + brand.fonts.primaryBold.url + ')');
-				// primaryBold_font.load().then(function (loaded_face) {
-				// 	document.fonts.add(loaded_face);
-				// 	document.body.style.fontFamily = '"primaryBold", Arial';
-				// }).catch(function (error) {
-				// 	console.error(error)
-				// });
-
-				// var secondaryLight_font = new FontFace('secondaryLight', 'url(' + brand.fonts.secondaryRegular.url + ')');
-				// secondaryLight_font.load().then(function (loaded_face) {
-				// 	document.fonts.add(loaded_face);
-				// 	document.body.style.fontFamily = '"secondaryLight", Arial';
-				// }).catch(function (error) {
-				// 	console.error(error)
-				// });
-
-				// var secondaryBold_font = new FontFace('secondaryBold', 'url(' + brand.fonts.secondaryBold.url + ')');
-				// secondaryBold_font.load().then(function (loaded_face) {
-				// 	document.fonts.add(loaded_face);
-				// 	document.body.style.fontFamily = '"secondaryBold", Arial';
-				// }).catch(function (error) {
-				// 	console.error(error)
-				// });
 
 				if (brand.colors.primary === '#000') {
 
@@ -327,7 +290,11 @@ const designTokens = () => {
 				// There was an error
 				console.warn('Something went wrong.', err);
 			});
-	});
 }
+
+
+window.addEventListener('load',function(){
+	document.querySelector('.alpq-loader-container').classList.add("alpq-loaded")  
+  });
 
 

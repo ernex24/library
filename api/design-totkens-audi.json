@@ -4,48 +4,48 @@
     },
     "colors": {
         "primary": "#000",
-        "secondary": "#ff9400",
+        "secondary": "#676767",
         "contrast": "#ffffff",
         "background": "#f2f4f5",
-        "inactive": "#eeeeee",
-        "$H4": "#666058",
-        "highlight": "#b2d8e8",
-        "link": "#007db3",
-        "linkHover": "#f3b229",
-        "Error": "#de592e",
+        "inactive": "#e7e9ea",
+        "h4": "#808080",
+        "highlight": "#c5c5c5",
+        "link": "#000000",
+        "linkHover": "#1f1f1f",
+        "error": "#de592e",
         "success": "#99cc51",
-        "helper": "#768d98"
+        "helper": "#bbbbbb"
     },
     "fontColors": {
         "primary": "#000000",
-        "secondary": "#ff9400",
+        "secondary": "#676767",
         "contrast": "#ffffff",
         "background": "#f2f4f5",
-        "inactive": "#eeeeee",
-        "$H4": "#666058",
+        "inactive": "#c5c5c5",
+        "h4": "#808080",
         "highlight": "#b2d8e8",
-        "link": "#007db3",
+        "link": "#000000",
         "linkHover": "#f3b229",
-        "Error": "#de592e",
+        "error": "#de592e",
         "success": "#99cc51",
-        "helper": "#768d98"
+        "helper": "#bbbbbb"
     },
     "fonts": {
         "primaryRegular": {
             "fontFamily": "primaryBook",
-            "url": "./fonts/vistaSansBold.woff"
+            "url": "styles/fonts/AudiType-WideLight.woff2"
         },
         "primaryBold": {
             "fontFamily": "primaryBold",
-            "url": "./fonts/vistaSansBold.woff"
+            "url": "styles/fonts/AudiType-WideNormal.woff2"
         },
         "secondaryRegular": {
             "fontFamily": "secondaryLight",
-            "url": "./fonts/vistaSansBold.woff"
+            "url": "styles/fonts/AudiType-ExtendedNormal.woff2"
         },
         "secondaryBold": {
             "fontFamily": "secondaryBold",
-            "url": "./fonts/vistaSansBold.woff"
+            "url": "styles/fonts/AudiType-ExtendedBold.woff2"
         }
     },
     "fontSize": {

@@ -14,6 +14,15 @@
 
 <body class="alpq-textSize-p alpq-bgColor-background">
 
+    <div class="alpq-loader-container">	
+        <svg class="alpq-loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+            <circle cx="170" cy="170" r="160" id="circle1"/>
+            <circle cx="170" cy="170" r="135" id="circle2"/>
+            <circle cx="170" cy="170" r="110" id="circle3"/>
+            <circle cx="170" cy="170" r="85"  id="circle4"/>
+        </svg>
+    </div>
+
     <div class="alpq-page-container">
         <div class=" alpq-content-wrap">
 
@@ -22,7 +31,7 @@
                 <img class="alpq-margin-m alpq-header-logo" src="styles/logo/alpiq-logo.svg?sanitize=true">
                 <div class="alpq-pos-end-center">
                     <span class="icon-global alpq-margin-right-s"></span>
-                    <div class="alpq-textColor-contrast">GLobal, English
+                    <div class="alpq-textColor-contrast">Global, English
                         <span class="icon-carat-down-contrast alpq-margin-left-right-xs"></span>
                     </div>
                     <span onclick="toggleCorporativeMenu()" class="icon-menu-hamburger alpq-margin-left-m alpq-margin-right-l"></span>
@@ -93,13 +102,33 @@
 
             <!-- Main container -->
             <div class="alpq-container">
-                <p class="alpq-textSize-H2 alpq-pos-start-center alpq-margin-left-m">Desing Tokens</p>
-                <p class="alpq-textSize-p alpq-pos-start-center alpq-margin-left-m">Whitelabeling the apps</p>
+
+                <!-- Title + Menu container -->
+                <div class="alpq-bgColor-contrast alpq-bgShadow">
+ 
+                    <!-- Title container -->
+                    <div class="alpq-margin-left-right-xs alpq-padding-top-bottom-xs  alpq-dist-hor-baseline alpq-borderRadius">
+                        <p class="alpq-textSize-H2 alpq-pos-start-center alpq-margin-left-xs">Desing Tokens</p>
+                        <p class="alpq-textSize-p alpq-pos-start-center alpq-margin-left-xs">Whitelabeling the apps</p>
+                    </div> 
+                    
+                    <!-- Menu container -->
+                    <ul class="alpq-secondary-menu">
+                        <li class="alpq-secondary-menu-active">Dark mode</li>
+                        <li>Whitelabeling</li>
+                    </ul>
+
+                </div>
 
                 <!-- Card container -->
-                <div class="alpq-bgColor-contrast alpq-margin-m alpq-borderRadius alpq-bgShadow">
+                <div class="alpq-bgColor-contrast alpq-margin-s alpq-borderRadius alpq-bgShadow">
 
-                    <p class="alpq-textSize-H3 alpq-pos-start-center alpq-padding-m">Design tokens</p>
+            <!-- Breadcrumbs -->
+                        <ul class="alpq-margin-left-right-s alpq-breadcrumbs">
+                                <li> <a href="#s">Home</a><i class="flaticon-right-arrow-angle alpq-textColor-inactive"></i></li>
+                                <li>Design Tokens</li>
+                            </ul>
+
 
                     <div class="alpq-accordion">
                         <div class="alpq-accordion-header">
@@ -122,20 +151,30 @@
                         <div class="alpq-accordion-content">
 
                             <div class="alpq-iner-container">
-                                
-                                <div class="alpq-selector">
-                                    <select id="brandSelector" onchange="brandSelector()">
-                                        <option>Select Value</option>
-                                        <option value="alpiq">Alpiq</option>
-                                        <option value="mercedesBenz">Mercedes-Benz</option>
-                                        <option value="porsche">Porsche</option>
-                                        <option value="audi">Audi</option>
-                                        <option value="bmw">BMW</option>
-                                    </select>
-                                </div>
 
+                                <div class="alpq-pos-center-center alpq-pos-wrap">
+
+                                    <div onclick="designTokensHandler('alpiq')" class="box alpq-bgColor-contrast alpq-margin-s alpq-textColor-contrast alpq-pos-center-center alpq-bgShadow">
+                                        <img src="styles/logo/alpiq-logo.svg">
+                                    </div>
+                                    <div onclick="designTokensHandler('mercedes-benz')"class="box alpq-bgColor-contrast alpq-margin-s alpq-pos-center-center alpq-bgShadow">
+                                        <img src="styles/logo/mercedes-benz.svg">
+                                    </div>
+                                    <div onclick="designTokensHandler('porsche')" class="box alpq-bgColor-contrast alpq-margin-s alpq-pos-center-center alpq-bgShadow">
+                                        <img style="max-width: 130px;" src="styles/logo/porsche.png">
+                                    </div>
+                                </div>
+                                <div  class="alpq-pos-center-center alpq-pos-wrap">
+                                    <div onclick="designTokensHandler('audi')" class="box alpq-bgColor-contrast alpq-margin-s alpq-textColor-contrast alpq-pos-center-center alpq-bgShadow">
+                                        <img style="max-width: 130px;" src="styles/logo/audi.svg">
+                                    </div>
+                                    <div onclick="designTokensHandler('bmw')" class="box alpq-bgColor-contrast alpq-margin-s alpq-pos-center-center alpq-bgShadow">
+                                        <img style="max-width: 130px; " src="styles/logo/bmw.svg">
+                                    </div>
+
+                                </div>
                             </div>
-                            
+                                </div>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,25 @@
+.alpq-secondary-menu{
+    border-top: 1px solid var(--alpq-color-background);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.alpq-secondary-menu > li {
+    height: var(--alpq-space-xxl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 160px; 
+    padding: 0 var(--alpq-space-s) 0 var(--alpq-space-s);
+    cursor: pointer;
+}
+
+.alpq-secondary-menu > li:hover {
+    background-color: var(--alpq-color-background);
+}
+
+.alpq-secondary-menu-active{
+    border-bottom: 2px solid var(--alpq-color-primary);
+}

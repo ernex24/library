@@ -3,6 +3,7 @@
     min-width: 240px;
     min-height: 100px;
     max-width: 520px;
+    cursor: pointer;
 }
 
 .box-position {
@@ -69,8 +70,4 @@ code[class*=language-], pre[class*=language-] {
 code, kbd, samp {
     font-family: monospace, monospace;
     font-size: 12px;
-}
-
-.select-selected{
-    margin-bottom: 250px;
 }

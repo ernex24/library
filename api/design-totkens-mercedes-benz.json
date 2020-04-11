@@ -6,29 +6,29 @@
         "primary": "#000000",
         "secondary": "#00ADEF",
         "contrast": "#ffffff",
-        "background": "#f2f4f5",
-        "inactive": "#eeeeee",
-        "$H4": "#666058",
-        "highlight": "#00ADEF",
-        "link": "#00ADEF",
+        "background": "#F8F8F8",
+        "inactive": "#a9b0b7",
+        "h4": "#999999",
+        "highlight": "#a9b0b7",
+        "link": "#0000ee",
         "linkHover": "#00ADEF",
-        "Error": "#de592e",
+        "error": "#de592e",
         "success": "#99cc51",
-        "helper": "#00ADEF"
+        "helper": "#a9b0b7"
     },
     "fontColors": {
         "primary": "#000000",
         "secondary": "#00ADEF",
         "contrast": "#ffffff",
-        "background": "#f2f4f5",
-        "inactive": "#eeeeee",
-        "$H4": "#666058",
-        "highlight": "#b2d8e8",
-        "link": "#000000",
+        "background": "#F8F8F8",
+        "inactive": "#999999",
+        "h4": "#999999",
+        "highlight": "#00ADEF",
+        "link": "#0000ee",
         "linkHover": "#00ADEF",
-        "Error": "#de592e",
+        "error": "#de592e",
         "success": "#99cc51",
-        "helper": "#999999"
+        "helper": "#a9b0b7"
     },
     "fonts": {
         "primaryRegular": {

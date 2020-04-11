@@ -4,48 +4,48 @@
     },
     "colors": {
         "primary": "#000",
-        "secondary": "#d5001c",
+        "secondary": "#cd242b",
         "contrast": "#ffffff",
-        "background": "#f2f4f5",
-        "inactive": "#eeeeee",
-        "$H4": "#666058",
-        "highlight": "#b2d8e8",
+        "background": "#eff0f1",
+        "inactive": "#c8cacb",
+        "h4": "#959899",
+        "highlight": "#55acee",
         "link": "#007db3",
-        "linkHover": "#d5001c",
-        "Error": "#de592e",
+        "linkHover": "#cd242b",
+        "error": "#de592e",
         "success": "#99cc51",
-        "helper": "#768d98"
+        "helper": "#959899"
     },
     "fontColors": {
         "primary": "#000000",
-        "secondary": "#d5001c",
+        "secondary": "#cd242b",
         "contrast": "#ffffff",
-        "background": "#f2f4f5",
-        "inactive": "#eeeeee",
-        "$H4": "#666058",
-        "highlight": "#b2d8e8",
-        "link": "#d5001c",
+        "background": "#eff0f1",
+        "inactive": "#959899",
+        "h4": "#959899",
+        "highlight": "#55acee",
+        "link": "#007db3",
         "linkHover": "#d5001c",
-        "Error": "#de592e",
+        "error": "#de592e",
         "success": "#99cc51",
-        "helper": "#768d98"
+        "helper": "#959899"
     },
     "fonts": {
         "primaryRegular": {
             "fontFamily": "primaryBook",
-            "url": "./fonts/vistaSansBold.woff"
+            "url": "styles/fonts/PorscheNextThin.woff2"
         },
         "primaryBold": {
             "fontFamily": "primaryBold",
-            "url": "./fonts/vistaSansBold.woff"
+            "url": "styles/fonts/PorscheNextRegular.woff2"
         },
         "secondaryRegular": {
             "fontFamily": "secondaryLight",
-            "url": "./fonts/vistaSansBold.woff"
+            "url": "styles/fonts/PorscheNextBold.woff2"
         },
         "secondaryBold": {
             "fontFamily": "secondaryBold",
-            "url": "./fonts/vistaSansBold.woff"
+            "url": "styles/fonts/PorscheNextBold.woff2"
         }
     },
     "fontSize": {
@@ -72,7 +72,7 @@
         "shadowL": "0 16px 24px -.5em rgba(0, 0, 0, 0.35)"
     },
     "border": {
-        "borderadius": "3px",
+        "borderadius": "0px",
         "borderwidth": "1px"
     }
 }

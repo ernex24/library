@@ -8,11 +8,11 @@
         "contrast": "#ffffff",
         "background": "#f2f4f5",
         "inactive": "#eeeeee",
-        "$H4": "#666058",
+        "h4": "#666058",
         "highlight": "#b2d8e8",
         "link": "#007db3",
         "linkHover": "#f3b229",
-        "Error": "#de592e",
+        "error": "#de592e",
         "success": "#99cc51",
         "helper": "#768d98"
     },
@@ -22,11 +22,11 @@
         "contrast": "#ffffff",
         "background": "#f2f4f5",
         "inactive": "#eeeeee",
-        "$H4": "#666058",
+        "h4": "#666058",
         "highlight": "#b2d8e8",
         "link": "#007db3",
         "linkHover": "#f3b229",
-        "Error": "#de592e",
+        "error": "#de592e",
         "success": "#99cc51",
         "helper": "#768d98"
     },
@@ -41,7 +41,7 @@
         },
         "secondaryRegular": {
             "fontFamily": "secondaryLight",
-            "url": "styles/fonts/vistaSlabLigth.woff2"
+            "url": "styles/fonts/vistaSlabLigth.woff"
         },
         "secondaryBold": {
             "fontFamily": "secondaryBold",

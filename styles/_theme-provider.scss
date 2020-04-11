@@ -1,31 +1,30 @@
 /* Theme Provider */
 
 /*Colors*/
-
 $primary: #052f43;
 $secondary: #ff9400;
 $contrast: #ffffff;
 $background: #f2f4f5;
 $inactive: #eeeeee;
-$H4: #666058;
+$h4: #666058;
 $highlight: #b2d8e8;
 $link: #007db3;
 $link-hover: #f3b229;
-$Error: #de592e;
+$error: #de592e;
 $success: #99cc51;
 $helper: #768d98;
-/*Font Colors*/
 
+/*Font Colors*/
 $font-primary: #052f43;
 $font-secondary: #ff9400;
 $font-contrast: #ffffff;
 $font-background: #f2f4f5;
 $font-inactive: #eeeeee;
-$font-H4: #666058;
+$font-h4: #666058;
 $font-highlight: #b2d8e8;
 $font-link: #007db3;
 $font-link-hover: #f3b229;
-$font-Error: #de592e;
+$font-error: #de592e;
 $font-success: #99cc51;
 $font-helper: #768d98;
 $font-size-xs: 8px;
@@ -34,8 +33,8 @@ $font-size-m: 16px;
 $font-size-l: 24px;
 $font-size-xl: 32px;
 $font-size-xxl: 64px;
-/* Spaces & Sizing 8pt system */
 
+/* Spaces & Sizing 8pt system */
 $space-xs: 4px;
 $space-s: 8px;
 $space-m: 16px;
@@ -50,13 +49,11 @@ $shadow-l: 0 $space-m $space-l -.5em rgba(0, 0, 0, 0.35);
 $borderadius: 3px;
 $borderwidth: 1px;
 $transition: all 0.5s;
-/* Fonts */
 
+/* Fonts */
 @font-face {
     font-family: "primaryBook";
-    src: local(primaryBook), //   url("./fonts/vistaSansBook.woff2") format("woff2"),
-    url("./fonts/vistaSansBook.woff") format("woff");
-    //   url("./fonts/vistaSansBook.ttf") format("truetype");
+    src: url("fonts/vistaSansBook.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -64,9 +61,7 @@ $transition: all 0.5s;
 
 @font-face {
     font-family: "primaryBold";
-    src: local(primaryBold), //   url("./fonts/vistaSansBold.woff2") format("woff2"),
-    url("./fonts/vistaSansBold.woff") format("woff");
-    //   url("./fonts/vistaSansBold.ttf") format("truetype");
+    src: url("fonts/vistaSansBold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
@@ -74,8 +69,7 @@ $transition: all 0.5s;
 
 @font-face {
     font-family: "secondaryLight";
-    src: local(secondaryLight), //   url("./fonts/vistaSlabLigth.ttf") format("truetype"), 
-    url("./fonts/vistaSlabLigth.woff2") format("woff2"); // url("./fonts/vistaSlabLigth.woff") format("woff");
+    src: url("fonts/vistaSlabLigth.woff2") format("woff"); 
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
@@ -83,9 +77,7 @@ $transition: all 0.5s;
 
 @font-face {
     font-family: "secondaryBold";
-    src: local(secondaryBold), //   url("./fonts/vistaSlabBook.woff2") format("woff2"),
-    url("./fonts/vistaSlabBook.woff") format("woff");
-    //   url("./fonts/vistaSlabBook.ttf") format("truetype");
+    src: url("fonts/vistaSlabBook.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
