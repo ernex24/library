@@ -1643,7 +1643,8 @@ Creation date: 22/06/2016 15:08
   content: "\f190"; }
 
 .flaticon-right-arrow-angle:before {
-  content: "\f191"; }
+  content: "\f191";
+  color: var(--alpq-color-inactive); }
 
 .flaticon-right-arrow-circular-button-outline:before {
   content: "\f192"; }
