@@ -184,35 +184,61 @@ const designTokens = (brand) => {
 
 				console.log('success!', json);
 				const brand = json
-				
+				const setStyle = document.documentElement.style;
+
 				// Background color
-				document.documentElement.style.setProperty('--alpq-color-primary', brand.colors.primary);
-				document.documentElement.style.setProperty('--alpq-color-contrast', brand.colors.contrast);
-				document.documentElement.style.setProperty('--alpq-color-secondary', brand.colors.secondary);
-				document.documentElement.style.setProperty('--alpq-color-highlight', brand.colors.highlight);
-				document.documentElement.style.setProperty('--alpq-color-error', brand.colors.error);
-				document.documentElement.style.setProperty('--alpq-color-success', brand.colors.success);
-				document.documentElement.style.setProperty('--alpq-color-h4', brand.colors.h4);
-				document.documentElement.style.setProperty('--alpq-color-link-hover', brand.colors.linkHover);
-				document.documentElement.style.setProperty('--alpq-color-helper', brand.colors.helper);
-				document.documentElement.style.setProperty('--alpq-color-link', brand.colors.link);
-				document.documentElement.style.setProperty('--alpq-color-inactive', brand.colors.inactive);
-				document.documentElement.style.setProperty('--alpq-color-background', brand.colors.background);
+				setStyle.setProperty('--alpq-color-primary', brand.colors.primary);
+				setStyle.setProperty('--alpq-color-contrast', brand.colors.contrast);
+				setStyle.setProperty('--alpq-color-secondary', brand.colors.secondary);
+				setStyle.setProperty('--alpq-color-highlight', brand.colors.highlight);
+				setStyle.setProperty('--alpq-color-error', brand.colors.error);
+				setStyle.setProperty('--alpq-color-success', brand.colors.success);
+				setStyle.setProperty('--alpq-color-h4', brand.colors.h4);
+				setStyle.setProperty('--alpq-color-link-hover', brand.colors.linkHover);
+				setStyle.setProperty('--alpq-color-helper', brand.colors.helper);
+				setStyle.setProperty('--alpq-color-link', brand.colors.link);
+				setStyle.setProperty('--alpq-color-inactive', brand.colors.inactive);
+				setStyle.setProperty('--alpq-color-background', brand.colors.background);
+
+				setStyle.setProperty('--alpq-button-primary', brand.colors.buttonPrimary);
+				setStyle.setProperty('--alpq-button-primary-hover', brand.colors.buttonPrimaryHover);
+				setStyle.setProperty('--alpq-header-color', brand.colors.header);
+				setStyle.setProperty('--alpq-font-color-header', brand.fontColors.fontColorheader);
 
 				// Font Colors
-				document.documentElement.style.setProperty('--alpq-font-color-primary', brand.fontColors.primary);
-				document.documentElement.style.setProperty('--alpq-font-color-contrast', brand.fontColors.contrast);
-				document.documentElement.style.setProperty('--alpq-font-color-secondary', brand.fontColors.secondary);
-				document.documentElement.style.setProperty('--alpq-font-color-highlight', brand.fontColors.highlight);
-				document.documentElement.style.setProperty('--alpq-font-color-error', brand.fontColors.error);
-				document.documentElement.style.setProperty('--alpq-font-color-success', brand.fontColors.success);
-				document.documentElement.style.setProperty('--alpq-font-color-h4', brand.fontColors.h4);
-				document.documentElement.style.setProperty('--alpq-font-color-link-hover', brand.fontColors.linkHover);
-				document.documentElement.style.setProperty('--alpq-font-color-helper', brand.fontColors.helper);
-				document.documentElement.style.setProperty('--alpq-font-color-link', brand.fontColors.link);
-				document.documentElement.style.setProperty('--alpq-font-color-inactive', brand.fontColors.inactive);
-				document.documentElement.style.setProperty('--alpq-font-color-background', brand.fontColors.background);
-				document.documentElement.style.setProperty('--alpq-borderadius', brand.border.borderadius);
+				setStyle.setProperty('--alpq-font-color-primary', brand.fontColors.primary);
+			
+				setStyle.setProperty('--alpq-font-color-secondary', brand.fontColors.secondary);
+				setStyle.setProperty('--alpq-font-color-highlight', brand.fontColors.highlight);
+				setStyle.setProperty('--alpq-font-color-warning', brand.fontColors.warning);
+				setStyle.setProperty('--alpq-font-color-error', brand.fontColors.error);
+				setStyle.setProperty('--alpq-font-color-success', brand.fontColors.success);
+	
+				setStyle.setProperty('--alpq-font-color-helper', brand.fontColors.helper);
+	
+				setStyle.setProperty('--alpq-font-color-inactive', brand.fontColors.inactive);
+				setStyle.setProperty('--alpq-font-color-background', brand.fontColors.background);
+				
+				setStyle.setProperty('--alpq-font-color-h1', brand.fontColors.h1);
+				setStyle.setProperty('--alpq-font-color-h2', brand.fontColors.h2);
+				setStyle.setProperty('--alpq-font-color-h3', brand.fontColors.h3);
+				setStyle.setProperty('--alpq-font-color-h4', brand.fontColors.h4);
+				setStyle.setProperty('--alpq-font-color-p', brand.fontColors.p);
+				setStyle.setProperty('--alpq-font-color-pbold', brand.fontColors.pbold);
+				setStyle.setProperty('--alpq-font-color-description', brand.fontColors.description);
+				setStyle.setProperty('--alpq-font-color-description-bold', brand.fontColors.descriptionBold);
+				setStyle.setProperty('--alpq-font-color-sidebar', brand.fontColors.sidebar);
+				setStyle.setProperty('--alpq-font-color-placeholder', brand.fontColors.placeholder);
+				setStyle.setProperty('--alpq-font-color-label', brand.fontColors.label);
+				setStyle.setProperty('--alpq-font-color-link', brand.fontColors.link);
+
+				setStyle.setProperty('--alpq-font-color-linkhover', brand.fontColors.linkHover);
+				setStyle.setProperty(' --alpq-font-color-contrast', brand.fontColors.contrast);
+				setStyle.setProperty('--alpq-font-color-warning', brand.fontColors.warning);
+				setStyle.setProperty('--alpq-font-color-error', brand.fontColors.error);
+				setStyle.setProperty('--alpq-font-color-success', brand.fontColors.success);
+				
+				setStyle.setProperty('--alpq-borderadius', brand.border.borderadius);
 
 				//Logo
 				document.querySelector('.alpq-header-logo').src = brand.logo.url
@@ -251,30 +277,30 @@ const designTokens = (brand) => {
 
 				document.head.appendChild(newStyle);
 
-				if (brand.colors.primary === '#000') {
+				// if (brand.colors.primary === '#000') {
 
-					document.querySelector('.alpq-header').style.backgroundColor = '#ffffff';
-					document.documentElement.style.setProperty('--alpq-font-color-contrast', brand.fontColors.primary);
-					document.querySelector('.alpq-header-icon').style.filter = 'grayscale(1)';
-					sidebar = document.querySelectorAll('.alpq-main-sidebar > a > div > img');
-					sidebar.forEach(() => {
-						sidebar;
-						sidebar.forEach((i) => {
-							i.style.filter = 'grayscale(1)';
-						});
-					});
+				// 	document.querySelector('.alpq-header').style.backgroundColor = '#ffffff';
+				// 	document.documentElement.style.setProperty('--alpq-font-color-contrast', brand.fontColors.primary);
+				// 	document.querySelector('.alpq-header-icon').style.filter = 'grayscale(1)';
+				// 	sidebar = document.querySelectorAll('.alpq-main-sidebar > a > div > img');
+				// 	sidebar.forEach(() => {
+				// 		sidebar;
+				// 		sidebar.forEach((i) => {
+				// 			i.style.filter = 'grayscale(1)';
+				// 		});
+				// 	});
 
-				} else {
-					document.querySelector('.alpq-header').style.backgroundColor = brand.colors.primary;
-					document.querySelector('.alpq-header-icon').style.filter = 'grayscale(0)';
-					sidebar = document.querySelectorAll('.alpq-main-sidebar > a > div > img');
-					sidebar.forEach(() => {
-						sidebar;
-						sidebar.forEach((i) => {
-							i.style.filter = 'grayscale(0)';
-						});
-					});
-				}
+				// } else {
+				// 	document.querySelector('.alpq-header').style.backgroundColor = brand.colors.primary;
+				// 	document.querySelector('.alpq-header-icon').style.filter = 'grayscale(0)';
+				// 	sidebar = document.querySelectorAll('.alpq-main-sidebar > a > div > img');
+				// 	sidebar.forEach(() => {
+				// 		sidebar;
+				// 		sidebar.forEach((i) => {
+				// 			i.style.filter = 'grayscale(0)';
+				// 		});
+				// 	});
+				// }
 
 				sidebar = document.querySelectorAll('.alpq-main-sidebar > a > div > img');
 				sidebar.forEach(() => {

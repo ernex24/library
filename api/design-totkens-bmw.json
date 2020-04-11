@@ -9,26 +9,41 @@
         "background": "#f2f4f5",
         "inactive": "#eeeeee",
         "h4": "#666058",
-        "highlight": "#3B78CC",
+        "highlight": "#eeeeee",
         "link": "#3B78CC",
-        "linkHover": "#f3b229",
+        "linkHover": "#0d5ac0",
         "error": "#de592e",
         "success": "#99cc51",
-        "helper": "#768d98"
+        "helper": "#0d5ac0",
+        "buttonPrimary": "#3B78CC",
+        "buttonPrimaryHover": "#0d5ac0",
+        "header": "#ffffff"
     },
     "fontColors": {
-        "primary": "#000000",
-        "secondary": "#3B78CC",
-        "contrast": "#000000",
-        "background": "#f2f4f5",
-        "inactive": "#eeeeee",
-        "h4": "#666058",
-        "highlight": "#3B78CC",
+        "fontColorheader": "#000000",
+        "h1": "#000000",
+        "h2": "#000000",
+        "h3": "#000000",
+        "h4": "#000000",
+        "p": "#000000",
+        "pbold": "#000000",
+        "description": "#666058",
+        "descriptionBold": "#666058",
+        "sidebar": "#000000",
+        "placeholder": "#000000",
+        "label": "#000000",
         "link": "#3B78CC",
-        "linkHover": "#f3b229",
+        "linkHover": "#0d5ac0",
+        "contrast": "#ffffff",
+        "inactive": "#666058",
+        "warning": "#f3b229",
         "error": "#de592e",
         "success": "#99cc51",
-        "helper": "#768d98"
+        "primary": "#000000",
+        "secondary": "#3B78CC",
+        "background": "#f2f4f5",
+        "highlight": "#3B78CC",
+        "helper": "#999999"
     },
     "fonts": {
         "primaryRegular": {
@@ -45,7 +60,7 @@
         },
         "secondaryBold": {
             "fontFamily": "secondaryBold",
-            "url": "styles/fonts/BMWTypeWebBoldAll.woff2"
+            "url": "styles/fonts/BMWTypeWebLightAll.woff2"
         }
     },
     "fontSize": {
@@ -72,7 +87,7 @@
         "shadowL": "0 16px 24px -.5em rgba(0, 0, 0, 0.35)"
     },
     "border": {
-        "borderadius": "3px",
+        "borderadius": "0px",
         "borderwidth": "1px"
     }
 }

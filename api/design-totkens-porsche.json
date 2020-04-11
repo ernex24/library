@@ -3,7 +3,7 @@
         "url": "styles/logo/porsche.png"
     },
     "colors": {
-        "primary": "#000",
+        "primary": "#00000",
         "secondary": "#cd242b",
         "contrast": "#ffffff",
         "background": "#eff0f1",
@@ -14,20 +14,35 @@
         "linkHover": "#cd242b",
         "error": "#de592e",
         "success": "#99cc51",
-        "helper": "#959899"
+        "helper": "#959899",
+        "buttonPrimary": "#cd242b",
+        "buttonPrimaryHover": "#cd242b",
+        "header": "#ffffff"
     },
     "fontColors": {
-        "primary": "#000000",
-        "secondary": "#cd242b",
+        "fontColorheader": "#000000",
+        "h1": "#000000",
+        "h2": "#000000",
+        "h3": "#000000",
+        "h4": "#000000",
+        "p": "#000000",
+        "pbold": "#000000",
+        "description": "#666058",
+        "descriptionBold": "#666058",
+        "sidebar": "#000000",
+        "placeholder": "#000000",
+        "label": "#000000",
+        "link": "#cd242b",
+        "linkHover": "#cd242b",
         "contrast": "#ffffff",
-        "background": "#eff0f1",
-        "inactive": "#959899",
-        "h4": "#959899",
-        "highlight": "#55acee",
-        "link": "#007db3",
-        "linkHover": "#d5001c",
+        "inactive": "#666058",
+        "warning": "#f3b229",
         "error": "#de592e",
         "success": "#99cc51",
+        "primary": "#000000",
+        "secondary": "#cd242b",
+        "background": "#eff0f1",
+        "highlight": "#55acee",
         "helper": "#959899"
     },
     "fonts": {
@@ -45,7 +60,7 @@
         },
         "secondaryBold": {
             "fontFamily": "secondaryBold",
-            "url": "styles/fonts/PorscheNextBold.woff2"
+            "url": "styles/fonts/PorscheNextThin.woff2"
         }
     },
     "fontSize": {

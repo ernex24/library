@@ -64,7 +64,7 @@
     text-align: center;
     width: inherit;
     height: var(--alpq-space-xxxl);
-    background-color: var(--alpq-color-primary);
+    background-color: var(--alpq-button-primary);
     color: var(--alpq-font-color-contrast);
     display: flex;
     justify-content: center;
@@ -72,7 +72,7 @@
     bottom: 0;
     cursor: pointer;
     &:hover {
-        background-color: var(--alpq-color-link);
+        background-color: var(--alpq-button-primary-hover);
     }
     &:active {
         background-color: var(--alpq-color-primary);

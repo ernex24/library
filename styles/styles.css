@@ -486,6 +486,9 @@ textarea,
 /* Theme Provider */
 /*Colors*/
 /*Font Colors*/
+/*Font Colors not adapted*/
+/*Buttons*/
+/*Header*/
 /* Spaces & Sizing 8pt system */
 /* Fonts */
 @font-face {
@@ -519,6 +522,7 @@ textarea,
   --alpq-color-secondary: #ff9400;
   --alpq-color-contrast: #ffffff;
   --alpq-color-highlight: #b2d8e8;
+  --alpq-color-warning: #f3b229;
   --alpq-color-error: #de592e;
   --alpq-color-success: #99cc51;
   --alpq-color-h4: #666058;
@@ -540,6 +544,28 @@ textarea,
   --alpq-font-color-link: #007db3;
   --alpq-font-color-inactive: #eeeeee;
   --alpq-font-color-background: #f2f4f5;
+  --alpq-font-color-h1: #052f43;
+  --alpq-font-color-h2: #052f43;
+  --alpq-font-color-h3: #052f43;
+  --alpq-font-color-h4: #666058;
+  --alpq-font-color-p: #052f43;
+  --alpq-font-color-pbold: #052f43;
+  --alpq-font-color-description: #666058;
+  --alpq-font-color-description-bold: #666058;
+  --alpq-font-color-sidebar: #052f43;
+  --alpq-font-color-placeholder: #768d98;
+  --alpq-font-color-label: #768d98;
+  --alpq-font-color-link: #007db3;
+  --alpq-font-color-linkhover: #f3b229;
+  --alpq-font-color-contrast: #ffffff;
+  --alpq-font-color-inactive: #eeeeee;
+  --alpq-font-color-warning: #f3b229;
+  --alpq-font-color-error: #de592e;
+  --alpq-font-color-success: #99cc51;
+  --alpq-button-primary: #052f43;
+  --alpq-button-primary-hover: #007db3;
+  --alpq-header-color: #052f43;
+  --alpq-font-color-header: #ffffff;
   --alpq-font-size-xs: 8px;
   --alpq-font-size-s: 12px;
   --alpq-font-size-m: 16px;
@@ -680,6 +706,9 @@ a:hover {
 .alpq-textColor-contrast, .alpq-btn-primary, .alpq-btn-error, .alpq-btn-success, .alpq-btn-warning {
   color: var(--alpq-font-color-contrast) !important; }
 
+.alpq-textColor-header {
+  color: var(--alpq-font-color-header) !important; }
+
 .alpq-textColor-link {
   color: var(--alpq-font-color-link) !important; }
 
@@ -695,40 +724,52 @@ a:hover {
 .alpq-textColor-background {
   color: var(--alpq-font-color-background) !important; }
 
+.alpq-textColor-helper {
+  color: var(--alpq-font-color-helper) !important; }
+
+.alpq-textColor-warning {
+  color: var(--alpq-font-color-warning) !important; }
+
+.alpq-textColor-error {
+  color: var(--alpq-font-color-error) !important; }
+
+.alpq-textColor-success {
+  color: var(--alpq-font-color-success) !important; }
+
 .alpq-textSize-H1 {
-  font-family: "secondaryLight";
+  font-family: "secondaryBold";
   font-size: var(--alpq-font-size-xxl);
   font-weight: 300;
   line-height: var(--alpq-space-xxxl);
-  color: var(--alpq-font-color-primary);
+  color: var(--alpq-font-color-h1);
   margin: 0; }
 
 .alpq-textSize-H2 {
   font-family: "secondaryBold";
   font-size: var(--alpq-font-size-xl);
   line-height: var(--alpq-space-xxl);
-  color: var(--alpq-font-color-primary);
+  color: var(--alpq-font-color-h2);
   margin: 0; }
 
 .alpq-textSize-H3 {
   font-family: "secondaryBold";
   font-size: var(--alpq-font-size-l);
   line-height: var(--alpq-space-xxl);
-  color: var(--alpq-font-color-primary);
+  color: var(--alpq-font-color-h3);
   margin: 0; }
 
 .alpq-textSize-H4 {
   font-family: "primaryBook";
   font-size: var(--alpq-font-size-l);
   line-height: var(--alpq-space-xl);
-  color: var(--alpq-font-color-H4);
+  color: var(--alpq-font-color-h4);
   margin: 0; }
 
 .alpq-textSize-p, .alpq-btn-primary, .alpq-btn-secondary, .alpq-btn-text, .alpq-btn-error, .alpq-btn-success, .alpq-btn-warning, .alpq-corporative-menu-logut, .alpq-input, .alpq-checkbox-container, .alpq-radiobtn-container {
   font-family: "primaryBook";
   font-size: var(--alpq-font-size-m);
   line-height: var(--alpq-space-l);
-  color: var(--alpq-font-color-primary);
+  color: var(--alpq-font-color-p);
   margin: 0; }
 
 .alpq-textSize-p-bold {
@@ -736,14 +777,14 @@ a:hover {
   font-size: var(--alpq-font-size-m);
   font-weight: bold;
   line-height: var(--alpq-space-l);
-  color: var(--alpq-font-color-primary);
+  color: var(--alpq-font-color-pbold);
   margin: 0; }
 
 .alpq-textSize-p-desc {
   font-family: "primaryBook";
   font-size: var(--alpq-font-size-s);
   line-height: var(--alpq-space-m);
-  color: var(--alpq-font-color-H4);
+  color: var(--alpq-font-color-description);
   margin: 0; }
 
 .alpq-textSize-p-desc-bold {
@@ -751,28 +792,28 @@ a:hover {
   font-size: var(--alpq-font-size-s);
   font-weight: bold;
   line-height: var(--alpq-space-m);
-  color: var(--alpq-font-color-H4);
+  color: var(--alpq-font-color-description-bold);
   margin: 0; }
 
 .alpq-textSize-placeholder {
   font-family: "primaryBook";
   font-size: var(--alpq-font-size-m);
   line-height: var(--alpq-space-m);
-  color: var(--alpq-font-color-helper);
+  color: var(--alpq-font-color-placeholder);
   margin: 0; }
 
 .alpq-textSize-label, .alpq-input-label {
   font-family: "primaryBook";
   font-size: var(--alpq-font-size-s);
   line-height: var(--alpq-space-m);
-  color: var(--alpq-font-color-primary);
+  color: var(--alpq-font-color-label);
   margin: 0; }
 
 .alpq-textSize-sidebar, .alpq-corporative-menu-divider {
   font-family: "primaryBold";
   font-size: var(--alpq-font-size-xs);
   line-height: var(--alpq-space-s);
-  color: var(--alpq-font-color-primary);
+  color: var(--alpq-font-color-sidebar);
   text-align: center;
   text-transform: uppercase;
   margin: 0; }
@@ -829,7 +870,7 @@ a:hover {
 
 .icon-carat-down-contrast:before {
   content: "\e905";
-  color: var(--alpq-font-color-contrast); }
+  color: var(--alpq-font-color-header); }
 
 .icon-carat-down-primary:before {
   content: "\e905";
@@ -841,7 +882,7 @@ a:hover {
 
 .icon-global:before {
   content: "\e907";
-  color: var(--alpq-font-color-contrast);
+  color: var(--alpq-font-color-header);
   font-size: var(--alpq-space-l); }
 
 .icon-menu-hamburger:before {
@@ -2160,7 +2201,7 @@ Creation date: 22/06/2016 15:08
   -webkit-box-shadow: var(--alpq-shadow-s) !important;
           box-shadow: var(--alpq-shadow-s) !important; }
 
-.alpq-bgColor-primary, .alpq-btn-primary, .alpq-btn-secondary:hover {
+.alpq-bgColor-primary, .alpq-btn-secondary:hover {
   background-color: var(--alpq-color-primary) !important; }
 
 .alpq-bgColor-secondary, .alpq-active::before, .alpq-btn-warning, .alpq-btn-warning:hover {
@@ -2173,9 +2214,9 @@ Creation date: 22/06/2016 15:08
   background-color: var(--alpq-color-error) !important; }
 
 .alpq-bgColor-warning {
-  background-color: var(--alpq-color-link-hover) !important; }
+  background-color: var(--alpq-color-warning) !important; }
 
-.alpq-bgColor-info, .alpq-btn-primary:hover {
+.alpq-bgColor-info {
   background-color: var(--alpq-color-link) !important; }
 
 .alpq-bgColor-inactive, .alpq-btn-primary:disabled, .alpq-btn-secondary:disabled, .alpq-btn-text:disabled, .alpq-btn-error:disabled, .alpq-btn-success:disabled, .alpq-btn-warning:disabled, .alpq-input:disabled {
@@ -2497,7 +2538,7 @@ hr.alpq-divider-xs {
   position: fixed; }
 
 .alpq-header {
-  background-color: var(--alpq-color-primary);
+  background-color: var(--alpq-header-color);
   width: 100%;
   height: var(--alpq-space-xxxxl);
   top: 0;
@@ -2551,7 +2592,7 @@ hr.alpq-divider-xs {
   background-color: var(--alpq-color-background); }
 
 .alpq-secondary-menu-active {
-  border-bottom: 2px solid var(--alpq-color-primary); }
+  border-bottom: 2px solid var(--alpq-button-primary); }
 
 .alpq-main-sidebar {
   width: var(--alpq-space-xxxxxl);
@@ -2615,12 +2656,14 @@ hr.alpq-divider-xs {
   height: 10px; }
 
 .alpq-btn-primary {
+  background-color: var(--alpq-button-primary);
   border: 0;
   height: var(--alpq-space-xxxl);
   min-width: 160px;
   -webkit-transition: var(--alpq-transition);
   transition: var(--alpq-transition); }
   .alpq-btn-primary:hover {
+    background-color: var(--alpq-button-primary-hover);
     -webkit-transition: var(--alpq-transition);
     transition: var(--alpq-transition); }
   .alpq-btn-primary:active {
@@ -2954,7 +2997,7 @@ div[class~=alertBox] > i {
   text-align: center;
   width: inherit;
   height: var(--alpq-space-xxxl);
-  background-color: var(--alpq-color-primary);
+  background-color: var(--alpq-button-primary);
   color: var(--alpq-font-color-contrast);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2968,7 +3011,7 @@ div[class~=alertBox] > i {
   bottom: 0;
   cursor: pointer; }
   .alpq-corporative-menu-logut:hover {
-    background-color: var(--alpq-color-link); }
+    background-color: var(--alpq-button-primary-hover); }
   .alpq-corporative-menu-logut:active {
     background-color: var(--alpq-color-primary); }
 

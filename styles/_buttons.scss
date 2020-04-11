@@ -1,6 +1,6 @@
 .alpq-btn-primary {
     @extend .alpq-textColor-contrast;
-    @extend .alpq-bgColor-primary;
+    background-color: var(--alpq-button-primary);
     @extend .alpq-borderRadius;
     @extend .alpq-padding-left-right-m;
     @extend .alpq-textSize-p;
@@ -9,7 +9,7 @@
     min-width: 160px;
     transition: var(--alpq-transition);
     &:hover {
-        @extend .alpq-bgColor-info;
+        background-color: var(--alpq-button-primary-hover);
         transition: var(--alpq-transition);
     }
     &:active {
