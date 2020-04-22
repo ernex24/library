@@ -118,8 +118,8 @@ accordion.forEach((e) => {
 // change colors dark mode
 
 window.addEventListener('DOMContentLoaded', () => {
-	designTokens();
-	darkmodeListener();
+	// designTokens();
+	darkmodeHandler();
 });
 
 
@@ -133,24 +133,22 @@ const darkmodeHandler = () => {
 	darkmodeListener();
 }
 
+let showDark = true
+
 const darkmodeListener = () => {
 	data = localStorage.getItem('dark-theme');
 	console.log(data)
 	if (data === 'true') {
 		console.log('true')
 		const setStyle = document.documentElement.style;
-		
 		setStyle.setProperty('--alpq-color-contrast', '#353535');
 		setStyle.setProperty('--alpq-color-background', '#2d2d2d');
 		setStyle.setProperty('--alpq-font-color-primary', '#eaeaea');
 		setStyle.setProperty('--alpq-color-highlight', '#303d42');
 		setStyle.setProperty('--alpq-shadow-s', '0 0 16px rgba(0, 0, 0, 0.3)');
-
 		setStyle.setProperty('--alpq-font-color-primary', '#ffffff');
-
 		setStyle.setProperty('--alpq-font-color-highlight', '#ffffff');
 		setStyle.setProperty('--alpq-font-color-helper', '#ffffff');
-
 		setStyle.setProperty('--alpq-font-color-h1', '#ffffff');
 		setStyle.setProperty('--alpq-font-color-h2', '#ffffff');
 		setStyle.setProperty('--alpq-font-color-h3', '#ffffff');
@@ -176,23 +174,15 @@ const darkmodeListener = () => {
 				i.style.filter = 'grayscale(1) invert(1)';
 			});
 		});
-	} else {
-		document.documentElement.style.setProperty('--alpq-color-contrast', '');
-		document.documentElement.style.setProperty('--alpq-color-background', '');
-		document.documentElement.style.setProperty('--alpq-font-color-primary', '');
-		document.documentElement.style.setProperty('--alpq-color-highlight', '');
-		document.documentElement.style.setProperty('--alpq-shadow-s', '');
-		sidebar = document.querySelectorAll('.alpq-main-sidebar > a > div > img');
-		sidebar.forEach(() => {
-			sidebar;
-			sidebar.forEach((i) => {
-				i.style.filter = 'grayscale(0) invert(0)';
-			});
-		});
+	} 
+	
+	if (data === 'false') {
+		designTokens()
 	}
 }
 
-let showDark = false
+
+
 
 const designTokensHandler = (brand) => {
 	window.localStorage.setItem('brand', brand);
@@ -200,14 +190,11 @@ const designTokensHandler = (brand) => {
 }
 
 const designTokens = (brand) => {
-
 	brand = localStorage.getItem('brand');
-
 		fetch('api/design-totkens-' + brand + '.json')
 			.then(res => {
 				return res.json()
 			}).then(json => {
-
 				console.log('success!', json);
 				const brand = json
 				const setStyle = document.documentElement.style;
@@ -225,7 +212,6 @@ const designTokens = (brand) => {
 				setStyle.setProperty('--alpq-color-link', brand.colors.link);
 				setStyle.setProperty('--alpq-color-inactive', brand.colors.inactive);
 				setStyle.setProperty('--alpq-color-background', brand.colors.background);
-
 				setStyle.setProperty('--alpq-button-primary', brand.colors.buttonPrimary);
 				setStyle.setProperty('--alpq-button-primary-hover', brand.colors.buttonPrimaryHover);
 				setStyle.setProperty('--alpq-header-color', brand.colors.header);
@@ -255,7 +241,6 @@ const designTokens = (brand) => {
 				setStyle.setProperty('--alpq-font-color-warning', brand.fontColors.warning);
 				setStyle.setProperty('--alpq-font-color-error', brand.fontColors.error);
 				setStyle.setProperty('--alpq-font-color-success', brand.fontColors.success);
-				
 				setStyle.setProperty('--alpq-borderadius', brand.border.borderadius);
 
 				//Logo
@@ -302,8 +287,6 @@ const designTokens = (brand) => {
 						i.style.filter = 'grayscale(1)';
 					});
 				});
-
-
 
 			}).catch(err => {
 				// There was an error
