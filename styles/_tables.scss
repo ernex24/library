@@ -1,0 +1,27 @@
+.alpq-table{
+    width: 100%;
+    min-width: 800px;
+    overflow: scroll;
+}
+
+.alpq-table-head {
+    border-bottom: 1px solid var(--alpq-color-primary);
+}
+
+
+.alpq-table-head-row {}
+
+.alpq-table-head-row > th {
+    text-align: center;
+    margin: 8px;
+}
+
+.alpq-table-row{
+    border-bottom: 1px solid var(--alpq-color-background);
+}
+
+.alpq-table-row > td {
+    text-align: center;
+}
+
+
